@@ -3,19 +3,19 @@ var cs1010s = cs1010s = cs1010s || {};
 cs1010s.GameScene = cc.Scene.extend({
     ctor:function(mapSize) {
         this._super();
+
+        this.constructMap(mapSize);
     },
 
-    onEnter:function () {
-        this._super();
-        var size = cc.director.getWinSize();
-        var sprite = cc.Sprite.create("HelloWorld.png");
-        sprite.setPosition(size.width / 2, size.height / 2);
-        sprite.setScale(0.8);
-        this.addChild(sprite, 0);
-
-        var label = cc.LabelTTF.create("Hello World", "Arial", 40);
-        label.setPosition(size.width / 2, size.height / 2);
-        this.addChild(label, 1);
+    constructMap:function(mapSize) {
+        for (var i = 0; i < mapSize; i++) {
+            for (var j = 0; j < mapSize; j++) {
+                var sprite = cc.Sprite.create("images/square.png");
+                sprite.setPosition((i + 0.5) * sprite.getContentSize().width,
+                    (j + 0.5) * sprite.getContentSize().height);
+                this.addChild(sprite);
+            }
+        }
     }
 });
 

@@ -1,0 +1,1133 @@
+{
+  "scores": {
+    "AI2": 90,
+    "AI": 50
+  },
+  "rounds": [
+    {
+      "scores": {
+        "AI2": 90,
+        "AI": 50
+      },
+      "history": [
+        {
+          "map": {
+            "(2, 1)": {
+              "neighbors": {
+                "NORTH": {
+                  "name": "(1, 1)",
+                  "type": "Place"
+                },
+                "SOUTH": {
+                  "name": "(3, 1)",
+                  "type": "Place"
+                },
+                "EAST": {
+                  "name": "(2, 2)",
+                  "type": "Place"
+                }
+              },
+              "objects": [
+                {
+                  "place": {
+                    "name": "(2, 1)",
+                    "type": "Place"
+                  },
+                  "medicine_value": 1,
+                  "owner": null,
+                  "food_value": 1,
+                  "type": "Medicine",
+                  "name": "Panadol"
+                },
+                {
+                  "place": {
+                    "name": "(2, 1)",
+                    "type": "Place"
+                  },
+                  "medicine_value": 4,
+                  "owner": null,
+                  "food_value": 1,
+                  "type": "Medicine",
+                  "name": "Aloe Vera"
+                },
+                {
+                  "shots_left": 0,
+                  "place": {
+                    "name": "(2, 1)",
+                    "type": "Place"
+                  },
+                  "min_dmg": 25,
+                  "max_dmg": 30,
+                  "type": "RangedWeapon",
+                  "name": "Crossbow",
+                  "owner": null
+                },
+                {
+                  "place": {
+                    "name": "(2, 1)",
+                    "type": "Place"
+                  },
+                  "food_value": 5,
+                  "type": "WildAnimal",
+                  "threshold": 3,
+                  "health": 18,
+                  "attack_probability": 0.33,
+                  "damage": 2,
+                  "name": "Python"
+                }
+              ],
+              "name": "(2, 1)",
+              "type": "Place"
+            },
+            "(1, 1)": {
+              "neighbors": {
+                "SOUTH": {
+                  "name": "(2, 1)",
+                  "type": "Place"
+                },
+                "EAST": {
+                  "name": "(1, 2)",
+                  "type": "Place"
+                }
+              },
+              "objects": [
+                {
+                  "place": {
+                    "name": "(1, 1)",
+                    "type": "Place"
+                  },
+                  "food_value": 16,
+                  "type": "Animal",
+                  "threshold": 3,
+                  "health": 23,
+                  "name": "Cow"
+                },
+                {
+                  "shots_left": 0,
+                  "place": {
+                    "name": "(1, 1)",
+                    "type": "Place"
+                  },
+                  "min_dmg": 20,
+                  "max_dmg": 25,
+                  "type": "RangedWeapon",
+                  "name": "Bow",
+                  "owner": null
+                },
+                {
+                  "place": {
+                    "name": "(1, 1)",
+                    "type": "Place"
+                  },
+                  "food_value": 4,
+                  "owner": null,
+                  "name": "Cabbage",
+                  "type": "Food"
+                }
+              ],
+              "name": "(1, 1)",
+              "type": "Place"
+            },
+            "(2, 2)": {
+              "neighbors": {
+                "NORTH": {
+                  "name": "(1, 2)",
+                  "type": "Place"
+                },
+                "WEST": {
+                  "name": "(2, 1)",
+                  "type": "Place"
+                },
+                "SOUTH": {
+                  "name": "(3, 2)",
+                  "type": "Place"
+                },
+                "EAST": {
+                  "name": "(2, 3)",
+                  "type": "Place"
+                }
+              },
+              "objects": [
+                {
+                  "place": {
+                    "name": "(2, 2)",
+                    "type": "Place"
+                  },
+                  "owner": null,
+                  "type": "Ammo",
+                  "quantity": 1,
+                  "weapon": "Bow",
+                  "name": "Arrows"
+                },
+                {
+                  "place": {
+                    "name": "(2, 2)",
+                    "type": "Place"
+                  },
+                  "owner": null,
+                  "type": "Ammo",
+                  "quantity": 1,
+                  "weapon": "Bow",
+                  "name": "Arrows"
+                },
+                {
+                  "place": {
+                    "name": "(2, 2)",
+                    "type": "Place"
+                  },
+                  "food_value": 4,
+                  "owner": null,
+                  "name": "Apple",
+                  "type": "Food"
+                },
+                {
+                  "place": {
+                    "name": "(2, 2)",
+                    "type": "Place"
+                  },
+                  "food_value": 4,
+                  "owner": null,
+                  "name": "Cabbage",
+                  "type": "Food"
+                }
+              ],
+              "name": "(2, 2)",
+              "type": "Place"
+            },
+            "(3, 2)": {
+              "neighbors": {
+                "NORTH": {
+                  "name": "(2, 2)",
+                  "type": "Place"
+                },
+                "WEST": {
+                  "name": "(3, 1)",
+                  "type": "Place"
+                },
+                "EAST": {
+                  "name": "(3, 3)",
+                  "type": "Place"
+                }
+              },
+              "objects": [
+                {
+                  "place": {
+                    "name": "(3, 2)",
+                    "type": "Place"
+                  },
+                  "medicine_value": 3,
+                  "owner": null,
+                  "food_value": 1,
+                  "type": "Medicine",
+                  "name": "Aloe Vera"
+                },
+                {
+                  "place": {
+                    "name": "(3, 2)",
+                    "type": "Place"
+                  },
+                  "owner": null,
+                  "type": "Ammo",
+                  "quantity": 1,
+                  "weapon": "Crossbow",
+                  "name": "Bolts"
+                },
+                {
+                  "place": {
+                    "name": "(3, 2)",
+                    "type": "Place"
+                  },
+                  "min_dmg": 10,
+                  "max_dmg": 25,
+                  "type": "Weapon",
+                  "name": "Sword",
+                  "owner": null
+                },
+                {
+                  "place": {
+                    "name": "(3, 2)",
+                    "type": "Place"
+                  },
+                  "food_value": 4,
+                  "owner": null,
+                  "name": "Potato",
+                  "type": "Food"
+                }
+              ],
+              "name": "(3, 2)",
+              "type": "Place"
+            },
+            "(3, 3)": {
+              "neighbors": {
+                "NORTH": {
+                  "name": "(2, 3)",
+                  "type": "Place"
+                },
+                "WEST": {
+                  "name": "(3, 2)",
+                  "type": "Place"
+                }
+              },
+              "objects": [
+                {
+                  "place": {
+                    "name": "(3, 3)",
+                    "type": "Place"
+                  },
+                  "food_value": 11,
+                  "type": "Animal",
+                  "threshold": 2,
+                  "health": 15,
+                  "name": "Pig"
+                },
+                {
+                  "place": {
+                    "name": "(3, 3)",
+                    "type": "Place"
+                  },
+                  "food_value": 5,
+                  "type": "Animal",
+                  "threshold": 0,
+                  "health": 4,
+                  "name": "Chicken"
+                },
+                {
+                  "shots_left": 0,
+                  "place": {
+                    "name": "(3, 3)",
+                    "type": "Place"
+                  },
+                  "min_dmg": 30,
+                  "max_dmg": 40,
+                  "type": "RangedWeapon",
+                  "name": "Pistol",
+                  "owner": null
+                },
+                {
+                  "place": {
+                    "name": "(3, 3)",
+                    "type": "Place"
+                  },
+                  "owner": null,
+                  "type": "Ammo",
+                  "quantity": 1,
+                  "weapon": "Pistol",
+                  "name": "9mm"
+                },
+                {
+                  "place": {
+                    "name": "(3, 3)",
+                    "type": "Place"
+                  },
+                  "min_dmg": 15,
+                  "max_dmg": 25,
+                  "type": "Weapon",
+                  "name": "Machete",
+                  "owner": null
+                },
+                {
+                  "place": {
+                    "name": "(3, 3)",
+                    "type": "Place"
+                  },
+                  "min_dmg": 15,
+                  "max_dmg": 25,
+                  "type": "Weapon",
+                  "name": "Machete",
+                  "owner": null
+                },
+                {
+                  "place": {
+                    "name": "(3, 3)",
+                    "type": "Place"
+                  },
+                  "min_dmg": 10,
+                  "max_dmg": 25,
+                  "type": "Weapon",
+                  "name": "Sword",
+                  "owner": null
+                },
+                {
+                  "place": {
+                    "name": "(3, 3)",
+                    "type": "Place"
+                  },
+                  "food_value": 11,
+                  "type": "WildAnimal",
+                  "threshold": 3,
+                  "health": 23,
+                  "attack_probability": 0.32,
+                  "damage": 8,
+                  "name": "Boar"
+                }
+              ],
+              "name": "(3, 3)",
+              "type": "Place"
+            },
+            "(1, 2)": {
+              "neighbors": {
+                "WEST": {
+                  "name": "(1, 1)",
+                  "type": "Place"
+                },
+                "SOUTH": {
+                  "name": "(2, 2)",
+                  "type": "Place"
+                },
+                "EAST": {
+                  "name": "(1, 3)",
+                  "type": "Place"
+                }
+              },
+              "objects": [
+                {
+                  "place": {
+                    "name": "(1, 2)",
+                    "type": "Place"
+                  },
+                  "medicine_value": 4,
+                  "owner": null,
+                  "food_value": 1,
+                  "type": "Medicine",
+                  "name": "Panadol"
+                },
+                {
+                  "place": {
+                    "name": "(1, 2)",
+                    "type": "Place"
+                  },
+                  "min_dmg": 15,
+                  "max_dmg": 25,
+                  "type": "Weapon",
+                  "name": "Machete",
+                  "owner": null
+                },
+                {
+                  "place": {
+                    "name": "(1, 2)",
+                    "type": "Place"
+                  },
+                  "type": "Conan",
+                  "threshold": -1,
+                  "health": 100,
+                  "inventory": [
+                    {
+                      "place": null,
+                      "min_dmg": 5,
+                      "max_dmg": 10,
+                      "type": "Weapon",
+                      "name": "Knife",
+                      "owner": null
+                    }
+                  ],
+                  "name": "AI",
+                  "hunger": 0
+                }
+              ],
+              "name": "(1, 2)",
+              "type": "Place"
+            },
+            "(1, 3)": {
+              "neighbors": {
+                "WEST": {
+                  "name": "(1, 2)",
+                  "type": "Place"
+                },
+                "SOUTH": {
+                  "name": "(2, 3)",
+                  "type": "Place"
+                }
+              },
+              "objects": [
+                {
+                  "place": {
+                    "name": "(1, 3)",
+                    "type": "Place"
+                  },
+                  "food_value": 5,
+                  "type": "Animal",
+                  "threshold": 4,
+                  "health": 2,
+                  "name": "Chicken"
+                },
+                {
+                  "place": {
+                    "name": "(1, 3)",
+                    "type": "Place"
+                  },
+                  "owner": null,
+                  "type": "Ammo",
+                  "quantity": 1,
+                  "weapon": "Crossbow",
+                  "name": "Bolts"
+                },
+                {
+                  "place": {
+                    "name": "(1, 3)",
+                    "type": "Place"
+                  },
+                  "type": "Player",
+                  "threshold": -1,
+                  "health": 100,
+                  "inventory": [
+                    {
+                      "place": null,
+                      "min_dmg": 5,
+                      "max_dmg": 10,
+                      "type": "Weapon",
+                      "name": "Knife",
+                      "owner": null
+                    }
+                  ],
+                  "name": "AI2",
+                  "hunger": 0
+                }
+              ],
+              "name": "(1, 3)",
+              "type": "Place"
+            },
+            "(2, 3)": {
+              "neighbors": {
+                "NORTH": {
+                  "name": "(1, 3)",
+                  "type": "Place"
+                },
+                "WEST": {
+                  "name": "(2, 2)",
+                  "type": "Place"
+                },
+                "SOUTH": {
+                  "name": "(3, 3)",
+                  "type": "Place"
+                }
+              },
+              "objects": [
+                {
+                  "place": {
+                    "name": "(2, 3)",
+                    "type": "Place"
+                  },
+                  "medicine_value": 2,
+                  "owner": null,
+                  "food_value": 1,
+                  "type": "Medicine",
+                  "name": "Aloe Vera"
+                },
+                {
+                  "shots_left": 0,
+                  "place": {
+                    "name": "(2, 3)",
+                    "type": "Place"
+                  },
+                  "min_dmg": 20,
+                  "max_dmg": 25,
+                  "type": "RangedWeapon",
+                  "name": "Bow",
+                  "owner": null
+                }
+              ],
+              "name": "(2, 3)",
+              "type": "Place"
+            },
+            "(3, 1)": {
+              "neighbors": {
+                "NORTH": {
+                  "name": "(2, 1)",
+                  "type": "Place"
+                },
+                "EAST": {
+                  "name": "(3, 2)",
+                  "type": "Place"
+                }
+              },
+              "objects": [
+                {
+                  "place": {
+                    "name": "(3, 1)",
+                    "type": "Place"
+                  },
+                  "food_value": 9,
+                  "type": "Animal",
+                  "threshold": 2,
+                  "health": 8,
+                  "name": "Sheep"
+                },
+                {
+                  "shots_left": 0,
+                  "place": {
+                    "name": "(3, 1)",
+                    "type": "Place"
+                  },
+                  "min_dmg": 25,
+                  "max_dmg": 30,
+                  "type": "RangedWeapon",
+                  "name": "Crossbow",
+                  "owner": null
+                },
+                {
+                  "place": {
+                    "name": "(3, 1)",
+                    "type": "Place"
+                  },
+                  "food_value": 11,
+                  "type": "WildAnimal",
+                  "threshold": 1,
+                  "health": 20,
+                  "attack_probability": 0.34,
+                  "damage": 6,
+                  "name": "Boar"
+                },
+                {
+                  "place": {
+                    "name": "(3, 1)",
+                    "type": "Place"
+                  },
+                  "food_value": 3,
+                  "owner": null,
+                  "name": "Watermelon",
+                  "type": "Food"
+                }
+              ],
+              "name": "(3, 1)",
+              "type": "Place"
+            }
+          },
+          "events": [
+            [
+              "MOVE",
+              {
+                "place": {
+                  "name": "(3, 1)",
+                  "type": "Place"
+                },
+                "food_value": 11,
+                "type": "WildAnimal",
+                "threshold": 1,
+                "health": 20,
+                "attack_probability": 0.34,
+                "damage": 6,
+                "name": "Boar"
+              },
+              {
+                "neighbors": {
+                  "NORTH": {
+                    "name": "(2, 1)",
+                    "type": "Place"
+                  },
+                  "EAST": {
+                    "name": "(3, 2)",
+                    "type": "Place"
+                  }
+                },
+                "objects": [
+                  {
+                    "place": {
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "food_value": 9,
+                    "type": "Animal",
+                    "threshold": 2,
+                    "health": 8,
+                    "name": "Sheep"
+                  },
+                  {
+                    "shots_left": 0,
+                    "place": {
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "min_dmg": 25,
+                    "max_dmg": 30,
+                    "type": "RangedWeapon",
+                    "name": "Crossbow",
+                    "owner": null
+                  },
+                  {
+                    "place": {
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "food_value": 11,
+                    "type": "WildAnimal",
+                    "threshold": 1,
+                    "health": 20,
+                    "attack_probability": 0.34,
+                    "damage": 6,
+                    "name": "Boar"
+                  },
+                  {
+                    "place": {
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "food_value": 3,
+                    "owner": null,
+                    "name": "Watermelon",
+                    "type": "Food"
+                  }
+                ],
+                "name": "(3, 1)",
+                "type": "Place"
+              },
+              {
+                "neighbors": {
+                  "NORTH": {
+                    "name": "(1, 1)",
+                    "type": "Place"
+                  },
+                  "SOUTH": {
+                    "name": "(3, 1)",
+                    "type": "Place"
+                  },
+                  "EAST": {
+                    "name": "(2, 2)",
+                    "type": "Place"
+                  }
+                },
+                "objects": [
+                  {
+                    "place": {
+                      "name": "(2, 1)",
+                      "type": "Place"
+                    },
+                    "medicine_value": 1,
+                    "owner": null,
+                    "food_value": 1,
+                    "type": "Medicine",
+                    "name": "Panadol"
+                  },
+                  {
+                    "place": {
+                      "name": "(2, 1)",
+                      "type": "Place"
+                    },
+                    "medicine_value": 4,
+                    "owner": null,
+                    "food_value": 1,
+                    "type": "Medicine",
+                    "name": "Aloe Vera"
+                  },
+                  {
+                    "shots_left": 0,
+                    "place": {
+                      "name": "(2, 1)",
+                      "type": "Place"
+                    },
+                    "min_dmg": 25,
+                    "max_dmg": 30,
+                    "type": "RangedWeapon",
+                    "name": "Crossbow",
+                    "owner": null
+                  },
+                  {
+                    "place": {
+                      "name": "(2, 1)",
+                      "type": "Place"
+                    },
+                    "food_value": 5,
+                    "type": "WildAnimal",
+                    "threshold": 3,
+                    "health": 18,
+                    "attack_probability": 0.33,
+                    "damage": 2,
+                    "name": "Python"
+                  }
+                ],
+                "name": "(2, 1)",
+                "type": "Place"
+              }
+            ],
+            [
+              "MOVE",
+              {
+                "place": {
+                  "name": "(3, 3)",
+                  "type": "Place"
+                },
+                "food_value": 5,
+                "type": "Animal",
+                "threshold": 0,
+                "health": 4,
+                "name": "Chicken"
+              },
+              {
+                "neighbors": {
+                  "NORTH": {
+                    "name": "(2, 3)",
+                    "type": "Place"
+                  },
+                  "WEST": {
+                    "name": "(3, 2)",
+                    "type": "Place"
+                  }
+                },
+                "objects": [
+                  {
+                    "place": {
+                      "name": "(3, 3)",
+                      "type": "Place"
+                    },
+                    "food_value": 11,
+                    "type": "Animal",
+                    "threshold": 2,
+                    "health": 15,
+                    "name": "Pig"
+                  },
+                  {
+                    "place": {
+                      "name": "(3, 3)",
+                      "type": "Place"
+                    },
+                    "food_value": 5,
+                    "type": "Animal",
+                    "threshold": 0,
+                    "health": 4,
+                    "name": "Chicken"
+                  },
+                  {
+                    "shots_left": 0,
+                    "place": {
+                      "name": "(3, 3)",
+                      "type": "Place"
+                    },
+                    "min_dmg": 30,
+                    "max_dmg": 40,
+                    "type": "RangedWeapon",
+                    "name": "Pistol",
+                    "owner": null
+                  },
+                  {
+                    "place": {
+                      "name": "(3, 3)",
+                      "type": "Place"
+                    },
+                    "owner": null,
+                    "type": "Ammo",
+                    "quantity": 1,
+                    "weapon": "Pistol",
+                    "name": "9mm"
+                  },
+                  {
+                    "place": {
+                      "name": "(3, 3)",
+                      "type": "Place"
+                    },
+                    "min_dmg": 15,
+                    "max_dmg": 25,
+                    "type": "Weapon",
+                    "name": "Machete",
+                    "owner": null
+                  },
+                  {
+                    "place": {
+                      "name": "(3, 3)",
+                      "type": "Place"
+                    },
+                    "min_dmg": 15,
+                    "max_dmg": 25,
+                    "type": "Weapon",
+                    "name": "Machete",
+                    "owner": null
+                  },
+                  {
+                    "place": {
+                      "name": "(3, 3)",
+                      "type": "Place"
+                    },
+                    "min_dmg": 10,
+                    "max_dmg": 25,
+                    "type": "Weapon",
+                    "name": "Sword",
+                    "owner": null
+                  },
+                  {
+                    "place": {
+                      "name": "(3, 3)",
+                      "type": "Place"
+                    },
+                    "food_value": 11,
+                    "type": "WildAnimal",
+                    "threshold": 3,
+                    "health": 23,
+                    "attack_probability": 0.32,
+                    "damage": 8,
+                    "name": "Boar"
+                  }
+                ],
+                "name": "(3, 3)",
+                "type": "Place"
+              },
+              {
+                "neighbors": {
+                  "NORTH": {
+                    "name": "(2, 2)",
+                    "type": "Place"
+                  },
+                  "WEST": {
+                    "name": "(3, 1)",
+                    "type": "Place"
+                  },
+                  "EAST": {
+                    "name": "(3, 3)",
+                    "type": "Place"
+                  }
+                },
+                "objects": [
+                  {
+                    "place": {
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "medicine_value": 3,
+                    "owner": null,
+                    "food_value": 1,
+                    "type": "Medicine",
+                    "name": "Aloe Vera"
+                  },
+                  {
+                    "place": {
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "owner": null,
+                    "type": "Ammo",
+                    "quantity": 1,
+                    "weapon": "Crossbow",
+                    "name": "Bolts"
+                  },
+                  {
+                    "place": {
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "min_dmg": 10,
+                    "max_dmg": 25,
+                    "type": "Weapon",
+                    "name": "Sword",
+                    "owner": null
+                  },
+                  {
+                    "place": {
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "food_value": 4,
+                    "owner": null,
+                    "name": "Potato",
+                    "type": "Food"
+                  }
+                ],
+                "name": "(3, 2)",
+                "type": "Place"
+              }
+            ],
+            [
+              "INPUT",
+              {
+                "place": {
+                  "name": "(1, 3)",
+                  "type": "Place"
+                },
+                "type": "Player",
+                "threshold": -1,
+                "health": 100,
+                "inventory": [
+                  {
+                    "place": null,
+                    "min_dmg": 5,
+                    "max_dmg": 10,
+                    "type": "Weapon",
+                    "name": "Knife",
+                    "owner": null
+                  }
+                ],
+                "name": "AI2",
+                "hunger": 1
+              },
+              [
+                "ATTACK",
+                {
+                  "place": {
+                    "name": "(1, 3)",
+                    "type": "Place"
+                  },
+                  "food_value": 5,
+                  "type": "Animal",
+                  "threshold": 4,
+                  "health": 2,
+                  "name": "Chicken"
+                },
+                {
+                  "place": null,
+                  "min_dmg": 5,
+                  "max_dmg": 10,
+                  "type": "Weapon",
+                  "name": "Knife",
+                  "owner": null
+                }
+              ]
+            ],
+            [
+              "ATTACK",
+              {
+                "place": {
+                  "name": "(1, 3)",
+                  "type": "Place"
+                },
+                "type": "Player",
+                "threshold": -1,
+                "health": 100,
+                "inventory": [
+                  {
+                    "place": null,
+                    "min_dmg": 5,
+                    "max_dmg": 10,
+                    "type": "Weapon",
+                    "name": "Knife",
+                    "owner": null
+                  }
+                ],
+                "name": "AI2",
+                "hunger": 1
+              },
+              {
+                "place": {
+                  "name": "(1, 3)",
+                  "type": "Place"
+                },
+                "food_value": 5,
+                "type": "Animal",
+                "threshold": 4,
+                "health": 2,
+                "name": "Chicken"
+              },
+              10
+            ],
+            [
+              "DEAD",
+              {
+                "place": {
+                  "name": "Heaven",
+                  "type": "Place"
+                },
+                "food_value": 5,
+                "type": "Animal",
+                "threshold": 4,
+                "health": 0,
+                "name": "Chicken"
+              }
+            ],
+            [
+              "KILLED",
+              {
+                "place": {
+                  "name": "(1, 3)",
+                  "type": "Place"
+                },
+                "type": "Player",
+                "threshold": -1,
+                "health": 100,
+                "inventory": [
+                  {
+                    "place": null,
+                    "min_dmg": 5,
+                    "max_dmg": 10,
+                    "type": "Weapon",
+                    "name": "Knife",
+                    "owner": null
+                  }
+                ],
+                "name": "AI2",
+                "hunger": 1
+              },
+              {
+                "place": {
+                  "name": "Heaven",
+                  "type": "Place"
+                },
+                "food_value": 5,
+                "type": "Animal",
+                "threshold": 4,
+                "health": 0,
+                "name": "Chicken"
+              }
+            ],
+            [
+              "INPUT_ERROR",
+              {
+                "place": {
+                  "name": "(1, 2)",
+                  "type": "Place"
+                },
+                "type": "Conan",
+                "threshold": -1,
+                "health": 100,
+                "inventory": [
+                  {
+                    "place": null,
+                    "min_dmg": 5,
+                    "max_dmg": 10,
+                    "type": "Weapon",
+                    "name": "Knife",
+                    "owner": null
+                  }
+                ],
+                "name": "AI",
+                "hunger": 1
+              },
+              "'Medicine' object has no attribute 'max_damage'"
+            ]
+          ]
+        }
+      ],
+      "config": {
+        "items": [
+          {
+            "qty": 5,
+            "type": "Animal"
+          },
+          {
+            "qty": 5,
+            "type": "Medicine"
+          },
+          {
+            "qty": 5,
+            "type": "RangedWeapon"
+          },
+          {
+            "qty": 5,
+            "type": "Weapon"
+          },
+          {
+            "qty": 3,
+            "type": "WildAnimal"
+          },
+          {
+            "qty": 5,
+            "type": "Food"
+          }
+        ],
+        "map": {
+          "size": 3,
+          "wrap": false
+        },
+        "max_steps": 10,
+        "periodic_events": [
+          {
+            "interval": 20,
+            "description": "Spawn Wild Animals"
+          },
+          {
+            "interval": 20,
+            "description": "Spawn Wild Animals"
+          },
+          {
+            "interval": 20,
+            "description": "Spawn Wild Animals"
+          }
+        ]
+      }
+    }
+  ]
+}

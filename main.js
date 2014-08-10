@@ -1,5 +1,5 @@
 window.onload = function(){
-    var resources = ["images/square.png"];
+    var resources = ["images/square.png", "images/medicine.png"];
 
     cc.game.onStart = function(){
         //load resources

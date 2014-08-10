@@ -16,11 +16,30 @@ cs1010s.GameScene = cc.Scene.extend({
                 this.addChild(sprite);
             }
         }
+    },
+
+    loadMapObjects:function(jsonMap) {
+        var that = this;
+        $.each(jsonMap, function(index, element) {
+            var tokens = index.replace(/[(),]/g, "").split(" ");
+            var row = parseInt(tokens[0]);
+            var col = parseInt(tokens[1]);
+            $.each(element.objects, function(id, jsonObj) {
+                that.addObject(cs1010s.GameObjectFactory.createFromJSON(jsonObj), row, col);
+            });
+        })
+    },
+
+    addObject:function(obj, row, col) {
+        console.log(row, col);
+        console.log(obj);
     }
 });
 
 cs1010s.GameScene.create = function(json) {
     var config = json.rounds[0].config;
     var mapSize = config.map.size;
-    return new cs1010s.GameScene(mapSize);
+    var scene = new cs1010s.GameScene(mapSize);
+    scene.loadMapObjects(json.rounds[0].history[0].map);
+    return scene;
 };

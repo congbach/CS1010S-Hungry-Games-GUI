@@ -8,7 +8,12 @@ window.onload = function(){
 
         // weapons
         "images/sword.png",
-        "images/machete.png"
+        "images/machete.png",
+
+        // ranged weapons
+        "images/bow.png",
+        "images/crossbow.png",
+        "images/pistol.png"
     ];
 
     cc.game.onStart = function(){

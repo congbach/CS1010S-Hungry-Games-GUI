@@ -9,6 +9,9 @@ cs1010s.GameObjectFactory.createFromJSON = function(json) {
         case "Weapon":
             return cs1010s.GameObjectFactory.createWeaponFromJSON(json);
 
+        case "RangedWeapon":
+            return cs1010s.GameObjectFactory.createRangedWeaponFromJSON(json);
+
         default:
             console.log(json);
             return null;
@@ -29,4 +32,14 @@ cs1010s.GameObjectFactory.createWeaponFromJSON = function(json) {
     var maxDmg = json.max_dmg;
     var owner = json.owner;
     return new cs1010s.Weapon(name, minDmg, maxDmg, owner);
-}
+};
+
+cs1010s.GameObjectFactory.createRangedWeaponFromJSON = function(json) {
+    var name = json.name;
+    var minDmg = json.min_dmg;
+    var maxDmg = json.max_dmg;
+    var shotsCount = json.shots_left;
+    var owner = json.owner;
+
+    return new cs1010s.RangedWeapon(name, minDmg, maxDmg, shotsCount, owner);
+};

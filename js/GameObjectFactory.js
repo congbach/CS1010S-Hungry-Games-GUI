@@ -5,6 +5,10 @@ cs1010s.GameObjectFactory.createFromJSON = function(json) {
     switch (json.type) {
         case "Medicine":
             return cs1010s.GameObjectFactory.createMedicineFromJSON(json);
+
+        case "Weapon":
+            return cs1010s.GameObjectFactory.createWeaponFromJSON(json);
+
         default:
             console.log(json);
             return null;
@@ -17,4 +21,12 @@ cs1010s.GameObjectFactory.createMedicineFromJSON = function(json) {
     var medicineValue = json.medicine_value;
     var owner = json.owner;
     return new cs1010s.Medicine(name, foodValue, medicineValue, owner);
+};
+
+cs1010s.GameObjectFactory.createWeaponFromJSON = function(json) {
+    var name = json.name;
+    var minDmg = json.min_dmg;
+    var maxDmg = json.max_dmg;
+    var owner = json.owner;
+    return new cs1010s.Weapon(name, minDmg, maxDmg, owner);
 }

@@ -1,5 +1,15 @@
 window.onload = function(){
-    var resources = ["images/square.png", "images/panadol.png", "images/aloe_vera.png"];
+    var resources = [
+        "images/square.png",
+
+        // medicine
+        "images/panadol.png",
+        "images/aloe_vera.png",
+
+        // weapons
+        "images/sword.png",
+        "images/machete.png"
+    ];
 
     cc.game.onStart = function(){
         //load resources

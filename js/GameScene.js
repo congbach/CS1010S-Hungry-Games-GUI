@@ -4,10 +4,13 @@ var cs1010s = cs1010s = cs1010s || {};
     var GRID_SIZE = 128.0;
 
     cs1010s.GameScene = cc.Scene.extend({
+        _mapObjects : null,
+
         ctor:function(mapSize) {
             this._super();
 
             this.constructMap(mapSize);
+            this.initializeMapObjects(mapSize);
         },
 
         constructMap:function(mapSize) {
@@ -21,24 +24,66 @@ var cs1010s = cs1010s = cs1010s || {};
             }
         },
 
+        initializeMapObjects:function(mapSize) {
+            this._mapObjects = [];
+            for (var row = 0; row < mapSize; row++) {
+                this._mapObjects.push([]);
+                for (var col = 0; col < mapSize; col++) {
+                    this._mapObjects[row].push([]);
+                }
+            }
+        },
+
         loadMapObjects:function(jsonMap) {
             var that = this;
             $.each(jsonMap, function(index, element) {
                 var tokens = index.replace(/[(),]/g, "").split(" ");
-                var row = parseInt(tokens[0]);
-                var col = parseInt(tokens[1]);
+                var row = parseInt(tokens[0]) - 1;
+                var col = parseInt(tokens[1]) - 1;
                 $.each(element.objects, function(id, jsonObj) {
                     console.log(row, col);
                     that.addObject(cs1010s.GameObjectFactory.createFromJSON(jsonObj), row, col);
                 });
             })
+
+            this.repositionAllObjects();
         },
 
         addObject:function(obj, row, col) {
             if (obj)
             {
-                obj.setPosition((row + 0.5) * GRID_SIZE, (col + 0.5) * GRID_SIZE);
                 this.addChild(obj);
+                this._mapObjects[row][col].push(obj);
+//                this.repositionObjectsAtGrid(row, col);
+            }
+        },
+
+        repositionAllObjects:function() {
+            for (var row = 0; row < this._mapObjects.length; row++)
+                for (var col = 0; col < this._mapObjects[row].length; col++)
+                    this.repositionObjectsAtGrid(row, col);
+        },
+
+        repositionObjectsAtGrid:function(row, col) {
+            var gridObjectsCount = this._mapObjects[row][col].length;
+            if (gridObjectsCount == 0)
+                return;
+
+            var gridSubRowCount = gridObjectsCount < 3 ? 1 : gridObjectsCount < 7 ? 2 : 3;
+            var gridSubColCount = gridObjectsCount < 2 ? 1 : gridObjectsCount < 5 ? 2 : 3;
+            var gridSubRowHeight = GRID_SIZE / gridSubRowCount;
+            var gridSubColWidth = GRID_SIZE / gridSubColCount;
+
+            var gridTopX = row * GRID_SIZE;
+            var gridTopY = col * GRID_SIZE;
+
+            for (var r = 0; r < gridSubRowCount; r++) {
+                for (var c = 0; c < gridSubColCount; c++) {
+                    console.log(gridObjectsCount, gridSubRowCount, gridSubColCount, r * gridSubColCount + c);
+                    var gridObject = this._mapObjects[row][col][r * gridSubColCount + c];
+                    gridObject.setPosition(gridTopX + (c + 0.5) * gridSubColWidth,
+                        gridTopY + (r + 0.5) * gridSubRowHeight);
+                }
             }
         }
     });

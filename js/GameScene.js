@@ -66,9 +66,6 @@ var cs1010s = cs1010s = cs1010s || {};
 
         repositionObjectsAtGrid:function(row, col) {
             var gridObjectsCount = this._mapObjects[row][col].length;
-            if (gridObjectsCount == 0)
-                return;
-
             var gridSubRowCount = gridObjectsCount < 3 ? 1 : gridObjectsCount < 7 ? 2 : 3;
             var gridSubColCount = gridObjectsCount < 2 ? 1 : gridObjectsCount < 5 ? 2 : 3;
             var gridSubRowHeight = GRID_SIZE / gridSubRowCount;
@@ -77,14 +74,14 @@ var cs1010s = cs1010s = cs1010s || {};
             var gridTopX = row * GRID_SIZE;
             var gridTopY = col * GRID_SIZE;
 
-            for (var r = 0; r < gridSubRowCount; r++) {
-                for (var c = 0; c < gridSubColCount; c++) {
-                    console.log(gridObjectsCount, gridSubRowCount, gridSubColCount, r * gridSubColCount + c);
-                    var gridObject = this._mapObjects[row][col][r * gridSubColCount + c];
-                    gridObject.setPosition(gridTopX + (c + 0.5) * gridSubColWidth,
-                        gridTopY + (r + 0.5) * gridSubRowHeight);
+            for (var i = 0; i < this._mapObjects[row][col].length; i++) {
+                var r = Math.floor(i / gridSubColCount);
+                var c = i % gridSubColCount;
+                console.log(gridObjectsCount, gridSubRowCount, gridSubColCount, i, r, c);
+                var gridObject = this._mapObjects[row][col][i];
+                gridObject.setPosition(gridTopX + (c + 0.5) * gridSubColWidth,
+                                       gridTopY + (r + 0.5) * gridSubRowHeight);
                 }
-            }
         }
     });
 

@@ -77,7 +77,6 @@ var cs1010s = cs1010s = cs1010s || {};
             for (var i = 0; i < this._mapObjects[row][col].length; i++) {
                 var r = Math.floor(i / gridSubColCount);
                 var c = i % gridSubColCount;
-                console.log(gridObjectsCount, gridSubRowCount, gridSubColCount, i, r, c);
                 var gridObject = this._mapObjects[row][col][i];
                 gridObject.setPosition(gridTopX + (c + 0.5) * gridSubColWidth,
                                        gridTopY + (r + 0.5) * gridSubRowHeight);

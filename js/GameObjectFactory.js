@@ -19,6 +19,9 @@ cs1010s.GameObjectFactory.createFromJSON = function(json) {
         case "Food":
             return cs1010s.GameObjectFactory.createFoodFromJSON(json);
 
+        case "Player":
+            return cs1010s.GameObjectFactory.createPlayerFromJSON(json);
+
         default:
             console.log(json);
             return null;
@@ -61,4 +64,10 @@ cs1010s.GameObjectFactory.createFoodFromJSON = function(json) {
     var name = json.name;
 
     return new cs1010s.Food(name);
+};
+
+cs1010s.GameObjectFactory.createPlayerFromJSON = function(json) {
+    var name = json.name;
+
+    return new cs1010s.Player(name);
 };

@@ -27,7 +27,11 @@ window.onload = function(){
         "images/watermelon.png",
         "images/cabbage.png",
         "images/potato.png",
-        "images/apple.png"
+        "images/apple.png",
+
+        // players
+        "images/AI.png",
+        "images/AI2.png"
     ];
 
     cc.game.onStart = function(){

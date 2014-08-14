@@ -1,5 +1,3 @@
-var cs1010s = cs1010s = cs1010s || {};
-
 cs1010s.Weapon = cs1010s.NamedObject.extend({
     minDmg : null,
     maxDmg : null,

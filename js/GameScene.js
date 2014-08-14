@@ -1,5 +1,3 @@
-var cs1010s = cs1010s = cs1010s || {};
-
 (function() {
     var GRID_SIZE = 128.0;
 

@@ -1,5 +1,3 @@
-var cs1010s = cs1010s = cs1010s || {};
-
 cs1010s.Medicine = cs1010s.NamedObject.extend({
     foodValue : null,
     medicineValue : null,

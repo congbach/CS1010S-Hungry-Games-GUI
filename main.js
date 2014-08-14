@@ -13,7 +13,15 @@ window.onload = function(){
         // ranged weapons
         "images/bow.png",
         "images/crossbow.png",
-        "images/pistol.png"
+        "images/pistol.png",
+
+        // animals
+        "images/sheep.png",
+        "images/cow.png",
+        "images/pig.png",
+        "images/boar.png",
+        "images/python.png",
+        "images/chicken.png"
     ];
 
     cc.game.onStart = function(){

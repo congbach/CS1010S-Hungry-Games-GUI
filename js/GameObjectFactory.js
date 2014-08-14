@@ -12,6 +12,10 @@ cs1010s.GameObjectFactory.createFromJSON = function(json) {
         case "RangedWeapon":
             return cs1010s.GameObjectFactory.createRangedWeaponFromJSON(json);
 
+        case "Animal":
+        case "WildAnimal":
+            return cs1010s.GameObjectFactory.createAnimalFromJSON(json);
+
         default:
             console.log(json);
             return null;
@@ -42,4 +46,10 @@ cs1010s.GameObjectFactory.createRangedWeaponFromJSON = function(json) {
     var owner = json.owner;
 
     return new cs1010s.RangedWeapon(name, minDmg, maxDmg, shotsCount, owner);
+};
+
+cs1010s.GameObjectFactory.createAnimalFromJSON = function(json) {
+    var name = json.name;
+
+    return new cs1010s.Animal(name);
 };

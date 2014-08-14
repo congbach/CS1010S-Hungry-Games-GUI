@@ -16,6 +16,9 @@ cs1010s.GameObjectFactory.createFromJSON = function(json) {
         case "WildAnimal":
             return cs1010s.GameObjectFactory.createAnimalFromJSON(json);
 
+        case "Food":
+            return cs1010s.GameObjectFactory.createFoodFromJSON(json);
+
         default:
             console.log(json);
             return null;
@@ -52,4 +55,10 @@ cs1010s.GameObjectFactory.createAnimalFromJSON = function(json) {
     var name = json.name;
 
     return new cs1010s.Animal(name);
+};
+
+cs1010s.GameObjectFactory.createFoodFromJSON = function(json) {
+    var name = json.name;
+
+    return new cs1010s.Food(name);
 };

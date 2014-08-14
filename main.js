@@ -21,7 +21,13 @@ window.onload = function(){
         "images/pig.png",
         "images/boar.png",
         "images/python.png",
-        "images/chicken.png"
+        "images/chicken.png",
+
+        // food
+        "images/watermelon.png",
+        "images/cabbage.png",
+        "images/potato.png",
+        "images/apple.png"
     ];
 
     cc.game.onStart = function(){

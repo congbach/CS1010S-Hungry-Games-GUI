@@ -1,34 +1,140 @@
 (function() {
-    var GRID_SIZE = 128.0;
+    var GRID_MAX_OBJECTS = 9;
+
+    cs1010s.Grid = cc.Sprite.extend({
+        _objects: null,
+
+        ctor:function() {
+            this._super("images/square.png");
+
+            this._objects = [];
+            for (var i = 0; i < GRID_MAX_OBJECTS; i++)
+                this._objects.push(null);
+        },
+
+        addObject:function(object) {
+            this._objects[this._getNextObjectIndex()] = object;
+        },
+
+        _getNextObjectIndex:function() {
+            for (var i = 0; i < this._objects.length; i++)
+                if (this._objects[i] == null)
+                    return i;
+
+            // FIXME: do some assertion or throw some error here
+            return -1;
+        },
+
+        removeObject:function(object) {
+            var index = this._objects.indexOf(object);
+            if (index != -1)
+                this._objects[index] = null;
+        },
+
+        searchForObjectByJSON:function(json) {
+            var ret = null;
+            $.each(this._objects, function(index, object) {
+                // FIXME: eventually all objects much implement matchJSON
+                if (object.matchJSON && object.matchJSON(json)) {
+                    ret = object;
+                    return false;
+                }
+            });
+            return ret;
+        },
+
+//        repositionAllObjects:function() {
+//            var subRowCount = this._objects.length < 3 ? 1 : this._objects.length < 7 ? 2 : 3;
+//            var subColCount = this._objects.length < 2 ? 1 : this._objects.length < 5 ? 2 : 3;
+//            var subRowHeight = this.getContentSize().height / subRowCount;
+//            var subColWidth = this.getContentSize().width / subColCount;
+//
+//            var x = this.getPosition().x - this.getContentSize().width/2;
+//            var y = this.getPosition().y - this.getContentSize().height/2;
+//
+//            for (var i = 0; i < this._objects.length; i++) {
+//                var r = Math.floor(i / subColCount);
+//                var c = i % subColCount;
+//                var object = this._objects[i];
+//                object.setPosition(x + (c + 0.5) * subColWidth,
+//                                   y + (r + 0.5) * subRowHeight);
+//            }
+//        },
+
+        repositionAllObjects:function() {
+            var that = this;
+            $.each(this._objects, function(index, object) {
+                if (object)
+                    object.setPosition(that._getPositionForObjectAtIndex(index));
+            });
+        },
+
+        _getPositionForObjectAtIndex:function(index) {
+            var GRID_MAP = [
+                [1, 5, 3],
+                [6, 0, 7],
+                [4, 8, 2]
+            ];
+            var subRowId, subColId;
+            for (var i = 0; i < 3; i++)
+                for (var j = 0; j < 3; j++)
+                    if (GRID_MAP[i][j] == index) {
+                        subRowId = i;
+                        subColId = j;
+                    }
+            var subRowHeight = this.getContentSize().height / 3;
+            var subColWidth = this.getContentSize().width / 3;
+
+            var x = this.getPosition().x - this.getContentSize().width/2;
+            var y = this.getPosition().y - this.getContentSize().height/2;
+
+            return cc.p(x + (subColId + 0.5) * subColWidth, y + (subRowId + 0.5) * subRowHeight);
+        },
+
+        getNextObjectPosition:function() {
+            return this._getPositionForObjectAtIndex(this._getNextObjectIndex());
+        }
+    });
+
+    cs1010s.GridCoordinate = cc.Class.extend({
+        row : null,
+        col : null,
+
+        ctor:function(row, col) {
+            this.row = row;
+            this.col = col;
+        }
+    });
+
+    cs1010s.GridCoordinate.createFromJSON = function(json) {
+        var tokens = json.replace(/[(),]/g, "").split(" ");
+        var row = parseInt(tokens[0]) - 1;
+        var col = parseInt(tokens[1]) - 1;
+
+        return new cs1010s.GridCoordinate(row, col);
+    };
 
     cs1010s.GameScene = cc.Scene.extend({
-        _mapObjects : null,
+        _grids : null,
 
         ctor:function(mapSize) {
             this._super();
 
             this.constructMap(mapSize);
-            this.initializeMapObjects(mapSize);
         },
 
         constructMap:function(mapSize) {
+            this._grids = [];
             for (var i = 0; i < mapSize; i++) {
+                var row = [];
                 for (var j = 0; j < mapSize; j++) {
-                    var sprite = cc.Sprite.create("images/square.png");
-                    sprite.setPosition((i + 0.5) * sprite.getContentSize().width,
-                        (j + 0.5) * sprite.getContentSize().height);
-                    this.addChild(sprite);
+                    var grid = new cs1010s.Grid();
+                    grid.setPosition((i + 0.5) * grid.getContentSize().width,
+                                     (j + 0.5) * grid.getContentSize().height);
+                    this.addChild(grid);
+                    row.push(grid);
                 }
-            }
-        },
-
-        initializeMapObjects:function(mapSize) {
-            this._mapObjects = [];
-            for (var row = 0; row < mapSize; row++) {
-                this._mapObjects.push([]);
-                for (var col = 0; col < mapSize; col++) {
-                    this._mapObjects[row].push([]);
-                }
+                this._grids.push(row);
             }
         },
 
@@ -39,7 +145,6 @@
                 var row = parseInt(tokens[0]) - 1;
                 var col = parseInt(tokens[1]) - 1;
                 $.each(element.objects, function(id, jsonObj) {
-                    console.log(row, col);
                     that.addObject(cs1010s.GameObjectFactory.createFromJSON(jsonObj), row, col);
                 });
             })
@@ -48,46 +153,30 @@
         },
 
         addObject:function(obj, row, col) {
-            if (obj)
-            {
+            // FIXME: assert here after supporting all objects
+            if (obj) {
                 this.addChild(obj);
-                this._mapObjects[row][col].push(obj);
-//                this.repositionObjectsAtGrid(row, col);
+                this.getGrid(row, col).addObject(obj);
             }
         },
 
         repositionAllObjects:function() {
-            for (var row = 0; row < this._mapObjects.length; row++)
-                for (var col = 0; col < this._mapObjects[row].length; col++)
-                    this.repositionObjectsAtGrid(row, col);
+            for (var row = 0; row < this._grids.length; row++)
+                for (var col = 0; col < this._grids[row].length; col++)
+                    this.getGrid(row, col).repositionAllObjects();
         },
 
-        repositionObjectsAtGrid:function(row, col) {
-            var gridObjectsCount = this._mapObjects[row][col].length;
-            var gridSubRowCount = gridObjectsCount < 3 ? 1 : gridObjectsCount < 7 ? 2 : 3;
-            var gridSubColCount = gridObjectsCount < 2 ? 1 : gridObjectsCount < 5 ? 2 : 3;
-            var gridSubRowHeight = GRID_SIZE / gridSubRowCount;
-            var gridSubColWidth = GRID_SIZE / gridSubColCount;
-
-            var gridTopX = row * GRID_SIZE;
-            var gridTopY = col * GRID_SIZE;
-
-            for (var i = 0; i < this._mapObjects[row][col].length; i++) {
-                var r = Math.floor(i / gridSubColCount);
-                var c = i % gridSubColCount;
-                var gridObject = this._mapObjects[row][col][i];
-                gridObject.setPosition(gridTopX + (c + 0.5) * gridSubColWidth,
-                                       gridTopY + (r + 0.5) * gridSubRowHeight);
-                }
+        getGrid:function() {
+            if (arguments.length == 1) {
+                var coordinate = arguments[0];
+                return this._grids[coordinate.row][coordinate.col];
+            }
+            else {
+                var row = arguments[0];
+                var col = arguments[1];
+                return this._grids[row][col];
+            }
         }
     });
-
-    cs1010s.GameScene.create = function(json) {
-        var config = json.rounds[0].config;
-        var mapSize = config.map.size;
-        var scene = new cs1010s.GameScene(mapSize);
-        scene.loadMapObjects(json.rounds[0].history[0].map);
-        return scene;
-    };
 
 }());

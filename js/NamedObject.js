@@ -6,5 +6,9 @@ cs1010s.NamedObject = cc.Sprite.extend({
     ctor:function(name) {
         this._super("images/" + name.replace(/[ ]/g, "_").toLowerCase() + ".png");
         this.name = name;
+    },
+
+    matchJSON:function(json) {
+        return json.name == this.name;
     }
 });

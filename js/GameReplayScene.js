@@ -26,7 +26,7 @@
         },
 
         shouldReplayEvent:function(event) {
-            var replayableEvents = [ "MOVE", "ATTACK", "TAKE", "DEAD" ];
+            var replayableEvents = [ "MOVE", "ATTACK", "TAKE", "KILLED" ];
             return replayableEvents.indexOf(event[0]) != -1;
         },
 
@@ -45,9 +45,9 @@
 //                    this.replayTakeEvent(event);
 //                    break;
 //
-//                case "DEAD":
-//                    this.replayDeadEvent(event);
-//                    break;
+                case "KILLED":
+                    this.replayDeadEvent(event);
+                    break;
 
                 default:
                     // FIXME: eventually all events should be supported -> throw assertion here
@@ -95,6 +95,21 @@
         },
 
         replayDeadEvent:function(event) {
+            var gridCoordinate = cs1010s.GridCoordinate.createFromJSON(event[1].place.name);
+            var grid = this.getGrid(gridCoordinate);
+            var deadObject = grid.searchForObjectByJSON(event[2]);
+            this.animateDeadEvent(deadObject, gridCoordinate);
+        },
+
+        animateDeadEvent:function(deadObject, gridCoordinate) {
+            var deadAnimationController =
+                new cs1010s.DeadEventAnimationController(deadObject, gridCoordinate, this.deadEventAnimationDidEnd, this);
+            deadAnimationController.startAnimating();
+        },
+
+        deadEventAnimationDidEnd:function(deadObject, gridCoordinate) {
+            this.getGrid(gridCoordinate).removeObject(deadObject);
+            this.removeChild(deadObject);
         }
     });
 

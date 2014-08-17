@@ -37,7 +37,7 @@ window.onload = function(){
     cc.game.onStart = function(){
         //load resources
         cc.LoaderScene.preload(resources, function () {
-            $.getJSON("sample_data.json", function(data) {
+            $.getJSON("sample_data_bak.json", function(data) {
                 cc.director.runScene(cs1010s.GameReplayScene.create(data));
             });
         }, this);

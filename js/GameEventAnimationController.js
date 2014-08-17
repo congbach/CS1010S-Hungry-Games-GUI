@@ -2,18 +2,19 @@
     var MOVE_EVENT_ANIMATION_DURATION = 1.0;
     var ATTACK_EVENT_ATTACKER_ATTACK_WITHDRAW_ANIMATION_DURATION = 0.2;
     var ATTACK_EVENT_TARGET_FLINCH_ANIMATION_DURATION = 1.0;
+    var DEAD_EVENT_ANIMATION_DURATION = 1.0;
 
     cs1010s.GameEventAnimationController = cc.Class.extend({
-        callback : null,
-        callbackTarget : null,
+        _callback : null,
+        _callbackTarget : null,
 
         ctor:function(callback, callbackTarget) {
-            this.callback = callback;
-            this.callbackTarget = callbackTarget;
+            this._callback = callback;
+            this._callbackTarget = callbackTarget;
         },
 
         invokeCallback:function(callback) {
-            this.callback.apply(this.callbackTarget);
+            this._callback.apply(this._callbackTarget);
         },
 
         startAnimating:function() {
@@ -92,6 +93,29 @@
             animationActions.push(cc.CallFunc.create(this.invokeCallback, this));
 
             this._attackedObject.runAction(cc.Sequence.create(animationActions));
+        }
+    });
+
+    cs1010s.DeadEventAnimationController = cs1010s.GameEventAnimationController.extend({
+        _deadObject : null,
+        _gridCoordinate : null,
+
+        ctor:function(deadObject, gridCoordinate, callback, callbackTarget) {
+            this._super(callback, callbackTarget);
+
+            this._deadObject = deadObject;
+            this._gridCoordinate = gridCoordinate;
+        },
+
+        startAnimating:function() {
+            var animationActions = [];
+            animationActions.push(cc.FadeOut.create(DEAD_EVENT_ANIMATION_DURATION));
+            animationActions.push(cc.CallFunc.create(this.invokeCallback, this));
+            this._deadObject.runAction(cc.Sequence.create(animationActions));
+        },
+
+        invokeCallback:function() {
+            this._callback.apply(this._callbackTarget, [this._deadObject, this._gridCoordinate]);
         }
     });
 }());

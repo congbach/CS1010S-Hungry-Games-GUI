@@ -69,13 +69,9 @@
         },
 
         animateMoveEvent:function(movingObj, toGrid) {
-            var moveAnimation = new cs1010s.MoveEventAnimationController(movingObj, toGrid,
-                                                                         this.moveAnimationDidEnd, this);
-            moveAnimation.startAnimating();
-        },
-
-        moveAnimationDidEnd:function() {
-            this.replayNextEvent();
+            var moveAnimationController =
+                new cs1010s.MoveEventAnimationController(movingObj, toGrid, this.replayNextEvent, this);
+            moveAnimationController.startAnimating();
         },
 
         replayAttackEvent:function(event) {
@@ -85,7 +81,14 @@
             var attackedObject = this.getGrid(attackedCoordinate).searchForObjectByJSON(event[2]);
             var attackDamage = event[3];
 
+            this.animateAttackEvent(attackingObject, attackedObject, attackDamage);
+        },
 
+        animateAttackEvent:function(attackingObject, attackedObject, attackDamage) {
+            var attackAnimationController =
+                new cs1010s.AttackEventAnimationController(attackingObject, attackedObject, attackDamage,
+                                                           this.replayNextEvent, this);
+            attackAnimationController.startAnimating();
         },
 
         replayTakeEvent:function(event) {

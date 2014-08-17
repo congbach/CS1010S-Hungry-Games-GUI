@@ -1,5 +1,4 @@
 (function() {
-    var ANIMATION_DURATION = 1.0;
     cs1010s.GameReplayScene = cs1010s.GameScene.extend({
         jsonHistoryLog : null,
         eventId : null,
@@ -38,10 +37,10 @@
                     this.replayMoveEvent(event);
                     break;
 
-//                case "ATTACK":
-//                    this.replayAttackEvent(event);
-//                    break;
-//
+                case "ATTACK":
+                    this.replayAttackEvent(event);
+                    break;
+
 //                case "TAKE":
 //                    this.replayTakeEvent(event);
 //                    break;
@@ -64,19 +63,29 @@
             var toCoordinate = cs1010s.GridCoordinate.createFromJSON(event[3].name);
             var toGrid = this.getGrid(toCoordinate);
 
-            this.animateMoveEvent(movingObj, fromCoordinate, toCoordinate);
+            this.animateMoveEvent(movingObj, toGrid);
             fromGrid.removeObject(movingObj);
             toGrid.addObject(movingObj);
         },
 
-        animateMoveEvent:function(movingObject, fromCoordinate, toCoordinate) {
-            var toPosition = this.getGrid(toCoordinate).getNextObjectPosition();
-            var animationAction = cc.MoveTo.create(ANIMATION_DURATION, toPosition);
-            var animationEndAction = cc.CallFunc.create(this.replayNextEvent, this);
-            movingObject.runAction(cc.Sequence.create(animationAction, animationEndAction));
+        animateMoveEvent:function(movingObj, toGrid) {
+            var moveAnimation = new cs1010s.MoveEventAnimationController(movingObj, toGrid,
+                                                                         this.moveAnimationDidEnd, this);
+            moveAnimation.startAnimating();
+        },
+
+        moveAnimationDidEnd:function() {
+            this.replayNextEvent();
         },
 
         replayAttackEvent:function(event) {
+            var attackingCoordinate = cs1010s.GridCoordinate.createFromJSON(event[1].place.name);
+            var attackingObject = this.getGrid(attackingCoordinate).searchForObjectByJSON(event[1]);
+            var attackedCoordinate = cs1010s.GridCoordinate.createFromJSON(event[2].place.name);
+            var attackedObject = this.getGrid(attackedCoordinate).searchForObjectByJSON(event[2]);
+            var attackDamage = event[3];
+
+
         },
 
         replayTakeEvent:function(event) {

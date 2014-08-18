@@ -1,24 +1,31 @@
 (function() {
     cs1010s.GameReplayScene = cs1010s.GameScene.extend({
         jsonHistoryLog : null,
+        turnId : null,
         eventId : null,
 
         playHistory:function(jsonHistoryLog) {
             this.jsonHistoryLog = jsonHistoryLog;
-            this.loadMapObjectsFromHistoryLog();
+            this.turnId = -1;
+            this.loadMapObjects(this.jsonHistoryLog[0].map);
+            this.replayNextTurn();
+        },
+
+        replayNextTurn:function() {
+            if (++this.turnId >= this.jsonHistoryLog.length)
+                return;
+
             this.eventId = -1;
             this.replayNextEvent();
         },
 
-        loadMapObjectsFromHistoryLog:function() {
-            this.loadMapObjects(this.jsonHistoryLog.map);
-        },
-
         replayNextEvent:function() {
-            if (++this.eventId >= this.jsonHistoryLog.events.length)
+            if (++this.eventId >= this.jsonHistoryLog[this.turnId].events.length) {
+                this.replayNextTurn();
                 return;
+            }
 
-            var event = this.jsonHistoryLog.events[this.eventId];
+            var event = this.jsonHistoryLog[this.turnId].events[this.eventId];
             if (this.shouldReplayEvent(event))
                 this.replayEvent(event);
             else
@@ -26,11 +33,17 @@
         },
 
         shouldReplayEvent:function(event) {
-            var replayableEvents = [ "MOVE", "ATTACK", "TAKE", "KILLED" ];
+            var replayableEvents = [
+                "MOVE",
+                "ATTACK",
+                "TAKE",
+                "KILLED"
+            ];
             return replayableEvents.indexOf(event[0]) != -1;
         },
 
         replayEvent:function(event) {
+            console.log(this.turnId, this.eventId);
             console.log(event);
             switch (event[0]) {
                 case "MOVE":
@@ -110,6 +123,7 @@
         deadEventAnimationDidEnd:function(deadObject, gridCoordinate) {
             this.getGrid(gridCoordinate).removeObject(deadObject);
             this.removeChild(deadObject);
+            this.replayNextEvent();
         }
     });
 
@@ -117,7 +131,7 @@
         var config = json.rounds[0].config;
         var mapSize = config.map.size;
         var scene = new cs1010s.GameReplayScene(mapSize);
-        scene.playHistory(json.rounds[0].history[0]);
+        scene.playHistory(json.rounds[0].history);
         return scene;
     };
 }());

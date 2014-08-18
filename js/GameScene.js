@@ -31,11 +31,16 @@
                 this._objects[index] = null;
         },
 
+        removeAllObjects:function() {
+            for (var i = 0; i < this._objects.length; i++)
+                this._objects[i] = null;
+        },
+
         searchForObjectByJSON:function(json) {
             var ret = null;
             $.each(this._objects, function(index, object) {
                 // FIXME: eventually all objects much implement matchJSON
-                if (object.matchJSON && object.matchJSON(json)) {
+                if (object && object.matchJSON && object.matchJSON(json)) {
                     ret = object;
                     return false;
                 }

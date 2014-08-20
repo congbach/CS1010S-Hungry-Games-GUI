@@ -1,5 +1,3 @@
-var cs1010s = cs1010s = cs1010s || {};
-
 cs1010s.GameObjectFactory = {};
 cs1010s.GameObjectFactory.createFromJSON = function(json) {
     switch (json.type) {
@@ -11,6 +9,9 @@ cs1010s.GameObjectFactory.createFromJSON = function(json) {
 
         case "RangedWeapon":
             return cs1010s.GameObjectFactory.createRangedWeaponFromJSON(json);
+
+        case "Ammo":
+            return cs1010s.GameObjectFactory.createAmmoFromJSON(json);
 
         case "Animal":
         case "WildAnimal":
@@ -47,6 +48,13 @@ cs1010s.GameObjectFactory.createRangedWeaponFromJSON = function(json) {
     var objectID = json.id;
 
     return new cs1010s.RangedWeapon(name, objectID);
+};
+
+cs1010s.GameObjectFactory.createAmmoFromJSON = function(json) {
+    var name = json.name;
+    var objectID = json.id;
+
+    return new cs1010s.Ammo(name, objectID);
 };
 
 cs1010s.GameObjectFactory.createAnimalFromJSON = function(json) {

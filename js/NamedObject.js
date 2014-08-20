@@ -1,5 +1,3 @@
-var cs1010s = cs1010s = cs1010s || {};
-
 cs1010s.NamedObject = cc.Sprite.extend({
     name : null,
     objectID : null,
@@ -7,7 +5,11 @@ cs1010s.NamedObject = cc.Sprite.extend({
     ctor:function(name, objectID) {
         this.name = name;
         this.objectID = objectID;
-        this._super("images/" + this.getImageFile());
+        var spriteFile = this.getImageFile();
+        if (!cs1010s.hasResource(spriteFile))
+            // FIXME: should provide some default image here (?)
+            console.log("Image not found: " + spriteFile);
+        this._super("images/" + spriteFile);
     },
 
     getImageFile:function() {

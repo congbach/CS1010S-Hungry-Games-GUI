@@ -8,7 +8,7 @@
             this.jsonHistoryLog = jsonHistoryLog;
             this.turnId = -1;
             this.loadMapObjects(this.jsonHistoryLog[0].map);
-            this.replayNextTurn();
+//            this.replayNextTurn();
         },
 
         replayNextTurn:function() {

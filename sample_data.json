@@ -1,1133 +1,3905 @@
 {
-  "scores": {
-    "AI2": 90,
-    "AI": 50
-  },
   "rounds": [
     {
-      "scores": {
-        "AI2": 90,
-        "AI": 50
-      },
-      "history": [
-        {
-          "map": {
-            "(2, 1)": {
-              "neighbors": {
-                "NORTH": {
-                  "name": "(1, 1)",
-                  "type": "Place"
-                },
-                "SOUTH": {
-                  "name": "(3, 1)",
-                  "type": "Place"
-                },
-                "EAST": {
-                  "name": "(2, 2)",
-                  "type": "Place"
-                }
-              },
-              "objects": [
-                {
-                  "place": {
-                    "name": "(2, 1)",
-                    "type": "Place"
-                  },
-                  "medicine_value": 1,
-                  "owner": null,
-                  "food_value": 1,
-                  "type": "Medicine",
-                  "name": "Panadol"
-                },
-                {
-                  "place": {
-                    "name": "(2, 1)",
-                    "type": "Place"
-                  },
-                  "medicine_value": 4,
-                  "owner": null,
-                  "food_value": 1,
-                  "type": "Medicine",
-                  "name": "Aloe Vera"
-                },
-                {
-                  "shots_left": 0,
-                  "place": {
-                    "name": "(2, 1)",
-                    "type": "Place"
-                  },
-                  "min_dmg": 25,
-                  "max_dmg": 30,
-                  "type": "RangedWeapon",
-                  "name": "Crossbow",
-                  "owner": null
-                },
-                {
-                  "place": {
-                    "name": "(2, 1)",
-                    "type": "Place"
-                  },
-                  "food_value": 5,
-                  "type": "WildAnimal",
-                  "threshold": 3,
-                  "health": 18,
-                  "attack_probability": 0.33,
-                  "damage": 2,
-                  "name": "Python"
-                }
-              ],
-              "name": "(2, 1)",
-              "type": "Place"
-            },
-            "(1, 1)": {
-              "neighbors": {
-                "SOUTH": {
-                  "name": "(2, 1)",
-                  "type": "Place"
-                },
-                "EAST": {
-                  "name": "(1, 2)",
-                  "type": "Place"
-                }
-              },
-              "objects": [
-                {
-                  "place": {
-                    "name": "(1, 1)",
-                    "type": "Place"
-                  },
-                  "food_value": 16,
-                  "type": "Animal",
-                  "threshold": 3,
-                  "health": 23,
-                  "name": "Cow"
-                },
-                {
-                  "shots_left": 0,
-                  "place": {
-                    "name": "(1, 1)",
-                    "type": "Place"
-                  },
-                  "min_dmg": 20,
-                  "max_dmg": 25,
-                  "type": "RangedWeapon",
-                  "name": "Bow",
-                  "owner": null
-                },
-                {
-                  "place": {
-                    "name": "(1, 1)",
-                    "type": "Place"
-                  },
-                  "food_value": 4,
-                  "owner": null,
-                  "name": "Cabbage",
-                  "type": "Food"
-                }
-              ],
-              "name": "(1, 1)",
-              "type": "Place"
-            },
-            "(2, 2)": {
-              "neighbors": {
-                "NORTH": {
-                  "name": "(1, 2)",
-                  "type": "Place"
-                },
-                "WEST": {
-                  "name": "(2, 1)",
-                  "type": "Place"
-                },
-                "SOUTH": {
-                  "name": "(3, 2)",
-                  "type": "Place"
-                },
-                "EAST": {
-                  "name": "(2, 3)",
-                  "type": "Place"
-                }
-              },
-              "objects": [
-                {
-                  "place": {
-                    "name": "(2, 2)",
-                    "type": "Place"
-                  },
-                  "owner": null,
-                  "type": "Ammo",
-                  "quantity": 1,
-                  "weapon": "Bow",
-                  "name": "Arrows"
-                },
-                {
-                  "place": {
-                    "name": "(2, 2)",
-                    "type": "Place"
-                  },
-                  "owner": null,
-                  "type": "Ammo",
-                  "quantity": 1,
-                  "weapon": "Bow",
-                  "name": "Arrows"
-                },
-                {
-                  "place": {
-                    "name": "(2, 2)",
-                    "type": "Place"
-                  },
-                  "food_value": 4,
-                  "owner": null,
-                  "name": "Apple",
-                  "type": "Food"
-                },
-                {
-                  "place": {
-                    "name": "(2, 2)",
-                    "type": "Place"
-                  },
-                  "food_value": 4,
-                  "owner": null,
-                  "name": "Cabbage",
-                  "type": "Food"
-                }
-              ],
-              "name": "(2, 2)",
-              "type": "Place"
-            },
-            "(3, 2)": {
-              "neighbors": {
-                "NORTH": {
-                  "name": "(2, 2)",
-                  "type": "Place"
-                },
-                "WEST": {
-                  "name": "(3, 1)",
-                  "type": "Place"
-                },
-                "EAST": {
-                  "name": "(3, 3)",
-                  "type": "Place"
-                }
-              },
-              "objects": [
-                {
-                  "place": {
-                    "name": "(3, 2)",
-                    "type": "Place"
-                  },
-                  "medicine_value": 3,
-                  "owner": null,
-                  "food_value": 1,
-                  "type": "Medicine",
-                  "name": "Aloe Vera"
-                },
-                {
-                  "place": {
-                    "name": "(3, 2)",
-                    "type": "Place"
-                  },
-                  "owner": null,
-                  "type": "Ammo",
-                  "quantity": 1,
-                  "weapon": "Crossbow",
-                  "name": "Bolts"
-                },
-                {
-                  "place": {
-                    "name": "(3, 2)",
-                    "type": "Place"
-                  },
-                  "min_dmg": 10,
-                  "max_dmg": 25,
-                  "type": "Weapon",
-                  "name": "Sword",
-                  "owner": null
-                },
-                {
-                  "place": {
-                    "name": "(3, 2)",
-                    "type": "Place"
-                  },
-                  "food_value": 4,
-                  "owner": null,
-                  "name": "Potato",
-                  "type": "Food"
-                }
-              ],
-              "name": "(3, 2)",
-              "type": "Place"
-            },
-            "(3, 3)": {
-              "neighbors": {
-                "NORTH": {
-                  "name": "(2, 3)",
-                  "type": "Place"
-                },
-                "WEST": {
-                  "name": "(3, 2)",
-                  "type": "Place"
-                }
-              },
-              "objects": [
-                {
-                  "place": {
-                    "name": "(3, 3)",
-                    "type": "Place"
-                  },
-                  "food_value": 11,
-                  "type": "Animal",
-                  "threshold": 2,
-                  "health": 15,
-                  "name": "Pig"
-                },
-                {
-                  "place": {
-                    "name": "(3, 3)",
-                    "type": "Place"
-                  },
-                  "food_value": 5,
-                  "type": "Animal",
-                  "threshold": 0,
-                  "health": 4,
-                  "name": "Chicken"
-                },
-                {
-                  "shots_left": 0,
-                  "place": {
-                    "name": "(3, 3)",
-                    "type": "Place"
-                  },
-                  "min_dmg": 30,
-                  "max_dmg": 40,
-                  "type": "RangedWeapon",
-                  "name": "Pistol",
-                  "owner": null
-                },
-                {
-                  "place": {
-                    "name": "(3, 3)",
-                    "type": "Place"
-                  },
-                  "owner": null,
-                  "type": "Ammo",
-                  "quantity": 1,
-                  "weapon": "Pistol",
-                  "name": "9mm"
-                },
-                {
-                  "place": {
-                    "name": "(3, 3)",
-                    "type": "Place"
-                  },
-                  "min_dmg": 15,
-                  "max_dmg": 25,
-                  "type": "Weapon",
-                  "name": "Machete",
-                  "owner": null
-                },
-                {
-                  "place": {
-                    "name": "(3, 3)",
-                    "type": "Place"
-                  },
-                  "min_dmg": 15,
-                  "max_dmg": 25,
-                  "type": "Weapon",
-                  "name": "Machete",
-                  "owner": null
-                },
-                {
-                  "place": {
-                    "name": "(3, 3)",
-                    "type": "Place"
-                  },
-                  "min_dmg": 10,
-                  "max_dmg": 25,
-                  "type": "Weapon",
-                  "name": "Sword",
-                  "owner": null
-                },
-                {
-                  "place": {
-                    "name": "(3, 3)",
-                    "type": "Place"
-                  },
-                  "food_value": 11,
-                  "type": "WildAnimal",
-                  "threshold": 3,
-                  "health": 23,
-                  "attack_probability": 0.32,
-                  "damage": 8,
-                  "name": "Boar"
-                }
-              ],
-              "name": "(3, 3)",
-              "type": "Place"
-            },
-            "(1, 2)": {
-              "neighbors": {
-                "WEST": {
-                  "name": "(1, 1)",
-                  "type": "Place"
-                },
-                "SOUTH": {
-                  "name": "(2, 2)",
-                  "type": "Place"
-                },
-                "EAST": {
-                  "name": "(1, 3)",
-                  "type": "Place"
-                }
-              },
-              "objects": [
-                {
-                  "place": {
-                    "name": "(1, 2)",
-                    "type": "Place"
-                  },
-                  "medicine_value": 4,
-                  "owner": null,
-                  "food_value": 1,
-                  "type": "Medicine",
-                  "name": "Panadol"
-                },
-                {
-                  "place": {
-                    "name": "(1, 2)",
-                    "type": "Place"
-                  },
-                  "min_dmg": 15,
-                  "max_dmg": 25,
-                  "type": "Weapon",
-                  "name": "Machete",
-                  "owner": null
-                },
-                {
-                  "place": {
-                    "name": "(1, 2)",
-                    "type": "Place"
-                  },
-                  "type": "Conan",
-                  "threshold": -1,
-                  "health": 100,
-                  "inventory": [
-                    {
-                      "place": null,
-                      "min_dmg": 5,
-                      "max_dmg": 10,
-                      "type": "Weapon",
-                      "name": "Knife",
-                      "owner": null
-                    }
-                  ],
-                  "name": "AI",
-                  "hunger": 0
-                }
-              ],
-              "name": "(1, 2)",
-              "type": "Place"
-            },
-            "(1, 3)": {
-              "neighbors": {
-                "WEST": {
-                  "name": "(1, 2)",
-                  "type": "Place"
-                },
-                "SOUTH": {
-                  "name": "(2, 3)",
-                  "type": "Place"
-                }
-              },
-              "objects": [
-                {
-                  "place": {
-                    "name": "(1, 3)",
-                    "type": "Place"
-                  },
-                  "food_value": 5,
-                  "type": "Animal",
-                  "threshold": 4,
-                  "health": 2,
-                  "name": "Chicken"
-                },
-                {
-                  "place": {
-                    "name": "(1, 3)",
-                    "type": "Place"
-                  },
-                  "owner": null,
-                  "type": "Ammo",
-                  "quantity": 1,
-                  "weapon": "Crossbow",
-                  "name": "Bolts"
-                },
-                {
-                  "place": {
-                    "name": "(1, 3)",
-                    "type": "Place"
-                  },
-                  "type": "Player",
-                  "threshold": -1,
-                  "health": 100,
-                  "inventory": [
-                    {
-                      "place": null,
-                      "min_dmg": 5,
-                      "max_dmg": 10,
-                      "type": "Weapon",
-                      "name": "Knife",
-                      "owner": null
-                    }
-                  ],
-                  "name": "AI2",
-                  "hunger": 0
-                }
-              ],
-              "name": "(1, 3)",
-              "type": "Place"
-            },
-            "(2, 3)": {
-              "neighbors": {
-                "NORTH": {
-                  "name": "(1, 3)",
-                  "type": "Place"
-                },
-                "WEST": {
-                  "name": "(2, 2)",
-                  "type": "Place"
-                },
-                "SOUTH": {
-                  "name": "(3, 3)",
-                  "type": "Place"
-                }
-              },
-              "objects": [
-                {
-                  "place": {
-                    "name": "(2, 3)",
-                    "type": "Place"
-                  },
-                  "medicine_value": 2,
-                  "owner": null,
-                  "food_value": 1,
-                  "type": "Medicine",
-                  "name": "Aloe Vera"
-                },
-                {
-                  "shots_left": 0,
-                  "place": {
-                    "name": "(2, 3)",
-                    "type": "Place"
-                  },
-                  "min_dmg": 20,
-                  "max_dmg": 25,
-                  "type": "RangedWeapon",
-                  "name": "Bow",
-                  "owner": null
-                }
-              ],
-              "name": "(2, 3)",
-              "type": "Place"
-            },
-            "(3, 1)": {
-              "neighbors": {
-                "NORTH": {
-                  "name": "(2, 1)",
-                  "type": "Place"
-                },
-                "EAST": {
-                  "name": "(3, 2)",
-                  "type": "Place"
-                }
-              },
-              "objects": [
-                {
-                  "place": {
-                    "name": "(3, 1)",
-                    "type": "Place"
-                  },
-                  "food_value": 9,
-                  "type": "Animal",
-                  "threshold": 2,
-                  "health": 8,
-                  "name": "Sheep"
-                },
-                {
-                  "shots_left": 0,
-                  "place": {
-                    "name": "(3, 1)",
-                    "type": "Place"
-                  },
-                  "min_dmg": 25,
-                  "max_dmg": 30,
-                  "type": "RangedWeapon",
-                  "name": "Crossbow",
-                  "owner": null
-                },
-                {
-                  "place": {
-                    "name": "(3, 1)",
-                    "type": "Place"
-                  },
-                  "food_value": 11,
-                  "type": "WildAnimal",
-                  "threshold": 1,
-                  "health": 20,
-                  "attack_probability": 0.34,
-                  "damage": 6,
-                  "name": "Boar"
-                },
-                {
-                  "place": {
-                    "name": "(3, 1)",
-                    "type": "Place"
-                  },
-                  "food_value": 3,
-                  "owner": null,
-                  "name": "Watermelon",
-                  "type": "Food"
-                }
-              ],
-              "name": "(3, 1)",
-              "type": "Place"
-            }
-          },
-          "events": [
-            [
-              "MOVE",
-              {
-                "place": {
-                  "name": "(3, 1)",
-                  "type": "Place"
-                },
-                "food_value": 11,
-                "type": "WildAnimal",
-                "threshold": 1,
-                "health": 20,
-                "attack_probability": 0.34,
-                "damage": 6,
-                "name": "Boar"
-              },
-              {
-                "neighbors": {
-                  "NORTH": {
-                    "name": "(2, 1)",
-                    "type": "Place"
-                  },
-                  "EAST": {
-                    "name": "(3, 2)",
-                    "type": "Place"
-                  }
-                },
-                "objects": [
-                  {
-                    "place": {
-                      "name": "(3, 1)",
-                      "type": "Place"
-                    },
-                    "food_value": 9,
-                    "type": "Animal",
-                    "threshold": 2,
-                    "health": 8,
-                    "name": "Sheep"
-                  },
-                  {
-                    "shots_left": 0,
-                    "place": {
-                      "name": "(3, 1)",
-                      "type": "Place"
-                    },
-                    "min_dmg": 25,
-                    "max_dmg": 30,
-                    "type": "RangedWeapon",
-                    "name": "Crossbow",
-                    "owner": null
-                  },
-                  {
-                    "place": {
-                      "name": "(3, 1)",
-                      "type": "Place"
-                    },
-                    "food_value": 11,
-                    "type": "WildAnimal",
-                    "threshold": 1,
-                    "health": 20,
-                    "attack_probability": 0.34,
-                    "damage": 6,
-                    "name": "Boar"
-                  },
-                  {
-                    "place": {
-                      "name": "(3, 1)",
-                      "type": "Place"
-                    },
-                    "food_value": 3,
-                    "owner": null,
-                    "name": "Watermelon",
-                    "type": "Food"
-                  }
-                ],
-                "name": "(3, 1)",
-                "type": "Place"
-              },
-              {
-                "neighbors": {
-                  "NORTH": {
-                    "name": "(1, 1)",
-                    "type": "Place"
-                  },
-                  "SOUTH": {
-                    "name": "(3, 1)",
-                    "type": "Place"
-                  },
-                  "EAST": {
-                    "name": "(2, 2)",
-                    "type": "Place"
-                  }
-                },
-                "objects": [
-                  {
-                    "place": {
-                      "name": "(2, 1)",
-                      "type": "Place"
-                    },
-                    "medicine_value": 1,
-                    "owner": null,
-                    "food_value": 1,
-                    "type": "Medicine",
-                    "name": "Panadol"
-                  },
-                  {
-                    "place": {
-                      "name": "(2, 1)",
-                      "type": "Place"
-                    },
-                    "medicine_value": 4,
-                    "owner": null,
-                    "food_value": 1,
-                    "type": "Medicine",
-                    "name": "Aloe Vera"
-                  },
-                  {
-                    "shots_left": 0,
-                    "place": {
-                      "name": "(2, 1)",
-                      "type": "Place"
-                    },
-                    "min_dmg": 25,
-                    "max_dmg": 30,
-                    "type": "RangedWeapon",
-                    "name": "Crossbow",
-                    "owner": null
-                  },
-                  {
-                    "place": {
-                      "name": "(2, 1)",
-                      "type": "Place"
-                    },
-                    "food_value": 5,
-                    "type": "WildAnimal",
-                    "threshold": 3,
-                    "health": 18,
-                    "attack_probability": 0.33,
-                    "damage": 2,
-                    "name": "Python"
-                  }
-                ],
-                "name": "(2, 1)",
-                "type": "Place"
-              }
-            ],
-            [
-              "MOVE",
-              {
-                "place": {
-                  "name": "(3, 3)",
-                  "type": "Place"
-                },
-                "food_value": 5,
-                "type": "Animal",
-                "threshold": 0,
-                "health": 4,
-                "name": "Chicken"
-              },
-              {
-                "neighbors": {
-                  "NORTH": {
-                    "name": "(2, 3)",
-                    "type": "Place"
-                  },
-                  "WEST": {
-                    "name": "(3, 2)",
-                    "type": "Place"
-                  }
-                },
-                "objects": [
-                  {
-                    "place": {
-                      "name": "(3, 3)",
-                      "type": "Place"
-                    },
-                    "food_value": 11,
-                    "type": "Animal",
-                    "threshold": 2,
-                    "health": 15,
-                    "name": "Pig"
-                  },
-                  {
-                    "place": {
-                      "name": "(3, 3)",
-                      "type": "Place"
-                    },
-                    "food_value": 5,
-                    "type": "Animal",
-                    "threshold": 0,
-                    "health": 4,
-                    "name": "Chicken"
-                  },
-                  {
-                    "shots_left": 0,
-                    "place": {
-                      "name": "(3, 3)",
-                      "type": "Place"
-                    },
-                    "min_dmg": 30,
-                    "max_dmg": 40,
-                    "type": "RangedWeapon",
-                    "name": "Pistol",
-                    "owner": null
-                  },
-                  {
-                    "place": {
-                      "name": "(3, 3)",
-                      "type": "Place"
-                    },
-                    "owner": null,
-                    "type": "Ammo",
-                    "quantity": 1,
-                    "weapon": "Pistol",
-                    "name": "9mm"
-                  },
-                  {
-                    "place": {
-                      "name": "(3, 3)",
-                      "type": "Place"
-                    },
-                    "min_dmg": 15,
-                    "max_dmg": 25,
-                    "type": "Weapon",
-                    "name": "Machete",
-                    "owner": null
-                  },
-                  {
-                    "place": {
-                      "name": "(3, 3)",
-                      "type": "Place"
-                    },
-                    "min_dmg": 15,
-                    "max_dmg": 25,
-                    "type": "Weapon",
-                    "name": "Machete",
-                    "owner": null
-                  },
-                  {
-                    "place": {
-                      "name": "(3, 3)",
-                      "type": "Place"
-                    },
-                    "min_dmg": 10,
-                    "max_dmg": 25,
-                    "type": "Weapon",
-                    "name": "Sword",
-                    "owner": null
-                  },
-                  {
-                    "place": {
-                      "name": "(3, 3)",
-                      "type": "Place"
-                    },
-                    "food_value": 11,
-                    "type": "WildAnimal",
-                    "threshold": 3,
-                    "health": 23,
-                    "attack_probability": 0.32,
-                    "damage": 8,
-                    "name": "Boar"
-                  }
-                ],
-                "name": "(3, 3)",
-                "type": "Place"
-              },
-              {
-                "neighbors": {
-                  "NORTH": {
-                    "name": "(2, 2)",
-                    "type": "Place"
-                  },
-                  "WEST": {
-                    "name": "(3, 1)",
-                    "type": "Place"
-                  },
-                  "EAST": {
-                    "name": "(3, 3)",
-                    "type": "Place"
-                  }
-                },
-                "objects": [
-                  {
-                    "place": {
-                      "name": "(3, 2)",
-                      "type": "Place"
-                    },
-                    "medicine_value": 3,
-                    "owner": null,
-                    "food_value": 1,
-                    "type": "Medicine",
-                    "name": "Aloe Vera"
-                  },
-                  {
-                    "place": {
-                      "name": "(3, 2)",
-                      "type": "Place"
-                    },
-                    "owner": null,
-                    "type": "Ammo",
-                    "quantity": 1,
-                    "weapon": "Crossbow",
-                    "name": "Bolts"
-                  },
-                  {
-                    "place": {
-                      "name": "(3, 2)",
-                      "type": "Place"
-                    },
-                    "min_dmg": 10,
-                    "max_dmg": 25,
-                    "type": "Weapon",
-                    "name": "Sword",
-                    "owner": null
-                  },
-                  {
-                    "place": {
-                      "name": "(3, 2)",
-                      "type": "Place"
-                    },
-                    "food_value": 4,
-                    "owner": null,
-                    "name": "Potato",
-                    "type": "Food"
-                  }
-                ],
-                "name": "(3, 2)",
-                "type": "Place"
-              }
-            ],
-            [
-              "INPUT",
-              {
-                "place": {
-                  "name": "(1, 3)",
-                  "type": "Place"
-                },
-                "type": "Player",
-                "threshold": -1,
-                "health": 100,
-                "inventory": [
-                  {
-                    "place": null,
-                    "min_dmg": 5,
-                    "max_dmg": 10,
-                    "type": "Weapon",
-                    "name": "Knife",
-                    "owner": null
-                  }
-                ],
-                "name": "AI2",
-                "hunger": 1
-              },
-              [
-                "ATTACK",
-                {
-                  "place": {
-                    "name": "(1, 3)",
-                    "type": "Place"
-                  },
-                  "food_value": 5,
-                  "type": "Animal",
-                  "threshold": 4,
-                  "health": 2,
-                  "name": "Chicken"
-                },
-                {
-                  "place": null,
-                  "min_dmg": 5,
-                  "max_dmg": 10,
-                  "type": "Weapon",
-                  "name": "Knife",
-                  "owner": null
-                }
-              ]
-            ],
-            [
-              "ATTACK",
-              {
-                "place": {
-                  "name": "(1, 3)",
-                  "type": "Place"
-                },
-                "type": "Player",
-                "threshold": -1,
-                "health": 100,
-                "inventory": [
-                  {
-                    "place": null,
-                    "min_dmg": 5,
-                    "max_dmg": 10,
-                    "type": "Weapon",
-                    "name": "Knife",
-                    "owner": null
-                  }
-                ],
-                "name": "AI2",
-                "hunger": 1
-              },
-              {
-                "place": {
-                  "name": "(1, 3)",
-                  "type": "Place"
-                },
-                "food_value": 5,
-                "type": "Animal",
-                "threshold": 4,
-                "health": 2,
-                "name": "Chicken"
-              },
-              10
-            ],
-            [
-              "DEAD",
-              {
-                "place": {
-                  "name": "Heaven",
-                  "type": "Place"
-                },
-                "food_value": 5,
-                "type": "Animal",
-                "threshold": 4,
-                "health": 0,
-                "name": "Chicken"
-              }
-            ],
-            [
-              "KILLED",
-              {
-                "place": {
-                  "name": "(1, 3)",
-                  "type": "Place"
-                },
-                "type": "Player",
-                "threshold": -1,
-                "health": 100,
-                "inventory": [
-                  {
-                    "place": null,
-                    "min_dmg": 5,
-                    "max_dmg": 10,
-                    "type": "Weapon",
-                    "name": "Knife",
-                    "owner": null
-                  }
-                ],
-                "name": "AI2",
-                "hunger": 1
-              },
-              {
-                "place": {
-                  "name": "Heaven",
-                  "type": "Place"
-                },
-                "food_value": 5,
-                "type": "Animal",
-                "threshold": 4,
-                "health": 0,
-                "name": "Chicken"
-              }
-            ],
-            [
-              "INPUT_ERROR",
-              {
-                "place": {
-                  "name": "(1, 2)",
-                  "type": "Place"
-                },
-                "type": "Conan",
-                "threshold": -1,
-                "health": 100,
-                "inventory": [
-                  {
-                    "place": null,
-                    "min_dmg": 5,
-                    "max_dmg": 10,
-                    "type": "Weapon",
-                    "name": "Knife",
-                    "owner": null
-                  }
-                ],
-                "name": "AI",
-                "hunger": 1
-              },
-              "'Medicine' object has no attribute 'max_damage'"
-            ]
-          ]
-        }
-      ],
       "config": {
         "items": [
           {
-            "qty": 5,
+            "qty": 10,
+            "type": "Weapon"
+          },
+          {
+            "qty": 10,
+            "type": "RangedWeapon"
+          },
+          {
+            "qty": 15,
+            "type": "Food"
+          },
+          {
+            "qty": 15,
+            "type": "Medicine"
+          },
+          {
+            "qty": 15,
             "type": "Animal"
           },
           {
             "qty": 5,
-            "type": "Medicine"
-          },
-          {
-            "qty": 5,
-            "type": "RangedWeapon"
-          },
-          {
-            "qty": 5,
-            "type": "Weapon"
-          },
-          {
-            "qty": 3,
             "type": "WildAnimal"
-          },
-          {
-            "qty": 5,
-            "type": "Food"
           }
         ],
         "map": {
           "size": 3,
           "wrap": false
         },
-        "max_steps": 10,
+        "max_steps": 20,
         "periodic_events": [
           {
-            "interval": 20,
-            "description": "Spawn Wild Animals"
+            "description": "Spawn Wild Animals",
+            "interval": 20
           },
           {
-            "interval": 20,
-            "description": "Spawn Wild Animals"
+            "description": "Spawn Wild Animals",
+            "interval": 20
           },
           {
-            "interval": 20,
-            "description": "Spawn Wild Animals"
+            "description": "Spawn Wild Animals",
+            "interval": 20
+          },
+          {
+            "description": "Spawn Wild Animals",
+            "interval": 20
+          },
+          {
+            "description": "Spawn Wild Animals",
+            "interval": 20
           }
         ]
+      },
+      "history": [
+        {
+          "events": [
+            [
+              "MOVE",
+              {
+                "food_value": 10,
+                "health": 17,
+                "id": "feafc4c4-038f-4fde-84c2-d51a2cc5bc18",
+                "name": "Pig",
+                "place": {
+                  "id": "0ba20804-9c43-4ee2-8749-62c2c57077af",
+                  "name": "(1, 3)",
+                  "type": "Place"
+                },
+                "threshold": 1,
+                "type": "Animal"
+              },
+              {
+                "id": "0ba20804-9c43-4ee2-8749-62c2c57077af",
+                "name": "(1, 3)",
+                "neighbors": {
+                  "SOUTH": {
+                    "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                    "name": "(2, 3)",
+                    "type": "Place"
+                  },
+                  "WEST": {
+                    "id": "6bdca0f8-02aa-41f5-9e6e-0236375f7307",
+                    "name": "(1, 2)",
+                    "type": "Place"
+                  }
+                },
+                "objects": [
+                  {
+                    "food_value": 3,
+                    "id": "03d718df-b2a8-425a-acb0-cfd4bd87d5c3",
+                    "name": "Watermelon",
+                    "owner": null,
+                    "place": {
+                      "id": "0ba20804-9c43-4ee2-8749-62c2c57077af",
+                      "name": "(1, 3)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": 1,
+                    "id": "c761c584-ac8e-45e3-9356-258d54a8d529",
+                    "medicine_value": 3,
+                    "name": "Panadol",
+                    "owner": null,
+                    "place": {
+                      "id": "0ba20804-9c43-4ee2-8749-62c2c57077af",
+                      "name": "(1, 3)",
+                      "type": "Place"
+                    },
+                    "type": "Medicine"
+                  },
+                  {
+                    "food_value": 8,
+                    "health": 19,
+                    "id": "e7715308-5631-4a51-a467-a0262585d4c0",
+                    "name": "Deer",
+                    "place": {
+                      "id": "0ba20804-9c43-4ee2-8749-62c2c57077af",
+                      "name": "(1, 3)",
+                      "type": "Place"
+                    },
+                    "threshold": 3,
+                    "type": "Animal"
+                  },
+                  {
+                    "food_value": 9,
+                    "health": 9,
+                    "id": "75bfa5b6-f0a6-4359-b1b8-f9689234f227",
+                    "name": "Sheep",
+                    "place": {
+                      "id": "0ba20804-9c43-4ee2-8749-62c2c57077af",
+                      "name": "(1, 3)",
+                      "type": "Place"
+                    },
+                    "threshold": 4,
+                    "type": "Animal"
+                  },
+                  {
+                    "food_value": 10,
+                    "health": 17,
+                    "id": "feafc4c4-038f-4fde-84c2-d51a2cc5bc18",
+                    "name": "Pig",
+                    "place": {
+                      "id": "0ba20804-9c43-4ee2-8749-62c2c57077af",
+                      "name": "(1, 3)",
+                      "type": "Place"
+                    },
+                    "threshold": 1,
+                    "type": "Animal"
+                  }
+                ],
+                "type": "Place"
+              },
+              {
+                "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                "name": "(2, 3)",
+                "neighbors": {
+                  "NORTH": {
+                    "id": "0ba20804-9c43-4ee2-8749-62c2c57077af",
+                    "name": "(1, 3)",
+                    "type": "Place"
+                  },
+                  "SOUTH": {
+                    "id": "de6a9929-363d-42f2-ab6e-19a3005722a8",
+                    "name": "(3, 3)",
+                    "type": "Place"
+                  },
+                  "WEST": {
+                    "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                    "name": "(2, 2)",
+                    "type": "Place"
+                  }
+                },
+                "objects": [
+                  {
+                    "id": "316f354b-a373-44d9-9fab-b89bd8f71c1c",
+                    "max_dmg": 15,
+                    "min_dmg": 12,
+                    "name": "Mace",
+                    "owner": null,
+                    "place": {
+                      "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                      "name": "(2, 3)",
+                      "type": "Place"
+                    },
+                    "type": "Weapon"
+                  },
+                  {
+                    "id": "5ec922d2-fb35-4b96-95af-d8c44c8aacd6",
+                    "max_dmg": 45,
+                    "min_dmg": 35,
+                    "name": "Rifle",
+                    "owner": null,
+                    "place": {
+                      "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                      "name": "(2, 3)",
+                      "type": "Place"
+                    },
+                    "shots_left": 0,
+                    "type": "RangedWeapon"
+                  },
+                  {
+                    "id": "8e041fb2-2249-40a2-8a14-3e14522b097f",
+                    "name": "5.56mm",
+                    "owner": null,
+                    "place": {
+                      "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                      "name": "(2, 3)",
+                      "type": "Place"
+                    },
+                    "quantity": 1,
+                    "type": "Ammo",
+                    "weapon": "Rifle"
+                  },
+                  {
+                    "id": "49b92c6e-80d8-487f-9ae6-45ba615c4d70",
+                    "name": "5.56mm",
+                    "owner": null,
+                    "place": {
+                      "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                      "name": "(2, 3)",
+                      "type": "Place"
+                    },
+                    "quantity": 1,
+                    "type": "Ammo",
+                    "weapon": "Rifle"
+                  },
+                  {
+                    "food_value": 0,
+                    "id": "428e5319-4217-4ebe-861a-60d59f76aaac",
+                    "medicine_value": 3,
+                    "name": "Healing Herbs",
+                    "owner": null,
+                    "place": {
+                      "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                      "name": "(2, 3)",
+                      "type": "Place"
+                    },
+                    "type": "Medicine"
+                  },
+                  {
+                    "food_value": 5,
+                    "health": 3,
+                    "id": "a5dedba1-c3e6-449e-93c5-75beb6b0145c",
+                    "name": "Chicken",
+                    "place": {
+                      "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                      "name": "(2, 3)",
+                      "type": "Place"
+                    },
+                    "threshold": 1,
+                    "type": "Animal"
+                  },
+                  {
+                    "food_value": 7,
+                    "health": 18,
+                    "id": "a135e458-fe1e-4ea5-a239-759138c2d8cf",
+                    "name": "Deer",
+                    "place": {
+                      "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                      "name": "(2, 3)",
+                      "type": "Place"
+                    },
+                    "threshold": 0,
+                    "type": "Animal"
+                  }
+                ],
+                "type": "Place"
+              }
+            ],
+            [
+              "MOVE",
+              {
+                "food_value": 17,
+                "health": 24,
+                "id": "a1bba245-f9c8-4ebd-8cd0-d9eb3d9310e6",
+                "name": "Cow",
+                "place": {
+                  "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                  "name": "(2, 2)",
+                  "type": "Place"
+                },
+                "threshold": 4,
+                "type": "Animal"
+              },
+              {
+                "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                "name": "(2, 2)",
+                "neighbors": {
+                  "EAST": {
+                    "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                    "name": "(2, 3)",
+                    "type": "Place"
+                  },
+                  "NORTH": {
+                    "id": "6bdca0f8-02aa-41f5-9e6e-0236375f7307",
+                    "name": "(1, 2)",
+                    "type": "Place"
+                  },
+                  "SOUTH": {
+                    "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                    "name": "(3, 2)",
+                    "type": "Place"
+                  },
+                  "WEST": {
+                    "id": "0d8fa5cc-6271-4bd4-80de-42a1f3468649",
+                    "name": "(2, 1)",
+                    "type": "Place"
+                  }
+                },
+                "objects": [
+                  {
+                    "id": "99403fe2-63b2-4401-bfe5-17ca8b453fe7",
+                    "max_dmg": 25,
+                    "min_dmg": 15,
+                    "name": "Machete",
+                    "owner": null,
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Weapon"
+                  },
+                  {
+                    "id": "d7fc9182-4992-45a3-96d6-b4adba7d29b9",
+                    "max_dmg": 25,
+                    "min_dmg": 20,
+                    "name": "Bow",
+                    "owner": null,
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "shots_left": 0,
+                    "type": "RangedWeapon"
+                  },
+                  {
+                    "id": "4aa0b988-58e6-40a5-8e80-8175df6d4860",
+                    "name": "5.56mm",
+                    "owner": null,
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "quantity": 1,
+                    "type": "Ammo",
+                    "weapon": "Rifle"
+                  },
+                  {
+                    "food_value": 4,
+                    "id": "663e5924-fd76-4f44-84e6-e3f62cd164e9",
+                    "name": "Carrot",
+                    "owner": null,
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": 4,
+                    "id": "d5a9ce10-0f80-4e1b-89b7-ffb7046258ba",
+                    "name": "Cabbage",
+                    "owner": null,
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": 4,
+                    "id": "c3360cbd-21c8-46df-9b10-edf5bf85f737",
+                    "name": "Potato",
+                    "owner": null,
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": 4,
+                    "id": "84bbf744-24b6-4c77-8e7e-69f7c22a479e",
+                    "name": "Potato",
+                    "owner": null,
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": -1,
+                    "id": "a98414dd-61fb-43e0-ad0b-048bac2f923a",
+                    "medicine_value": 3,
+                    "name": "Wild Mushroom",
+                    "owner": null,
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Medicine"
+                  },
+                  {
+                    "food_value": 1,
+                    "id": "2d024969-348b-412e-8e80-f60b7eed0fe5",
+                    "medicine_value": 4,
+                    "name": "Aloe Vera",
+                    "owner": null,
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Medicine"
+                  },
+                  {
+                    "food_value": 17,
+                    "health": 24,
+                    "id": "a1bba245-f9c8-4ebd-8cd0-d9eb3d9310e6",
+                    "name": "Cow",
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "threshold": 4,
+                    "type": "Animal"
+                  },
+                  {
+                    "health": 100,
+                    "hunger": 0,
+                    "id": "c9d4086c-6780-4fdb-8759-1ca07c4a2201",
+                    "inventory": [
+                      {
+                        "id": "2aa261c6-c047-4cc0-bfa1-68e440925b18",
+                        "max_dmg": 10,
+                        "min_dmg": 5,
+                        "name": "Knife",
+                        "owner": null,
+                        "place": null,
+                        "type": "Weapon"
+                      }
+                    ],
+                    "name": "Muhammad Adam bin Ismail",
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "threshold": -1,
+                    "type": "Player"
+                  }
+                ],
+                "type": "Place"
+              },
+              {
+                "id": "6bdca0f8-02aa-41f5-9e6e-0236375f7307",
+                "name": "(1, 2)",
+                "neighbors": {
+                  "EAST": {
+                    "id": "0ba20804-9c43-4ee2-8749-62c2c57077af",
+                    "name": "(1, 3)",
+                    "type": "Place"
+                  },
+                  "SOUTH": {
+                    "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                    "name": "(2, 2)",
+                    "type": "Place"
+                  },
+                  "WEST": {
+                    "id": "ae3ef7b0-09c7-464a-b24d-54d3f898be53",
+                    "name": "(1, 1)",
+                    "type": "Place"
+                  }
+                },
+                "objects": [
+                  {
+                    "id": "35148c20-1b31-4bdd-bee0-f584ed53f97a",
+                    "max_dmg": 12,
+                    "min_dmg": 10,
+                    "name": "Dagger",
+                    "owner": null,
+                    "place": {
+                      "id": "6bdca0f8-02aa-41f5-9e6e-0236375f7307",
+                      "name": "(1, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Weapon"
+                  },
+                  {
+                    "id": "83026c7d-3dad-4428-9d00-86536e16e4a0",
+                    "max_dmg": 30,
+                    "min_dmg": 25,
+                    "name": "Crossbow",
+                    "owner": null,
+                    "place": {
+                      "id": "6bdca0f8-02aa-41f5-9e6e-0236375f7307",
+                      "name": "(1, 2)",
+                      "type": "Place"
+                    },
+                    "shots_left": 0,
+                    "type": "RangedWeapon"
+                  },
+                  {
+                    "id": "4331f9fe-0b5b-43cc-b9ee-4f425179be10",
+                    "name": "Arrows",
+                    "owner": null,
+                    "place": {
+                      "id": "6bdca0f8-02aa-41f5-9e6e-0236375f7307",
+                      "name": "(1, 2)",
+                      "type": "Place"
+                    },
+                    "quantity": 1,
+                    "type": "Ammo",
+                    "weapon": "Bow"
+                  },
+                  {
+                    "id": "68cf6a96-14e1-487f-9578-7a1ab84b2882",
+                    "name": "9mm",
+                    "owner": null,
+                    "place": {
+                      "id": "6bdca0f8-02aa-41f5-9e6e-0236375f7307",
+                      "name": "(1, 2)",
+                      "type": "Place"
+                    },
+                    "quantity": 1,
+                    "type": "Ammo",
+                    "weapon": "Pistol"
+                  },
+                  {
+                    "food_value": 0,
+                    "id": "b3409840-3427-4d4f-81a1-5e535564f3b6",
+                    "medicine_value": 3,
+                    "name": "Healing Herbs",
+                    "owner": null,
+                    "place": {
+                      "id": "6bdca0f8-02aa-41f5-9e6e-0236375f7307",
+                      "name": "(1, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Medicine"
+                  },
+                  {
+                    "food_value": 1,
+                    "id": "7b4bba8f-1ab6-4fcb-9ece-9304b36eeb58",
+                    "medicine_value": 1,
+                    "name": "Panadol",
+                    "owner": null,
+                    "place": {
+                      "id": "6bdca0f8-02aa-41f5-9e6e-0236375f7307",
+                      "name": "(1, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Medicine"
+                  },
+                  {
+                    "food_value": -1,
+                    "id": "d9ce0385-fa02-411f-9f14-035dbee1f0f0",
+                    "medicine_value": 3,
+                    "name": "Wild Mushroom",
+                    "owner": null,
+                    "place": {
+                      "id": "6bdca0f8-02aa-41f5-9e6e-0236375f7307",
+                      "name": "(1, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Medicine"
+                  },
+                  {
+                    "food_value": 5,
+                    "health": 4,
+                    "id": "f2c43bff-3b3a-4b79-9bba-df1578415ef2",
+                    "name": "Chicken",
+                    "place": {
+                      "id": "6bdca0f8-02aa-41f5-9e6e-0236375f7307",
+                      "name": "(1, 2)",
+                      "type": "Place"
+                    },
+                    "threshold": 4,
+                    "type": "Animal"
+                  },
+                  {
+                    "attack_probability": 0.4,
+                    "damage": 15,
+                    "food_value": 17,
+                    "health": 31,
+                    "id": "b0aea83d-7979-4f0d-a729-b57f8f2950d3",
+                    "name": "Bear",
+                    "place": {
+                      "id": "6bdca0f8-02aa-41f5-9e6e-0236375f7307",
+                      "name": "(1, 2)",
+                      "type": "Place"
+                    },
+                    "threshold": 3,
+                    "type": "WildAnimal"
+                  },
+                  {
+                    "attack_probability": 0.37,
+                    "damage": 8,
+                    "food_value": 10,
+                    "health": 22,
+                    "id": "59f4a68e-cfd9-45de-ae89-4aa0f5184724",
+                    "name": "Boar",
+                    "place": {
+                      "id": "6bdca0f8-02aa-41f5-9e6e-0236375f7307",
+                      "name": "(1, 2)",
+                      "type": "Place"
+                    },
+                    "threshold": 2,
+                    "type": "WildAnimal"
+                  }
+                ],
+                "type": "Place"
+              }
+            ],
+            [
+              "MOVE",
+              {
+                "food_value": 7,
+                "health": 18,
+                "id": "a135e458-fe1e-4ea5-a239-759138c2d8cf",
+                "name": "Deer",
+                "place": {
+                  "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                  "name": "(2, 3)",
+                  "type": "Place"
+                },
+                "threshold": 0,
+                "type": "Animal"
+              },
+              {
+                "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                "name": "(2, 3)",
+                "neighbors": {
+                  "NORTH": {
+                    "id": "0ba20804-9c43-4ee2-8749-62c2c57077af",
+                    "name": "(1, 3)",
+                    "type": "Place"
+                  },
+                  "SOUTH": {
+                    "id": "de6a9929-363d-42f2-ab6e-19a3005722a8",
+                    "name": "(3, 3)",
+                    "type": "Place"
+                  },
+                  "WEST": {
+                    "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                    "name": "(2, 2)",
+                    "type": "Place"
+                  }
+                },
+                "objects": [
+                  {
+                    "id": "316f354b-a373-44d9-9fab-b89bd8f71c1c",
+                    "max_dmg": 15,
+                    "min_dmg": 12,
+                    "name": "Mace",
+                    "owner": null,
+                    "place": {
+                      "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                      "name": "(2, 3)",
+                      "type": "Place"
+                    },
+                    "type": "Weapon"
+                  },
+                  {
+                    "id": "5ec922d2-fb35-4b96-95af-d8c44c8aacd6",
+                    "max_dmg": 45,
+                    "min_dmg": 35,
+                    "name": "Rifle",
+                    "owner": null,
+                    "place": {
+                      "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                      "name": "(2, 3)",
+                      "type": "Place"
+                    },
+                    "shots_left": 0,
+                    "type": "RangedWeapon"
+                  },
+                  {
+                    "id": "8e041fb2-2249-40a2-8a14-3e14522b097f",
+                    "name": "5.56mm",
+                    "owner": null,
+                    "place": {
+                      "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                      "name": "(2, 3)",
+                      "type": "Place"
+                    },
+                    "quantity": 1,
+                    "type": "Ammo",
+                    "weapon": "Rifle"
+                  },
+                  {
+                    "id": "49b92c6e-80d8-487f-9ae6-45ba615c4d70",
+                    "name": "5.56mm",
+                    "owner": null,
+                    "place": {
+                      "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                      "name": "(2, 3)",
+                      "type": "Place"
+                    },
+                    "quantity": 1,
+                    "type": "Ammo",
+                    "weapon": "Rifle"
+                  },
+                  {
+                    "food_value": 0,
+                    "id": "428e5319-4217-4ebe-861a-60d59f76aaac",
+                    "medicine_value": 3,
+                    "name": "Healing Herbs",
+                    "owner": null,
+                    "place": {
+                      "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                      "name": "(2, 3)",
+                      "type": "Place"
+                    },
+                    "type": "Medicine"
+                  },
+                  {
+                    "food_value": 5,
+                    "health": 3,
+                    "id": "a5dedba1-c3e6-449e-93c5-75beb6b0145c",
+                    "name": "Chicken",
+                    "place": {
+                      "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                      "name": "(2, 3)",
+                      "type": "Place"
+                    },
+                    "threshold": 1,
+                    "type": "Animal"
+                  },
+                  {
+                    "food_value": 7,
+                    "health": 18,
+                    "id": "a135e458-fe1e-4ea5-a239-759138c2d8cf",
+                    "name": "Deer",
+                    "place": {
+                      "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                      "name": "(2, 3)",
+                      "type": "Place"
+                    },
+                    "threshold": 0,
+                    "type": "Animal"
+                  },
+                  {
+                    "food_value": 10,
+                    "health": 17,
+                    "id": "feafc4c4-038f-4fde-84c2-d51a2cc5bc18",
+                    "name": "Pig",
+                    "place": {
+                      "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                      "name": "(2, 3)",
+                      "type": "Place"
+                    },
+                    "threshold": 1,
+                    "type": "Animal"
+                  }
+                ],
+                "type": "Place"
+              },
+              {
+                "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                "name": "(2, 2)",
+                "neighbors": {
+                  "EAST": {
+                    "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                    "name": "(2, 3)",
+                    "type": "Place"
+                  },
+                  "NORTH": {
+                    "id": "6bdca0f8-02aa-41f5-9e6e-0236375f7307",
+                    "name": "(1, 2)",
+                    "type": "Place"
+                  },
+                  "SOUTH": {
+                    "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                    "name": "(3, 2)",
+                    "type": "Place"
+                  },
+                  "WEST": {
+                    "id": "0d8fa5cc-6271-4bd4-80de-42a1f3468649",
+                    "name": "(2, 1)",
+                    "type": "Place"
+                  }
+                },
+                "objects": [
+                  {
+                    "id": "99403fe2-63b2-4401-bfe5-17ca8b453fe7",
+                    "max_dmg": 25,
+                    "min_dmg": 15,
+                    "name": "Machete",
+                    "owner": null,
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Weapon"
+                  },
+                  {
+                    "id": "d7fc9182-4992-45a3-96d6-b4adba7d29b9",
+                    "max_dmg": 25,
+                    "min_dmg": 20,
+                    "name": "Bow",
+                    "owner": null,
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "shots_left": 0,
+                    "type": "RangedWeapon"
+                  },
+                  {
+                    "id": "4aa0b988-58e6-40a5-8e80-8175df6d4860",
+                    "name": "5.56mm",
+                    "owner": null,
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "quantity": 1,
+                    "type": "Ammo",
+                    "weapon": "Rifle"
+                  },
+                  {
+                    "food_value": 4,
+                    "id": "663e5924-fd76-4f44-84e6-e3f62cd164e9",
+                    "name": "Carrot",
+                    "owner": null,
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": 4,
+                    "id": "d5a9ce10-0f80-4e1b-89b7-ffb7046258ba",
+                    "name": "Cabbage",
+                    "owner": null,
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": 4,
+                    "id": "c3360cbd-21c8-46df-9b10-edf5bf85f737",
+                    "name": "Potato",
+                    "owner": null,
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": 4,
+                    "id": "84bbf744-24b6-4c77-8e7e-69f7c22a479e",
+                    "name": "Potato",
+                    "owner": null,
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": -1,
+                    "id": "a98414dd-61fb-43e0-ad0b-048bac2f923a",
+                    "medicine_value": 3,
+                    "name": "Wild Mushroom",
+                    "owner": null,
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Medicine"
+                  },
+                  {
+                    "food_value": 1,
+                    "id": "2d024969-348b-412e-8e80-f60b7eed0fe5",
+                    "medicine_value": 4,
+                    "name": "Aloe Vera",
+                    "owner": null,
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Medicine"
+                  },
+                  {
+                    "health": 100,
+                    "hunger": 0,
+                    "id": "c9d4086c-6780-4fdb-8759-1ca07c4a2201",
+                    "inventory": [
+                      {
+                        "id": "2aa261c6-c047-4cc0-bfa1-68e440925b18",
+                        "max_dmg": 10,
+                        "min_dmg": 5,
+                        "name": "Knife",
+                        "owner": null,
+                        "place": null,
+                        "type": "Weapon"
+                      }
+                    ],
+                    "name": "Muhammad Adam bin Ismail",
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "threshold": -1,
+                    "type": "Player"
+                  }
+                ],
+                "type": "Place"
+              }
+            ],
+            [
+              "MOVE",
+              {
+                "food_value": 15,
+                "health": 24,
+                "id": "c070e9a3-d178-4e5a-8c24-1b6a8a370e1a",
+                "name": "Cow",
+                "place": {
+                  "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                  "name": "(3, 1)",
+                  "type": "Place"
+                },
+                "threshold": 4,
+                "type": "Animal"
+              },
+              {
+                "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                "name": "(3, 1)",
+                "neighbors": {
+                  "EAST": {
+                    "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                    "name": "(3, 2)",
+                    "type": "Place"
+                  },
+                  "NORTH": {
+                    "id": "0d8fa5cc-6271-4bd4-80de-42a1f3468649",
+                    "name": "(2, 1)",
+                    "type": "Place"
+                  }
+                },
+                "objects": [
+                  {
+                    "id": "6e16e6ed-df97-4224-bca3-57120f92f39d",
+                    "max_dmg": 25,
+                    "min_dmg": 15,
+                    "name": "Machete",
+                    "owner": null,
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "type": "Weapon"
+                  },
+                  {
+                    "id": "b91a4edb-a4ac-4fe8-a92b-ed539a166b1d",
+                    "max_dmg": 12,
+                    "min_dmg": 10,
+                    "name": "Dagger",
+                    "owner": null,
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "type": "Weapon"
+                  },
+                  {
+                    "id": "95a96d54-19a0-48fe-b0d6-200c48fe254e",
+                    "name": "Arrows",
+                    "owner": null,
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "quantity": 1,
+                    "type": "Ammo",
+                    "weapon": "Bow"
+                  },
+                  {
+                    "id": "0cbde109-ea32-4a2e-9a5a-11bf441ab7b1",
+                    "max_dmg": 45,
+                    "min_dmg": 35,
+                    "name": "Rifle",
+                    "owner": null,
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "shots_left": 0,
+                    "type": "RangedWeapon"
+                  },
+                  {
+                    "food_value": 3,
+                    "id": "8d0b41c3-74b7-495f-a533-f94cbbb1cb15",
+                    "name": "Apple",
+                    "owner": null,
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": 4,
+                    "id": "4d46374b-aa76-4c5d-a565-ad8cddb2051e",
+                    "name": "Potato",
+                    "owner": null,
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": 3,
+                    "id": "7317c524-cdc3-4ebb-a07b-5babed5ec677",
+                    "name": "Carrot",
+                    "owner": null,
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": 4,
+                    "id": "4d94cb05-c3d4-4bee-b319-226632656631",
+                    "name": "Watermelon",
+                    "owner": null,
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": 3,
+                    "id": "9360b1d5-85d6-4692-8c8b-d6c452b5e032",
+                    "name": "Potato",
+                    "owner": null,
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": 1,
+                    "id": "466e5720-d35f-447d-ba82-4afd5d3cbe6a",
+                    "medicine_value": 1,
+                    "name": "Panadol",
+                    "owner": null,
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "type": "Medicine"
+                  },
+                  {
+                    "food_value": 0,
+                    "id": "96ceefb4-5131-454d-bc1f-4ed94ef1c79a",
+                    "medicine_value": 5,
+                    "name": "Health Potion",
+                    "owner": null,
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "type": "Medicine"
+                  },
+                  {
+                    "food_value": 0,
+                    "id": "d2939e59-227b-4dcf-954f-43574a4773d0",
+                    "medicine_value": 3,
+                    "name": "Healing Herbs",
+                    "owner": null,
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "type": "Medicine"
+                  },
+                  {
+                    "food_value": 0,
+                    "id": "4e4d8b4a-a7d4-4123-b621-a56f7c6c9284",
+                    "medicine_value": 5,
+                    "name": "Health Potion",
+                    "owner": null,
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "type": "Medicine"
+                  },
+                  {
+                    "food_value": 15,
+                    "health": 24,
+                    "id": "c070e9a3-d178-4e5a-8c24-1b6a8a370e1a",
+                    "name": "Cow",
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "threshold": 4,
+                    "type": "Animal"
+                  },
+                  {
+                    "attack_probability": 0.25,
+                    "damage": 17,
+                    "food_value": 17,
+                    "health": 32,
+                    "id": "f2585d67-dfc5-4f0b-84f6-dab2ee67fc6b",
+                    "name": "Bear",
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "threshold": 1,
+                    "type": "WildAnimal"
+                  },
+                  {
+                    "health": 100,
+                    "hunger": 0,
+                    "id": "628baede-2ebb-477f-bcf3-a8aa69056890",
+                    "inventory": [
+                      {
+                        "id": "1b571a3b-bf7b-417d-93ed-2d312b48a34f",
+                        "max_dmg": 10,
+                        "min_dmg": 5,
+                        "name": "Knife",
+                        "owner": null,
+                        "place": null,
+                        "type": "Weapon"
+                      }
+                    ],
+                    "name": "Chua Zhe Xuan Royston",
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "threshold": -1,
+                    "type": "Player"
+                  }
+                ],
+                "type": "Place"
+              },
+              {
+                "id": "0d8fa5cc-6271-4bd4-80de-42a1f3468649",
+                "name": "(2, 1)",
+                "neighbors": {
+                  "EAST": {
+                    "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                    "name": "(2, 2)",
+                    "type": "Place"
+                  },
+                  "NORTH": {
+                    "id": "ae3ef7b0-09c7-464a-b24d-54d3f898be53",
+                    "name": "(1, 1)",
+                    "type": "Place"
+                  },
+                  "SOUTH": {
+                    "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                    "name": "(3, 1)",
+                    "type": "Place"
+                  }
+                },
+                "objects": [
+                  {
+                    "id": "1c4aebc6-8fa5-4284-84ca-6a24242347e2",
+                    "max_dmg": 25,
+                    "min_dmg": 15,
+                    "name": "Machete",
+                    "owner": null,
+                    "place": {
+                      "id": "0d8fa5cc-6271-4bd4-80de-42a1f3468649",
+                      "name": "(2, 1)",
+                      "type": "Place"
+                    },
+                    "type": "Weapon"
+                  },
+                  {
+                    "id": "0fc7d83d-4c51-47f5-91ec-74685f4c5c10",
+                    "max_dmg": 12,
+                    "min_dmg": 10,
+                    "name": "Dagger",
+                    "owner": null,
+                    "place": {
+                      "id": "0d8fa5cc-6271-4bd4-80de-42a1f3468649",
+                      "name": "(2, 1)",
+                      "type": "Place"
+                    },
+                    "type": "Weapon"
+                  },
+                  {
+                    "food_value": 3,
+                    "id": "bca250dc-2ead-4b7d-960e-e9bc51de9403",
+                    "name": "Watermelon",
+                    "owner": null,
+                    "place": {
+                      "id": "0d8fa5cc-6271-4bd4-80de-42a1f3468649",
+                      "name": "(2, 1)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": 0,
+                    "id": "5fb56246-085e-442d-89d8-74097f479377",
+                    "medicine_value": 3,
+                    "name": "Healing Herbs",
+                    "owner": null,
+                    "place": {
+                      "id": "0d8fa5cc-6271-4bd4-80de-42a1f3468649",
+                      "name": "(2, 1)",
+                      "type": "Place"
+                    },
+                    "type": "Medicine"
+                  },
+                  {
+                    "food_value": 1,
+                    "id": "8ebca157-f705-4a6f-9976-a40ca122062a",
+                    "medicine_value": 1,
+                    "name": "Panadol",
+                    "owner": null,
+                    "place": {
+                      "id": "0d8fa5cc-6271-4bd4-80de-42a1f3468649",
+                      "name": "(2, 1)",
+                      "type": "Place"
+                    },
+                    "type": "Medicine"
+                  },
+                  {
+                    "food_value": 7,
+                    "health": 7,
+                    "id": "19bc42ac-734c-4bf0-9886-c89b9015b756",
+                    "name": "Sheep",
+                    "place": {
+                      "id": "0d8fa5cc-6271-4bd4-80de-42a1f3468649",
+                      "name": "(2, 1)",
+                      "type": "Place"
+                    },
+                    "threshold": 2,
+                    "type": "Animal"
+                  },
+                  {
+                    "food_value": 8,
+                    "health": 8,
+                    "id": "2451e852-e33e-4d2c-a36e-992351a12619",
+                    "name": "Sheep",
+                    "place": {
+                      "id": "0d8fa5cc-6271-4bd4-80de-42a1f3468649",
+                      "name": "(2, 1)",
+                      "type": "Place"
+                    },
+                    "threshold": 3,
+                    "type": "Animal"
+                  },
+                  {
+                    "attack_probability": 0.25,
+                    "damage": 10,
+                    "food_value": 8,
+                    "health": 26,
+                    "id": "2a107a1d-71ab-4947-b98f-945e9fa9a3d1",
+                    "name": "Wolf",
+                    "place": {
+                      "id": "0d8fa5cc-6271-4bd4-80de-42a1f3468649",
+                      "name": "(2, 1)",
+                      "type": "Place"
+                    },
+                    "threshold": 1,
+                    "type": "WildAnimal"
+                  }
+                ],
+                "type": "Place"
+              }
+            ],
+            [
+              "MOVE",
+              {
+                "attack_probability": 0.25,
+                "damage": 17,
+                "food_value": 17,
+                "health": 32,
+                "id": "f2585d67-dfc5-4f0b-84f6-dab2ee67fc6b",
+                "name": "Bear",
+                "place": {
+                  "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                  "name": "(3, 1)",
+                  "type": "Place"
+                },
+                "threshold": 1,
+                "type": "WildAnimal"
+              },
+              {
+                "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                "name": "(3, 1)",
+                "neighbors": {
+                  "EAST": {
+                    "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                    "name": "(3, 2)",
+                    "type": "Place"
+                  },
+                  "NORTH": {
+                    "id": "0d8fa5cc-6271-4bd4-80de-42a1f3468649",
+                    "name": "(2, 1)",
+                    "type": "Place"
+                  }
+                },
+                "objects": [
+                  {
+                    "id": "6e16e6ed-df97-4224-bca3-57120f92f39d",
+                    "max_dmg": 25,
+                    "min_dmg": 15,
+                    "name": "Machete",
+                    "owner": null,
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "type": "Weapon"
+                  },
+                  {
+                    "id": "b91a4edb-a4ac-4fe8-a92b-ed539a166b1d",
+                    "max_dmg": 12,
+                    "min_dmg": 10,
+                    "name": "Dagger",
+                    "owner": null,
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "type": "Weapon"
+                  },
+                  {
+                    "id": "95a96d54-19a0-48fe-b0d6-200c48fe254e",
+                    "name": "Arrows",
+                    "owner": null,
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "quantity": 1,
+                    "type": "Ammo",
+                    "weapon": "Bow"
+                  },
+                  {
+                    "id": "0cbde109-ea32-4a2e-9a5a-11bf441ab7b1",
+                    "max_dmg": 45,
+                    "min_dmg": 35,
+                    "name": "Rifle",
+                    "owner": null,
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "shots_left": 0,
+                    "type": "RangedWeapon"
+                  },
+                  {
+                    "food_value": 3,
+                    "id": "8d0b41c3-74b7-495f-a533-f94cbbb1cb15",
+                    "name": "Apple",
+                    "owner": null,
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": 4,
+                    "id": "4d46374b-aa76-4c5d-a565-ad8cddb2051e",
+                    "name": "Potato",
+                    "owner": null,
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": 3,
+                    "id": "7317c524-cdc3-4ebb-a07b-5babed5ec677",
+                    "name": "Carrot",
+                    "owner": null,
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": 4,
+                    "id": "4d94cb05-c3d4-4bee-b319-226632656631",
+                    "name": "Watermelon",
+                    "owner": null,
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": 3,
+                    "id": "9360b1d5-85d6-4692-8c8b-d6c452b5e032",
+                    "name": "Potato",
+                    "owner": null,
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": 1,
+                    "id": "466e5720-d35f-447d-ba82-4afd5d3cbe6a",
+                    "medicine_value": 1,
+                    "name": "Panadol",
+                    "owner": null,
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "type": "Medicine"
+                  },
+                  {
+                    "food_value": 0,
+                    "id": "96ceefb4-5131-454d-bc1f-4ed94ef1c79a",
+                    "medicine_value": 5,
+                    "name": "Health Potion",
+                    "owner": null,
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "type": "Medicine"
+                  },
+                  {
+                    "food_value": 0,
+                    "id": "d2939e59-227b-4dcf-954f-43574a4773d0",
+                    "medicine_value": 3,
+                    "name": "Healing Herbs",
+                    "owner": null,
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "type": "Medicine"
+                  },
+                  {
+                    "food_value": 0,
+                    "id": "4e4d8b4a-a7d4-4123-b621-a56f7c6c9284",
+                    "medicine_value": 5,
+                    "name": "Health Potion",
+                    "owner": null,
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "type": "Medicine"
+                  },
+                  {
+                    "attack_probability": 0.25,
+                    "damage": 17,
+                    "food_value": 17,
+                    "health": 32,
+                    "id": "f2585d67-dfc5-4f0b-84f6-dab2ee67fc6b",
+                    "name": "Bear",
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "threshold": 1,
+                    "type": "WildAnimal"
+                  },
+                  {
+                    "health": 100,
+                    "hunger": 0,
+                    "id": "628baede-2ebb-477f-bcf3-a8aa69056890",
+                    "inventory": [
+                      {
+                        "id": "1b571a3b-bf7b-417d-93ed-2d312b48a34f",
+                        "max_dmg": 10,
+                        "min_dmg": 5,
+                        "name": "Knife",
+                        "owner": null,
+                        "place": null,
+                        "type": "Weapon"
+                      }
+                    ],
+                    "name": "Chua Zhe Xuan Royston",
+                    "place": {
+                      "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                      "name": "(3, 1)",
+                      "type": "Place"
+                    },
+                    "threshold": -1,
+                    "type": "Player"
+                  }
+                ],
+                "type": "Place"
+              },
+              {
+                "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                "name": "(3, 2)",
+                "neighbors": {
+                  "EAST": {
+                    "id": "de6a9929-363d-42f2-ab6e-19a3005722a8",
+                    "name": "(3, 3)",
+                    "type": "Place"
+                  },
+                  "NORTH": {
+                    "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                    "name": "(2, 2)",
+                    "type": "Place"
+                  },
+                  "WEST": {
+                    "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                    "name": "(3, 1)",
+                    "type": "Place"
+                  }
+                },
+                "objects": [
+                  {
+                    "id": "c8ee003d-6713-4a6a-8e1d-21052a948885",
+                    "max_dmg": 15,
+                    "min_dmg": 12,
+                    "name": "Mace",
+                    "owner": null,
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Weapon"
+                  },
+                  {
+                    "id": "d13a06d0-ac42-4c85-9eac-3f455353bf9c",
+                    "max_dmg": 25,
+                    "min_dmg": 20,
+                    "name": "Bow",
+                    "owner": null,
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "shots_left": 0,
+                    "type": "RangedWeapon"
+                  },
+                  {
+                    "id": "727931bd-582e-4412-be05-d3d04a29ab8d",
+                    "max_dmg": 30,
+                    "min_dmg": 25,
+                    "name": "Crossbow",
+                    "owner": null,
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "shots_left": 0,
+                    "type": "RangedWeapon"
+                  },
+                  {
+                    "id": "c2a64ce8-8763-4d7f-b673-ad84eff75411",
+                    "max_dmg": 45,
+                    "min_dmg": 35,
+                    "name": "Rifle",
+                    "owner": null,
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "shots_left": 0,
+                    "type": "RangedWeapon"
+                  },
+                  {
+                    "food_value": 4,
+                    "id": "d911fa0e-496e-4dbb-bb1e-de84e25173ce",
+                    "name": "Potato",
+                    "owner": null,
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": 4,
+                    "id": "a94ba956-b642-49ec-90d7-33242ac7179b",
+                    "name": "Watermelon",
+                    "owner": null,
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": -1,
+                    "id": "ed3515cb-ca3e-43e3-9be8-1b5af82a8074",
+                    "medicine_value": 3,
+                    "name": "Wild Mushroom",
+                    "owner": null,
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Medicine"
+                  },
+                  {
+                    "food_value": 10,
+                    "health": 19,
+                    "id": "4804065a-e048-4a72-9cdd-cb6996892db4",
+                    "name": "Pig",
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "threshold": 3,
+                    "type": "Animal"
+                  },
+                  {
+                    "food_value": 7,
+                    "health": 17,
+                    "id": "01947267-870e-4876-8569-e4c62be21157",
+                    "name": "Deer",
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "threshold": 3,
+                    "type": "Animal"
+                  },
+                  {
+                    "food_value": 16,
+                    "health": 21,
+                    "id": "8025c791-79f4-410d-a171-f7c5351d9b9f",
+                    "name": "Cow",
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "threshold": 0,
+                    "type": "Animal"
+                  }
+                ],
+                "type": "Place"
+              }
+            ],
+            [
+              "MOVE",
+              {
+                "food_value": 10,
+                "health": 19,
+                "id": "4804065a-e048-4a72-9cdd-cb6996892db4",
+                "name": "Pig",
+                "place": {
+                  "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                  "name": "(3, 2)",
+                  "type": "Place"
+                },
+                "threshold": 3,
+                "type": "Animal"
+              },
+              {
+                "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                "name": "(3, 2)",
+                "neighbors": {
+                  "EAST": {
+                    "id": "de6a9929-363d-42f2-ab6e-19a3005722a8",
+                    "name": "(3, 3)",
+                    "type": "Place"
+                  },
+                  "NORTH": {
+                    "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                    "name": "(2, 2)",
+                    "type": "Place"
+                  },
+                  "WEST": {
+                    "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                    "name": "(3, 1)",
+                    "type": "Place"
+                  }
+                },
+                "objects": [
+                  {
+                    "id": "c8ee003d-6713-4a6a-8e1d-21052a948885",
+                    "max_dmg": 15,
+                    "min_dmg": 12,
+                    "name": "Mace",
+                    "owner": null,
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Weapon"
+                  },
+                  {
+                    "id": "d13a06d0-ac42-4c85-9eac-3f455353bf9c",
+                    "max_dmg": 25,
+                    "min_dmg": 20,
+                    "name": "Bow",
+                    "owner": null,
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "shots_left": 0,
+                    "type": "RangedWeapon"
+                  },
+                  {
+                    "id": "727931bd-582e-4412-be05-d3d04a29ab8d",
+                    "max_dmg": 30,
+                    "min_dmg": 25,
+                    "name": "Crossbow",
+                    "owner": null,
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "shots_left": 0,
+                    "type": "RangedWeapon"
+                  },
+                  {
+                    "id": "c2a64ce8-8763-4d7f-b673-ad84eff75411",
+                    "max_dmg": 45,
+                    "min_dmg": 35,
+                    "name": "Rifle",
+                    "owner": null,
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "shots_left": 0,
+                    "type": "RangedWeapon"
+                  },
+                  {
+                    "food_value": 4,
+                    "id": "d911fa0e-496e-4dbb-bb1e-de84e25173ce",
+                    "name": "Potato",
+                    "owner": null,
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": 4,
+                    "id": "a94ba956-b642-49ec-90d7-33242ac7179b",
+                    "name": "Watermelon",
+                    "owner": null,
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": -1,
+                    "id": "ed3515cb-ca3e-43e3-9be8-1b5af82a8074",
+                    "medicine_value": 3,
+                    "name": "Wild Mushroom",
+                    "owner": null,
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Medicine"
+                  },
+                  {
+                    "food_value": 10,
+                    "health": 19,
+                    "id": "4804065a-e048-4a72-9cdd-cb6996892db4",
+                    "name": "Pig",
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "threshold": 3,
+                    "type": "Animal"
+                  },
+                  {
+                    "food_value": 7,
+                    "health": 17,
+                    "id": "01947267-870e-4876-8569-e4c62be21157",
+                    "name": "Deer",
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "threshold": 3,
+                    "type": "Animal"
+                  },
+                  {
+                    "food_value": 16,
+                    "health": 21,
+                    "id": "8025c791-79f4-410d-a171-f7c5351d9b9f",
+                    "name": "Cow",
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "threshold": 0,
+                    "type": "Animal"
+                  },
+                  {
+                    "attack_probability": 0.25,
+                    "damage": 17,
+                    "food_value": 17,
+                    "health": 32,
+                    "id": "f2585d67-dfc5-4f0b-84f6-dab2ee67fc6b",
+                    "name": "Bear",
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "threshold": 1,
+                    "type": "WildAnimal"
+                  }
+                ],
+                "type": "Place"
+              },
+              {
+                "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                "name": "(2, 2)",
+                "neighbors": {
+                  "EAST": {
+                    "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                    "name": "(2, 3)",
+                    "type": "Place"
+                  },
+                  "NORTH": {
+                    "id": "6bdca0f8-02aa-41f5-9e6e-0236375f7307",
+                    "name": "(1, 2)",
+                    "type": "Place"
+                  },
+                  "SOUTH": {
+                    "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                    "name": "(3, 2)",
+                    "type": "Place"
+                  },
+                  "WEST": {
+                    "id": "0d8fa5cc-6271-4bd4-80de-42a1f3468649",
+                    "name": "(2, 1)",
+                    "type": "Place"
+                  }
+                },
+                "objects": [
+                  {
+                    "id": "99403fe2-63b2-4401-bfe5-17ca8b453fe7",
+                    "max_dmg": 25,
+                    "min_dmg": 15,
+                    "name": "Machete",
+                    "owner": null,
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Weapon"
+                  },
+                  {
+                    "id": "d7fc9182-4992-45a3-96d6-b4adba7d29b9",
+                    "max_dmg": 25,
+                    "min_dmg": 20,
+                    "name": "Bow",
+                    "owner": null,
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "shots_left": 0,
+                    "type": "RangedWeapon"
+                  },
+                  {
+                    "id": "4aa0b988-58e6-40a5-8e80-8175df6d4860",
+                    "name": "5.56mm",
+                    "owner": null,
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "quantity": 1,
+                    "type": "Ammo",
+                    "weapon": "Rifle"
+                  },
+                  {
+                    "food_value": 4,
+                    "id": "663e5924-fd76-4f44-84e6-e3f62cd164e9",
+                    "name": "Carrot",
+                    "owner": null,
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": 4,
+                    "id": "d5a9ce10-0f80-4e1b-89b7-ffb7046258ba",
+                    "name": "Cabbage",
+                    "owner": null,
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": 4,
+                    "id": "c3360cbd-21c8-46df-9b10-edf5bf85f737",
+                    "name": "Potato",
+                    "owner": null,
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": 4,
+                    "id": "84bbf744-24b6-4c77-8e7e-69f7c22a479e",
+                    "name": "Potato",
+                    "owner": null,
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": -1,
+                    "id": "a98414dd-61fb-43e0-ad0b-048bac2f923a",
+                    "medicine_value": 3,
+                    "name": "Wild Mushroom",
+                    "owner": null,
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Medicine"
+                  },
+                  {
+                    "food_value": 1,
+                    "id": "2d024969-348b-412e-8e80-f60b7eed0fe5",
+                    "medicine_value": 4,
+                    "name": "Aloe Vera",
+                    "owner": null,
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Medicine"
+                  },
+                  {
+                    "health": 100,
+                    "hunger": 0,
+                    "id": "c9d4086c-6780-4fdb-8759-1ca07c4a2201",
+                    "inventory": [
+                      {
+                        "id": "2aa261c6-c047-4cc0-bfa1-68e440925b18",
+                        "max_dmg": 10,
+                        "min_dmg": 5,
+                        "name": "Knife",
+                        "owner": null,
+                        "place": null,
+                        "type": "Weapon"
+                      }
+                    ],
+                    "name": "Muhammad Adam bin Ismail",
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "threshold": -1,
+                    "type": "Player"
+                  },
+                  {
+                    "food_value": 7,
+                    "health": 18,
+                    "id": "a135e458-fe1e-4ea5-a239-759138c2d8cf",
+                    "name": "Deer",
+                    "place": {
+                      "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                      "name": "(2, 2)",
+                      "type": "Place"
+                    },
+                    "threshold": 0,
+                    "type": "Animal"
+                  }
+                ],
+                "type": "Place"
+              }
+            ],
+            [
+              "MOVE",
+              {
+                "food_value": 16,
+                "health": 21,
+                "id": "8025c791-79f4-410d-a171-f7c5351d9b9f",
+                "name": "Cow",
+                "place": {
+                  "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                  "name": "(3, 2)",
+                  "type": "Place"
+                },
+                "threshold": 0,
+                "type": "Animal"
+              },
+              {
+                "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                "name": "(3, 2)",
+                "neighbors": {
+                  "EAST": {
+                    "id": "de6a9929-363d-42f2-ab6e-19a3005722a8",
+                    "name": "(3, 3)",
+                    "type": "Place"
+                  },
+                  "NORTH": {
+                    "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                    "name": "(2, 2)",
+                    "type": "Place"
+                  },
+                  "WEST": {
+                    "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                    "name": "(3, 1)",
+                    "type": "Place"
+                  }
+                },
+                "objects": [
+                  {
+                    "id": "c8ee003d-6713-4a6a-8e1d-21052a948885",
+                    "max_dmg": 15,
+                    "min_dmg": 12,
+                    "name": "Mace",
+                    "owner": null,
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Weapon"
+                  },
+                  {
+                    "id": "d13a06d0-ac42-4c85-9eac-3f455353bf9c",
+                    "max_dmg": 25,
+                    "min_dmg": 20,
+                    "name": "Bow",
+                    "owner": null,
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "shots_left": 0,
+                    "type": "RangedWeapon"
+                  },
+                  {
+                    "id": "727931bd-582e-4412-be05-d3d04a29ab8d",
+                    "max_dmg": 30,
+                    "min_dmg": 25,
+                    "name": "Crossbow",
+                    "owner": null,
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "shots_left": 0,
+                    "type": "RangedWeapon"
+                  },
+                  {
+                    "id": "c2a64ce8-8763-4d7f-b673-ad84eff75411",
+                    "max_dmg": 45,
+                    "min_dmg": 35,
+                    "name": "Rifle",
+                    "owner": null,
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "shots_left": 0,
+                    "type": "RangedWeapon"
+                  },
+                  {
+                    "food_value": 4,
+                    "id": "d911fa0e-496e-4dbb-bb1e-de84e25173ce",
+                    "name": "Potato",
+                    "owner": null,
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": 4,
+                    "id": "a94ba956-b642-49ec-90d7-33242ac7179b",
+                    "name": "Watermelon",
+                    "owner": null,
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "food_value": -1,
+                    "id": "ed3515cb-ca3e-43e3-9be8-1b5af82a8074",
+                    "medicine_value": 3,
+                    "name": "Wild Mushroom",
+                    "owner": null,
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "type": "Medicine"
+                  },
+                  {
+                    "food_value": 7,
+                    "health": 17,
+                    "id": "01947267-870e-4876-8569-e4c62be21157",
+                    "name": "Deer",
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "threshold": 3,
+                    "type": "Animal"
+                  },
+                  {
+                    "food_value": 16,
+                    "health": 21,
+                    "id": "8025c791-79f4-410d-a171-f7c5351d9b9f",
+                    "name": "Cow",
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "threshold": 0,
+                    "type": "Animal"
+                  },
+                  {
+                    "attack_probability": 0.25,
+                    "damage": 17,
+                    "food_value": 17,
+                    "health": 32,
+                    "id": "f2585d67-dfc5-4f0b-84f6-dab2ee67fc6b",
+                    "name": "Bear",
+                    "place": {
+                      "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                      "name": "(3, 2)",
+                      "type": "Place"
+                    },
+                    "threshold": 1,
+                    "type": "WildAnimal"
+                  }
+                ],
+                "type": "Place"
+              },
+              {
+                "id": "de6a9929-363d-42f2-ab6e-19a3005722a8",
+                "name": "(3, 3)",
+                "neighbors": {
+                  "NORTH": {
+                    "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                    "name": "(2, 3)",
+                    "type": "Place"
+                  },
+                  "WEST": {
+                    "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                    "name": "(3, 2)",
+                    "type": "Place"
+                  }
+                },
+                "objects": [
+                  {
+                    "id": "847b9471-76b7-40a1-bf83-8359141e2d87",
+                    "max_dmg": 15,
+                    "min_dmg": 12,
+                    "name": "Mace",
+                    "owner": null,
+                    "place": {
+                      "id": "de6a9929-363d-42f2-ab6e-19a3005722a8",
+                      "name": "(3, 3)",
+                      "type": "Place"
+                    },
+                    "type": "Weapon"
+                  },
+                  {
+                    "id": "5e3f1fec-f267-4220-b0ac-3567484a9590",
+                    "max_dmg": 25,
+                    "min_dmg": 15,
+                    "name": "Machete",
+                    "owner": null,
+                    "place": {
+                      "id": "de6a9929-363d-42f2-ab6e-19a3005722a8",
+                      "name": "(3, 3)",
+                      "type": "Place"
+                    },
+                    "type": "Weapon"
+                  },
+                  {
+                    "id": "b9de517b-71be-44df-904a-2a9bd8cfcc93",
+                    "name": "Bolts",
+                    "owner": null,
+                    "place": {
+                      "id": "de6a9929-363d-42f2-ab6e-19a3005722a8",
+                      "name": "(3, 3)",
+                      "type": "Place"
+                    },
+                    "quantity": 1,
+                    "type": "Ammo",
+                    "weapon": "Crossbow"
+                  },
+                  {
+                    "id": "a1f5b18d-4603-4d90-82eb-c38336045aff",
+                    "name": "Bolts",
+                    "owner": null,
+                    "place": {
+                      "id": "de6a9929-363d-42f2-ab6e-19a3005722a8",
+                      "name": "(3, 3)",
+                      "type": "Place"
+                    },
+                    "quantity": 1,
+                    "type": "Ammo",
+                    "weapon": "Crossbow"
+                  },
+                  {
+                    "id": "77cab62f-e00d-4555-a35d-e922318bfb9c",
+                    "max_dmg": 45,
+                    "min_dmg": 35,
+                    "name": "Rifle",
+                    "owner": null,
+                    "place": {
+                      "id": "de6a9929-363d-42f2-ab6e-19a3005722a8",
+                      "name": "(3, 3)",
+                      "type": "Place"
+                    },
+                    "shots_left": 0,
+                    "type": "RangedWeapon"
+                  },
+                  {
+                    "food_value": 3,
+                    "id": "f6366187-2140-4a22-9197-467d800b2787",
+                    "name": "Watermelon",
+                    "owner": null,
+                    "place": {
+                      "id": "de6a9929-363d-42f2-ab6e-19a3005722a8",
+                      "name": "(3, 3)",
+                      "type": "Place"
+                    },
+                    "type": "Food"
+                  },
+                  {
+                    "attack_probability": 0.33,
+                    "damage": 12,
+                    "food_value": 6,
+                    "health": 28,
+                    "id": "05eeebfa-7d48-4773-bbbd-69756686123b",
+                    "name": "Wolf",
+                    "place": {
+                      "id": "de6a9929-363d-42f2-ab6e-19a3005722a8",
+                      "name": "(3, 3)",
+                      "type": "Place"
+                    },
+                    "threshold": 3,
+                    "type": "WildAnimal"
+                  }
+                ],
+                "type": "Place"
+              }
+            ],
+            [
+              "INPUT",
+              {
+                "health": 100,
+                "hunger": 1,
+                "id": "c9d4086c-6780-4fdb-8759-1ca07c4a2201",
+                "inventory": [
+                  {
+                    "id": "2aa261c6-c047-4cc0-bfa1-68e440925b18",
+                    "max_dmg": 10,
+                    "min_dmg": 5,
+                    "name": "Knife",
+                    "owner": null,
+                    "place": null,
+                    "type": "Weapon"
+                  }
+                ],
+                "name": "Muhammad Adam bin Ismail",
+                "place": {
+                  "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                  "name": "(2, 2)",
+                  "type": "Place"
+                },
+                "threshold": -1,
+                "type": "Player"
+              },
+              [
+                "TAKE",
+                {
+                  "food_value": 4,
+                  "id": "663e5924-fd76-4f44-84e6-e3f62cd164e9",
+                  "name": "Carrot",
+                  "owner": null,
+                  "place": {
+                    "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                    "name": "(2, 2)",
+                    "type": "Place"
+                  },
+                  "type": "Food"
+                }
+              ]
+            ],
+            [
+              "TOOK",
+              {
+                "health": 100,
+                "hunger": 1,
+                "id": "c9d4086c-6780-4fdb-8759-1ca07c4a2201",
+                "inventory": [
+                  {
+                    "id": "2aa261c6-c047-4cc0-bfa1-68e440925b18",
+                    "max_dmg": 10,
+                    "min_dmg": 5,
+                    "name": "Knife",
+                    "owner": null,
+                    "place": null,
+                    "type": "Weapon"
+                  },
+                  {
+                    "food_value": 4,
+                    "id": "663e5924-fd76-4f44-84e6-e3f62cd164e9",
+                    "name": "Carrot",
+                    "owner": {
+                      "health": 100,
+                      "hunger": 1,
+                      "id": "c9d4086c-6780-4fdb-8759-1ca07c4a2201",
+                      "name": "Muhammad Adam bin Ismail",
+                      "place": {
+                        "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                        "name": "(2, 2)",
+                        "type": "Place"
+                      },
+                      "threshold": -1,
+                      "type": "Player"
+                    },
+                    "place": null,
+                    "type": "Food"
+                  }
+                ],
+                "name": "Muhammad Adam bin Ismail",
+                "place": {
+                  "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                  "name": "(2, 2)",
+                  "type": "Place"
+                },
+                "threshold": -1,
+                "type": "Player"
+              },
+              {
+                "food_value": 4,
+                "id": "663e5924-fd76-4f44-84e6-e3f62cd164e9",
+                "name": "Carrot",
+                "owner": {
+                  "health": 100,
+                  "hunger": 1,
+                  "id": "c9d4086c-6780-4fdb-8759-1ca07c4a2201",
+                  "name": "Muhammad Adam bin Ismail",
+                  "place": {
+                    "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                    "name": "(2, 2)",
+                    "type": "Place"
+                  },
+                  "threshold": -1,
+                  "type": "Player"
+                },
+                "place": null,
+                "type": "Food"
+              }
+            ],
+            [
+              "INPUT",
+              {
+                "health": 100,
+                "hunger": 1,
+                "id": "628baede-2ebb-477f-bcf3-a8aa69056890",
+                "inventory": [
+                  {
+                    "id": "1b571a3b-bf7b-417d-93ed-2d312b48a34f",
+                    "max_dmg": 10,
+                    "min_dmg": 5,
+                    "name": "Knife",
+                    "owner": null,
+                    "place": null,
+                    "type": "Weapon"
+                  }
+                ],
+                "name": "Chua Zhe Xuan Royston",
+                "place": {
+                  "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                  "name": "(3, 1)",
+                  "type": "Place"
+                },
+                "threshold": -1,
+                "type": "Player"
+              },
+              [
+                "TAKE",
+                {
+                  "id": "0cbde109-ea32-4a2e-9a5a-11bf441ab7b1",
+                  "max_dmg": 45,
+                  "min_dmg": 35,
+                  "name": "Rifle",
+                  "owner": null,
+                  "place": {
+                    "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                    "name": "(3, 1)",
+                    "type": "Place"
+                  },
+                  "shots_left": 0,
+                  "type": "RangedWeapon"
+                }
+              ]
+            ],
+            [
+              "TOOK",
+              {
+                "health": 100,
+                "hunger": 1,
+                "id": "628baede-2ebb-477f-bcf3-a8aa69056890",
+                "inventory": [
+                  {
+                    "id": "1b571a3b-bf7b-417d-93ed-2d312b48a34f",
+                    "max_dmg": 10,
+                    "min_dmg": 5,
+                    "name": "Knife",
+                    "owner": null,
+                    "place": null,
+                    "type": "Weapon"
+                  },
+                  {
+                    "id": "0cbde109-ea32-4a2e-9a5a-11bf441ab7b1",
+                    "max_dmg": 45,
+                    "min_dmg": 35,
+                    "name": "Rifle",
+                    "owner": {
+                      "health": 100,
+                      "hunger": 1,
+                      "id": "628baede-2ebb-477f-bcf3-a8aa69056890",
+                      "name": "Chua Zhe Xuan Royston",
+                      "place": {
+                        "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                        "name": "(3, 1)",
+                        "type": "Place"
+                      },
+                      "threshold": -1,
+                      "type": "Player"
+                    },
+                    "place": null,
+                    "shots_left": 0,
+                    "type": "RangedWeapon"
+                  }
+                ],
+                "name": "Chua Zhe Xuan Royston",
+                "place": {
+                  "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                  "name": "(3, 1)",
+                  "type": "Place"
+                },
+                "threshold": -1,
+                "type": "Player"
+              },
+              {
+                "id": "0cbde109-ea32-4a2e-9a5a-11bf441ab7b1",
+                "max_dmg": 45,
+                "min_dmg": 35,
+                "name": "Rifle",
+                "owner": {
+                  "health": 100,
+                  "hunger": 1,
+                  "id": "628baede-2ebb-477f-bcf3-a8aa69056890",
+                  "name": "Chua Zhe Xuan Royston",
+                  "place": {
+                    "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                    "name": "(3, 1)",
+                    "type": "Place"
+                  },
+                  "threshold": -1,
+                  "type": "Player"
+                },
+                "place": null,
+                "shots_left": 0,
+                "type": "RangedWeapon"
+              }
+            ]
+          ],
+          "map": {
+            "(1, 1)": {
+              "id": "ae3ef7b0-09c7-464a-b24d-54d3f898be53",
+              "name": "(1, 1)",
+              "neighbors": {
+                "EAST": {
+                  "id": "6bdca0f8-02aa-41f5-9e6e-0236375f7307",
+                  "name": "(1, 2)",
+                  "type": "Place"
+                },
+                "SOUTH": {
+                  "id": "0d8fa5cc-6271-4bd4-80de-42a1f3468649",
+                  "name": "(2, 1)",
+                  "type": "Place"
+                }
+              },
+              "objects": [
+                {
+                  "id": "328be16f-30b7-4039-b97f-f425b95540a5",
+                  "max_dmg": 25,
+                  "min_dmg": 20,
+                  "name": "Bow",
+                  "owner": null,
+                  "place": {
+                    "id": "ae3ef7b0-09c7-464a-b24d-54d3f898be53",
+                    "name": "(1, 1)",
+                    "type": "Place"
+                  },
+                  "shots_left": 0,
+                  "type": "RangedWeapon"
+                },
+                {
+                  "id": "508f23f3-9b4a-4454-9219-c0c71da0196b",
+                  "name": "Arrows",
+                  "owner": null,
+                  "place": {
+                    "id": "ae3ef7b0-09c7-464a-b24d-54d3f898be53",
+                    "name": "(1, 1)",
+                    "type": "Place"
+                  },
+                  "quantity": 1,
+                  "type": "Ammo",
+                  "weapon": "Bow"
+                },
+                {
+                  "id": "3968bd47-f7f4-4768-98cc-35b4321ca3ec",
+                  "max_dmg": 40,
+                  "min_dmg": 30,
+                  "name": "Pistol",
+                  "owner": null,
+                  "place": {
+                    "id": "ae3ef7b0-09c7-464a-b24d-54d3f898be53",
+                    "name": "(1, 1)",
+                    "type": "Place"
+                  },
+                  "shots_left": 0,
+                  "type": "RangedWeapon"
+                },
+                {
+                  "id": "8d547108-627d-4009-98de-4ae893f80985",
+                  "name": "5.56mm",
+                  "owner": null,
+                  "place": {
+                    "id": "ae3ef7b0-09c7-464a-b24d-54d3f898be53",
+                    "name": "(1, 1)",
+                    "type": "Place"
+                  },
+                  "quantity": 1,
+                  "type": "Ammo",
+                  "weapon": "Rifle"
+                },
+                {
+                  "food_value": 4,
+                  "id": "15a2e789-ac53-4120-b11f-53aa8ee81137",
+                  "name": "Cabbage",
+                  "owner": null,
+                  "place": {
+                    "id": "ae3ef7b0-09c7-464a-b24d-54d3f898be53",
+                    "name": "(1, 1)",
+                    "type": "Place"
+                  },
+                  "type": "Food"
+                },
+                {
+                  "food_value": 1,
+                  "id": "dd95eba8-e8f1-4ab3-9865-43800787bb2f",
+                  "medicine_value": 2,
+                  "name": "Aloe Vera",
+                  "owner": null,
+                  "place": {
+                    "id": "ae3ef7b0-09c7-464a-b24d-54d3f898be53",
+                    "name": "(1, 1)",
+                    "type": "Place"
+                  },
+                  "type": "Medicine"
+                },
+                {
+                  "food_value": 5,
+                  "health": 2,
+                  "id": "840e4339-f4f9-4a60-ba5e-f59656eb39fe",
+                  "name": "Chicken",
+                  "place": {
+                    "id": "ae3ef7b0-09c7-464a-b24d-54d3f898be53",
+                    "name": "(1, 1)",
+                    "type": "Place"
+                  },
+                  "threshold": 2,
+                  "type": "Animal"
+                },
+                {
+                  "food_value": 10,
+                  "health": 18,
+                  "id": "17c81ebf-fe8f-4000-b96a-794d72829b48",
+                  "name": "Pig",
+                  "place": {
+                    "id": "ae3ef7b0-09c7-464a-b24d-54d3f898be53",
+                    "name": "(1, 1)",
+                    "type": "Place"
+                  },
+                  "threshold": 1,
+                  "type": "Animal"
+                }
+              ],
+              "type": "Place"
+            },
+            "(1, 2)": {
+              "id": "6bdca0f8-02aa-41f5-9e6e-0236375f7307",
+              "name": "(1, 2)",
+              "neighbors": {
+                "EAST": {
+                  "id": "0ba20804-9c43-4ee2-8749-62c2c57077af",
+                  "name": "(1, 3)",
+                  "type": "Place"
+                },
+                "SOUTH": {
+                  "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                  "name": "(2, 2)",
+                  "type": "Place"
+                },
+                "WEST": {
+                  "id": "ae3ef7b0-09c7-464a-b24d-54d3f898be53",
+                  "name": "(1, 1)",
+                  "type": "Place"
+                }
+              },
+              "objects": [
+                {
+                  "id": "35148c20-1b31-4bdd-bee0-f584ed53f97a",
+                  "max_dmg": 12,
+                  "min_dmg": 10,
+                  "name": "Dagger",
+                  "owner": null,
+                  "place": {
+                    "id": "6bdca0f8-02aa-41f5-9e6e-0236375f7307",
+                    "name": "(1, 2)",
+                    "type": "Place"
+                  },
+                  "type": "Weapon"
+                },
+                {
+                  "id": "83026c7d-3dad-4428-9d00-86536e16e4a0",
+                  "max_dmg": 30,
+                  "min_dmg": 25,
+                  "name": "Crossbow",
+                  "owner": null,
+                  "place": {
+                    "id": "6bdca0f8-02aa-41f5-9e6e-0236375f7307",
+                    "name": "(1, 2)",
+                    "type": "Place"
+                  },
+                  "shots_left": 0,
+                  "type": "RangedWeapon"
+                },
+                {
+                  "id": "4331f9fe-0b5b-43cc-b9ee-4f425179be10",
+                  "name": "Arrows",
+                  "owner": null,
+                  "place": {
+                    "id": "6bdca0f8-02aa-41f5-9e6e-0236375f7307",
+                    "name": "(1, 2)",
+                    "type": "Place"
+                  },
+                  "quantity": 1,
+                  "type": "Ammo",
+                  "weapon": "Bow"
+                },
+                {
+                  "id": "68cf6a96-14e1-487f-9578-7a1ab84b2882",
+                  "name": "9mm",
+                  "owner": null,
+                  "place": {
+                    "id": "6bdca0f8-02aa-41f5-9e6e-0236375f7307",
+                    "name": "(1, 2)",
+                    "type": "Place"
+                  },
+                  "quantity": 1,
+                  "type": "Ammo",
+                  "weapon": "Pistol"
+                },
+                {
+                  "food_value": 0,
+                  "id": "b3409840-3427-4d4f-81a1-5e535564f3b6",
+                  "medicine_value": 3,
+                  "name": "Healing Herbs",
+                  "owner": null,
+                  "place": {
+                    "id": "6bdca0f8-02aa-41f5-9e6e-0236375f7307",
+                    "name": "(1, 2)",
+                    "type": "Place"
+                  },
+                  "type": "Medicine"
+                },
+                {
+                  "food_value": 1,
+                  "id": "7b4bba8f-1ab6-4fcb-9ece-9304b36eeb58",
+                  "medicine_value": 1,
+                  "name": "Panadol",
+                  "owner": null,
+                  "place": {
+                    "id": "6bdca0f8-02aa-41f5-9e6e-0236375f7307",
+                    "name": "(1, 2)",
+                    "type": "Place"
+                  },
+                  "type": "Medicine"
+                },
+                {
+                  "food_value": -1,
+                  "id": "d9ce0385-fa02-411f-9f14-035dbee1f0f0",
+                  "medicine_value": 3,
+                  "name": "Wild Mushroom",
+                  "owner": null,
+                  "place": {
+                    "id": "6bdca0f8-02aa-41f5-9e6e-0236375f7307",
+                    "name": "(1, 2)",
+                    "type": "Place"
+                  },
+                  "type": "Medicine"
+                },
+                {
+                  "food_value": 5,
+                  "health": 4,
+                  "id": "f2c43bff-3b3a-4b79-9bba-df1578415ef2",
+                  "name": "Chicken",
+                  "place": {
+                    "id": "6bdca0f8-02aa-41f5-9e6e-0236375f7307",
+                    "name": "(1, 2)",
+                    "type": "Place"
+                  },
+                  "threshold": 4,
+                  "type": "Animal"
+                },
+                {
+                  "attack_probability": 0.4,
+                  "damage": 15,
+                  "food_value": 17,
+                  "health": 31,
+                  "id": "b0aea83d-7979-4f0d-a729-b57f8f2950d3",
+                  "name": "Bear",
+                  "place": {
+                    "id": "6bdca0f8-02aa-41f5-9e6e-0236375f7307",
+                    "name": "(1, 2)",
+                    "type": "Place"
+                  },
+                  "threshold": 3,
+                  "type": "WildAnimal"
+                },
+                {
+                  "attack_probability": 0.37,
+                  "damage": 8,
+                  "food_value": 10,
+                  "health": 22,
+                  "id": "59f4a68e-cfd9-45de-ae89-4aa0f5184724",
+                  "name": "Boar",
+                  "place": {
+                    "id": "6bdca0f8-02aa-41f5-9e6e-0236375f7307",
+                    "name": "(1, 2)",
+                    "type": "Place"
+                  },
+                  "threshold": 2,
+                  "type": "WildAnimal"
+                }
+              ],
+              "type": "Place"
+            },
+            "(1, 3)": {
+              "id": "0ba20804-9c43-4ee2-8749-62c2c57077af",
+              "name": "(1, 3)",
+              "neighbors": {
+                "SOUTH": {
+                  "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                  "name": "(2, 3)",
+                  "type": "Place"
+                },
+                "WEST": {
+                  "id": "6bdca0f8-02aa-41f5-9e6e-0236375f7307",
+                  "name": "(1, 2)",
+                  "type": "Place"
+                }
+              },
+              "objects": [
+                {
+                  "food_value": 3,
+                  "id": "03d718df-b2a8-425a-acb0-cfd4bd87d5c3",
+                  "name": "Watermelon",
+                  "owner": null,
+                  "place": {
+                    "id": "0ba20804-9c43-4ee2-8749-62c2c57077af",
+                    "name": "(1, 3)",
+                    "type": "Place"
+                  },
+                  "type": "Food"
+                },
+                {
+                  "food_value": 1,
+                  "id": "c761c584-ac8e-45e3-9356-258d54a8d529",
+                  "medicine_value": 3,
+                  "name": "Panadol",
+                  "owner": null,
+                  "place": {
+                    "id": "0ba20804-9c43-4ee2-8749-62c2c57077af",
+                    "name": "(1, 3)",
+                    "type": "Place"
+                  },
+                  "type": "Medicine"
+                },
+                {
+                  "food_value": 8,
+                  "health": 19,
+                  "id": "e7715308-5631-4a51-a467-a0262585d4c0",
+                  "name": "Deer",
+                  "place": {
+                    "id": "0ba20804-9c43-4ee2-8749-62c2c57077af",
+                    "name": "(1, 3)",
+                    "type": "Place"
+                  },
+                  "threshold": 3,
+                  "type": "Animal"
+                },
+                {
+                  "food_value": 9,
+                  "health": 9,
+                  "id": "75bfa5b6-f0a6-4359-b1b8-f9689234f227",
+                  "name": "Sheep",
+                  "place": {
+                    "id": "0ba20804-9c43-4ee2-8749-62c2c57077af",
+                    "name": "(1, 3)",
+                    "type": "Place"
+                  },
+                  "threshold": 4,
+                  "type": "Animal"
+                },
+                {
+                  "food_value": 10,
+                  "health": 17,
+                  "id": "feafc4c4-038f-4fde-84c2-d51a2cc5bc18",
+                  "name": "Pig",
+                  "place": {
+                    "id": "0ba20804-9c43-4ee2-8749-62c2c57077af",
+                    "name": "(1, 3)",
+                    "type": "Place"
+                  },
+                  "threshold": 1,
+                  "type": "Animal"
+                }
+              ],
+              "type": "Place"
+            },
+            "(2, 1)": {
+              "id": "0d8fa5cc-6271-4bd4-80de-42a1f3468649",
+              "name": "(2, 1)",
+              "neighbors": {
+                "EAST": {
+                  "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                  "name": "(2, 2)",
+                  "type": "Place"
+                },
+                "NORTH": {
+                  "id": "ae3ef7b0-09c7-464a-b24d-54d3f898be53",
+                  "name": "(1, 1)",
+                  "type": "Place"
+                },
+                "SOUTH": {
+                  "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                  "name": "(3, 1)",
+                  "type": "Place"
+                }
+              },
+              "objects": [
+                {
+                  "id": "1c4aebc6-8fa5-4284-84ca-6a24242347e2",
+                  "max_dmg": 25,
+                  "min_dmg": 15,
+                  "name": "Machete",
+                  "owner": null,
+                  "place": {
+                    "id": "0d8fa5cc-6271-4bd4-80de-42a1f3468649",
+                    "name": "(2, 1)",
+                    "type": "Place"
+                  },
+                  "type": "Weapon"
+                },
+                {
+                  "id": "0fc7d83d-4c51-47f5-91ec-74685f4c5c10",
+                  "max_dmg": 12,
+                  "min_dmg": 10,
+                  "name": "Dagger",
+                  "owner": null,
+                  "place": {
+                    "id": "0d8fa5cc-6271-4bd4-80de-42a1f3468649",
+                    "name": "(2, 1)",
+                    "type": "Place"
+                  },
+                  "type": "Weapon"
+                },
+                {
+                  "food_value": 3,
+                  "id": "bca250dc-2ead-4b7d-960e-e9bc51de9403",
+                  "name": "Watermelon",
+                  "owner": null,
+                  "place": {
+                    "id": "0d8fa5cc-6271-4bd4-80de-42a1f3468649",
+                    "name": "(2, 1)",
+                    "type": "Place"
+                  },
+                  "type": "Food"
+                },
+                {
+                  "food_value": 0,
+                  "id": "5fb56246-085e-442d-89d8-74097f479377",
+                  "medicine_value": 3,
+                  "name": "Healing Herbs",
+                  "owner": null,
+                  "place": {
+                    "id": "0d8fa5cc-6271-4bd4-80de-42a1f3468649",
+                    "name": "(2, 1)",
+                    "type": "Place"
+                  },
+                  "type": "Medicine"
+                },
+                {
+                  "food_value": 1,
+                  "id": "8ebca157-f705-4a6f-9976-a40ca122062a",
+                  "medicine_value": 1,
+                  "name": "Panadol",
+                  "owner": null,
+                  "place": {
+                    "id": "0d8fa5cc-6271-4bd4-80de-42a1f3468649",
+                    "name": "(2, 1)",
+                    "type": "Place"
+                  },
+                  "type": "Medicine"
+                },
+                {
+                  "food_value": 7,
+                  "health": 7,
+                  "id": "19bc42ac-734c-4bf0-9886-c89b9015b756",
+                  "name": "Sheep",
+                  "place": {
+                    "id": "0d8fa5cc-6271-4bd4-80de-42a1f3468649",
+                    "name": "(2, 1)",
+                    "type": "Place"
+                  },
+                  "threshold": 2,
+                  "type": "Animal"
+                },
+                {
+                  "food_value": 8,
+                  "health": 8,
+                  "id": "2451e852-e33e-4d2c-a36e-992351a12619",
+                  "name": "Sheep",
+                  "place": {
+                    "id": "0d8fa5cc-6271-4bd4-80de-42a1f3468649",
+                    "name": "(2, 1)",
+                    "type": "Place"
+                  },
+                  "threshold": 3,
+                  "type": "Animal"
+                },
+                {
+                  "attack_probability": 0.25,
+                  "damage": 10,
+                  "food_value": 8,
+                  "health": 26,
+                  "id": "2a107a1d-71ab-4947-b98f-945e9fa9a3d1",
+                  "name": "Wolf",
+                  "place": {
+                    "id": "0d8fa5cc-6271-4bd4-80de-42a1f3468649",
+                    "name": "(2, 1)",
+                    "type": "Place"
+                  },
+                  "threshold": 1,
+                  "type": "WildAnimal"
+                }
+              ],
+              "type": "Place"
+            },
+            "(2, 2)": {
+              "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+              "name": "(2, 2)",
+              "neighbors": {
+                "EAST": {
+                  "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                  "name": "(2, 3)",
+                  "type": "Place"
+                },
+                "NORTH": {
+                  "id": "6bdca0f8-02aa-41f5-9e6e-0236375f7307",
+                  "name": "(1, 2)",
+                  "type": "Place"
+                },
+                "SOUTH": {
+                  "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                  "name": "(3, 2)",
+                  "type": "Place"
+                },
+                "WEST": {
+                  "id": "0d8fa5cc-6271-4bd4-80de-42a1f3468649",
+                  "name": "(2, 1)",
+                  "type": "Place"
+                }
+              },
+              "objects": [
+                {
+                  "id": "99403fe2-63b2-4401-bfe5-17ca8b453fe7",
+                  "max_dmg": 25,
+                  "min_dmg": 15,
+                  "name": "Machete",
+                  "owner": null,
+                  "place": {
+                    "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                    "name": "(2, 2)",
+                    "type": "Place"
+                  },
+                  "type": "Weapon"
+                },
+                {
+                  "id": "d7fc9182-4992-45a3-96d6-b4adba7d29b9",
+                  "max_dmg": 25,
+                  "min_dmg": 20,
+                  "name": "Bow",
+                  "owner": null,
+                  "place": {
+                    "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                    "name": "(2, 2)",
+                    "type": "Place"
+                  },
+                  "shots_left": 0,
+                  "type": "RangedWeapon"
+                },
+                {
+                  "id": "4aa0b988-58e6-40a5-8e80-8175df6d4860",
+                  "name": "5.56mm",
+                  "owner": null,
+                  "place": {
+                    "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                    "name": "(2, 2)",
+                    "type": "Place"
+                  },
+                  "quantity": 1,
+                  "type": "Ammo",
+                  "weapon": "Rifle"
+                },
+                {
+                  "food_value": 4,
+                  "id": "663e5924-fd76-4f44-84e6-e3f62cd164e9",
+                  "name": "Carrot",
+                  "owner": null,
+                  "place": {
+                    "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                    "name": "(2, 2)",
+                    "type": "Place"
+                  },
+                  "type": "Food"
+                },
+                {
+                  "food_value": 4,
+                  "id": "d5a9ce10-0f80-4e1b-89b7-ffb7046258ba",
+                  "name": "Cabbage",
+                  "owner": null,
+                  "place": {
+                    "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                    "name": "(2, 2)",
+                    "type": "Place"
+                  },
+                  "type": "Food"
+                },
+                {
+                  "food_value": 4,
+                  "id": "c3360cbd-21c8-46df-9b10-edf5bf85f737",
+                  "name": "Potato",
+                  "owner": null,
+                  "place": {
+                    "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                    "name": "(2, 2)",
+                    "type": "Place"
+                  },
+                  "type": "Food"
+                },
+                {
+                  "food_value": 4,
+                  "id": "84bbf744-24b6-4c77-8e7e-69f7c22a479e",
+                  "name": "Potato",
+                  "owner": null,
+                  "place": {
+                    "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                    "name": "(2, 2)",
+                    "type": "Place"
+                  },
+                  "type": "Food"
+                },
+                {
+                  "food_value": -1,
+                  "id": "a98414dd-61fb-43e0-ad0b-048bac2f923a",
+                  "medicine_value": 3,
+                  "name": "Wild Mushroom",
+                  "owner": null,
+                  "place": {
+                    "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                    "name": "(2, 2)",
+                    "type": "Place"
+                  },
+                  "type": "Medicine"
+                },
+                {
+                  "food_value": 1,
+                  "id": "2d024969-348b-412e-8e80-f60b7eed0fe5",
+                  "medicine_value": 4,
+                  "name": "Aloe Vera",
+                  "owner": null,
+                  "place": {
+                    "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                    "name": "(2, 2)",
+                    "type": "Place"
+                  },
+                  "type": "Medicine"
+                },
+                {
+                  "food_value": 17,
+                  "health": 24,
+                  "id": "a1bba245-f9c8-4ebd-8cd0-d9eb3d9310e6",
+                  "name": "Cow",
+                  "place": {
+                    "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                    "name": "(2, 2)",
+                    "type": "Place"
+                  },
+                  "threshold": 4,
+                  "type": "Animal"
+                },
+                {
+                  "health": 100,
+                  "hunger": 0,
+                  "id": "c9d4086c-6780-4fdb-8759-1ca07c4a2201",
+                  "inventory": [
+                    {
+                      "id": "2aa261c6-c047-4cc0-bfa1-68e440925b18",
+                      "max_dmg": 10,
+                      "min_dmg": 5,
+                      "name": "Knife",
+                      "owner": null,
+                      "place": null,
+                      "type": "Weapon"
+                    }
+                  ],
+                  "name": "Muhammad Adam bin Ismail",
+                  "place": {
+                    "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                    "name": "(2, 2)",
+                    "type": "Place"
+                  },
+                  "threshold": -1,
+                  "type": "Player"
+                }
+              ],
+              "type": "Place"
+            },
+            "(2, 3)": {
+              "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+              "name": "(2, 3)",
+              "neighbors": {
+                "NORTH": {
+                  "id": "0ba20804-9c43-4ee2-8749-62c2c57077af",
+                  "name": "(1, 3)",
+                  "type": "Place"
+                },
+                "SOUTH": {
+                  "id": "de6a9929-363d-42f2-ab6e-19a3005722a8",
+                  "name": "(3, 3)",
+                  "type": "Place"
+                },
+                "WEST": {
+                  "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                  "name": "(2, 2)",
+                  "type": "Place"
+                }
+              },
+              "objects": [
+                {
+                  "id": "316f354b-a373-44d9-9fab-b89bd8f71c1c",
+                  "max_dmg": 15,
+                  "min_dmg": 12,
+                  "name": "Mace",
+                  "owner": null,
+                  "place": {
+                    "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                    "name": "(2, 3)",
+                    "type": "Place"
+                  },
+                  "type": "Weapon"
+                },
+                {
+                  "id": "5ec922d2-fb35-4b96-95af-d8c44c8aacd6",
+                  "max_dmg": 45,
+                  "min_dmg": 35,
+                  "name": "Rifle",
+                  "owner": null,
+                  "place": {
+                    "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                    "name": "(2, 3)",
+                    "type": "Place"
+                  },
+                  "shots_left": 0,
+                  "type": "RangedWeapon"
+                },
+                {
+                  "id": "8e041fb2-2249-40a2-8a14-3e14522b097f",
+                  "name": "5.56mm",
+                  "owner": null,
+                  "place": {
+                    "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                    "name": "(2, 3)",
+                    "type": "Place"
+                  },
+                  "quantity": 1,
+                  "type": "Ammo",
+                  "weapon": "Rifle"
+                },
+                {
+                  "id": "49b92c6e-80d8-487f-9ae6-45ba615c4d70",
+                  "name": "5.56mm",
+                  "owner": null,
+                  "place": {
+                    "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                    "name": "(2, 3)",
+                    "type": "Place"
+                  },
+                  "quantity": 1,
+                  "type": "Ammo",
+                  "weapon": "Rifle"
+                },
+                {
+                  "food_value": 0,
+                  "id": "428e5319-4217-4ebe-861a-60d59f76aaac",
+                  "medicine_value": 3,
+                  "name": "Healing Herbs",
+                  "owner": null,
+                  "place": {
+                    "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                    "name": "(2, 3)",
+                    "type": "Place"
+                  },
+                  "type": "Medicine"
+                },
+                {
+                  "food_value": 5,
+                  "health": 3,
+                  "id": "a5dedba1-c3e6-449e-93c5-75beb6b0145c",
+                  "name": "Chicken",
+                  "place": {
+                    "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                    "name": "(2, 3)",
+                    "type": "Place"
+                  },
+                  "threshold": 1,
+                  "type": "Animal"
+                },
+                {
+                  "food_value": 7,
+                  "health": 18,
+                  "id": "a135e458-fe1e-4ea5-a239-759138c2d8cf",
+                  "name": "Deer",
+                  "place": {
+                    "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                    "name": "(2, 3)",
+                    "type": "Place"
+                  },
+                  "threshold": 0,
+                  "type": "Animal"
+                }
+              ],
+              "type": "Place"
+            },
+            "(3, 1)": {
+              "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+              "name": "(3, 1)",
+              "neighbors": {
+                "EAST": {
+                  "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                  "name": "(3, 2)",
+                  "type": "Place"
+                },
+                "NORTH": {
+                  "id": "0d8fa5cc-6271-4bd4-80de-42a1f3468649",
+                  "name": "(2, 1)",
+                  "type": "Place"
+                }
+              },
+              "objects": [
+                {
+                  "id": "6e16e6ed-df97-4224-bca3-57120f92f39d",
+                  "max_dmg": 25,
+                  "min_dmg": 15,
+                  "name": "Machete",
+                  "owner": null,
+                  "place": {
+                    "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                    "name": "(3, 1)",
+                    "type": "Place"
+                  },
+                  "type": "Weapon"
+                },
+                {
+                  "id": "b91a4edb-a4ac-4fe8-a92b-ed539a166b1d",
+                  "max_dmg": 12,
+                  "min_dmg": 10,
+                  "name": "Dagger",
+                  "owner": null,
+                  "place": {
+                    "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                    "name": "(3, 1)",
+                    "type": "Place"
+                  },
+                  "type": "Weapon"
+                },
+                {
+                  "id": "95a96d54-19a0-48fe-b0d6-200c48fe254e",
+                  "name": "Arrows",
+                  "owner": null,
+                  "place": {
+                    "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                    "name": "(3, 1)",
+                    "type": "Place"
+                  },
+                  "quantity": 1,
+                  "type": "Ammo",
+                  "weapon": "Bow"
+                },
+                {
+                  "id": "0cbde109-ea32-4a2e-9a5a-11bf441ab7b1",
+                  "max_dmg": 45,
+                  "min_dmg": 35,
+                  "name": "Rifle",
+                  "owner": null,
+                  "place": {
+                    "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                    "name": "(3, 1)",
+                    "type": "Place"
+                  },
+                  "shots_left": 0,
+                  "type": "RangedWeapon"
+                },
+                {
+                  "food_value": 3,
+                  "id": "8d0b41c3-74b7-495f-a533-f94cbbb1cb15",
+                  "name": "Apple",
+                  "owner": null,
+                  "place": {
+                    "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                    "name": "(3, 1)",
+                    "type": "Place"
+                  },
+                  "type": "Food"
+                },
+                {
+                  "food_value": 4,
+                  "id": "4d46374b-aa76-4c5d-a565-ad8cddb2051e",
+                  "name": "Potato",
+                  "owner": null,
+                  "place": {
+                    "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                    "name": "(3, 1)",
+                    "type": "Place"
+                  },
+                  "type": "Food"
+                },
+                {
+                  "food_value": 3,
+                  "id": "7317c524-cdc3-4ebb-a07b-5babed5ec677",
+                  "name": "Carrot",
+                  "owner": null,
+                  "place": {
+                    "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                    "name": "(3, 1)",
+                    "type": "Place"
+                  },
+                  "type": "Food"
+                },
+                {
+                  "food_value": 4,
+                  "id": "4d94cb05-c3d4-4bee-b319-226632656631",
+                  "name": "Watermelon",
+                  "owner": null,
+                  "place": {
+                    "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                    "name": "(3, 1)",
+                    "type": "Place"
+                  },
+                  "type": "Food"
+                },
+                {
+                  "food_value": 3,
+                  "id": "9360b1d5-85d6-4692-8c8b-d6c452b5e032",
+                  "name": "Potato",
+                  "owner": null,
+                  "place": {
+                    "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                    "name": "(3, 1)",
+                    "type": "Place"
+                  },
+                  "type": "Food"
+                },
+                {
+                  "food_value": 1,
+                  "id": "466e5720-d35f-447d-ba82-4afd5d3cbe6a",
+                  "medicine_value": 1,
+                  "name": "Panadol",
+                  "owner": null,
+                  "place": {
+                    "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                    "name": "(3, 1)",
+                    "type": "Place"
+                  },
+                  "type": "Medicine"
+                },
+                {
+                  "food_value": 0,
+                  "id": "96ceefb4-5131-454d-bc1f-4ed94ef1c79a",
+                  "medicine_value": 5,
+                  "name": "Health Potion",
+                  "owner": null,
+                  "place": {
+                    "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                    "name": "(3, 1)",
+                    "type": "Place"
+                  },
+                  "type": "Medicine"
+                },
+                {
+                  "food_value": 0,
+                  "id": "d2939e59-227b-4dcf-954f-43574a4773d0",
+                  "medicine_value": 3,
+                  "name": "Healing Herbs",
+                  "owner": null,
+                  "place": {
+                    "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                    "name": "(3, 1)",
+                    "type": "Place"
+                  },
+                  "type": "Medicine"
+                },
+                {
+                  "food_value": 0,
+                  "id": "4e4d8b4a-a7d4-4123-b621-a56f7c6c9284",
+                  "medicine_value": 5,
+                  "name": "Health Potion",
+                  "owner": null,
+                  "place": {
+                    "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                    "name": "(3, 1)",
+                    "type": "Place"
+                  },
+                  "type": "Medicine"
+                },
+                {
+                  "food_value": 15,
+                  "health": 24,
+                  "id": "c070e9a3-d178-4e5a-8c24-1b6a8a370e1a",
+                  "name": "Cow",
+                  "place": {
+                    "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                    "name": "(3, 1)",
+                    "type": "Place"
+                  },
+                  "threshold": 4,
+                  "type": "Animal"
+                },
+                {
+                  "attack_probability": 0.25,
+                  "damage": 17,
+                  "food_value": 17,
+                  "health": 32,
+                  "id": "f2585d67-dfc5-4f0b-84f6-dab2ee67fc6b",
+                  "name": "Bear",
+                  "place": {
+                    "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                    "name": "(3, 1)",
+                    "type": "Place"
+                  },
+                  "threshold": 1,
+                  "type": "WildAnimal"
+                },
+                {
+                  "health": 100,
+                  "hunger": 0,
+                  "id": "628baede-2ebb-477f-bcf3-a8aa69056890",
+                  "inventory": [
+                    {
+                      "id": "1b571a3b-bf7b-417d-93ed-2d312b48a34f",
+                      "max_dmg": 10,
+                      "min_dmg": 5,
+                      "name": "Knife",
+                      "owner": null,
+                      "place": null,
+                      "type": "Weapon"
+                    }
+                  ],
+                  "name": "Chua Zhe Xuan Royston",
+                  "place": {
+                    "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                    "name": "(3, 1)",
+                    "type": "Place"
+                  },
+                  "threshold": -1,
+                  "type": "Player"
+                }
+              ],
+              "type": "Place"
+            },
+            "(3, 2)": {
+              "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+              "name": "(3, 2)",
+              "neighbors": {
+                "EAST": {
+                  "id": "de6a9929-363d-42f2-ab6e-19a3005722a8",
+                  "name": "(3, 3)",
+                  "type": "Place"
+                },
+                "NORTH": {
+                  "id": "342ffe3a-a36c-43b6-b284-b4cfb35d9990",
+                  "name": "(2, 2)",
+                  "type": "Place"
+                },
+                "WEST": {
+                  "id": "306d5526-0aa9-4330-9d92-4a59736cc405",
+                  "name": "(3, 1)",
+                  "type": "Place"
+                }
+              },
+              "objects": [
+                {
+                  "id": "c8ee003d-6713-4a6a-8e1d-21052a948885",
+                  "max_dmg": 15,
+                  "min_dmg": 12,
+                  "name": "Mace",
+                  "owner": null,
+                  "place": {
+                    "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                    "name": "(3, 2)",
+                    "type": "Place"
+                  },
+                  "type": "Weapon"
+                },
+                {
+                  "id": "d13a06d0-ac42-4c85-9eac-3f455353bf9c",
+                  "max_dmg": 25,
+                  "min_dmg": 20,
+                  "name": "Bow",
+                  "owner": null,
+                  "place": {
+                    "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                    "name": "(3, 2)",
+                    "type": "Place"
+                  },
+                  "shots_left": 0,
+                  "type": "RangedWeapon"
+                },
+                {
+                  "id": "727931bd-582e-4412-be05-d3d04a29ab8d",
+                  "max_dmg": 30,
+                  "min_dmg": 25,
+                  "name": "Crossbow",
+                  "owner": null,
+                  "place": {
+                    "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                    "name": "(3, 2)",
+                    "type": "Place"
+                  },
+                  "shots_left": 0,
+                  "type": "RangedWeapon"
+                },
+                {
+                  "id": "c2a64ce8-8763-4d7f-b673-ad84eff75411",
+                  "max_dmg": 45,
+                  "min_dmg": 35,
+                  "name": "Rifle",
+                  "owner": null,
+                  "place": {
+                    "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                    "name": "(3, 2)",
+                    "type": "Place"
+                  },
+                  "shots_left": 0,
+                  "type": "RangedWeapon"
+                },
+                {
+                  "food_value": 4,
+                  "id": "d911fa0e-496e-4dbb-bb1e-de84e25173ce",
+                  "name": "Potato",
+                  "owner": null,
+                  "place": {
+                    "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                    "name": "(3, 2)",
+                    "type": "Place"
+                  },
+                  "type": "Food"
+                },
+                {
+                  "food_value": 4,
+                  "id": "a94ba956-b642-49ec-90d7-33242ac7179b",
+                  "name": "Watermelon",
+                  "owner": null,
+                  "place": {
+                    "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                    "name": "(3, 2)",
+                    "type": "Place"
+                  },
+                  "type": "Food"
+                },
+                {
+                  "food_value": -1,
+                  "id": "ed3515cb-ca3e-43e3-9be8-1b5af82a8074",
+                  "medicine_value": 3,
+                  "name": "Wild Mushroom",
+                  "owner": null,
+                  "place": {
+                    "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                    "name": "(3, 2)",
+                    "type": "Place"
+                  },
+                  "type": "Medicine"
+                },
+                {
+                  "food_value": 10,
+                  "health": 19,
+                  "id": "4804065a-e048-4a72-9cdd-cb6996892db4",
+                  "name": "Pig",
+                  "place": {
+                    "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                    "name": "(3, 2)",
+                    "type": "Place"
+                  },
+                  "threshold": 3,
+                  "type": "Animal"
+                },
+                {
+                  "food_value": 7,
+                  "health": 17,
+                  "id": "01947267-870e-4876-8569-e4c62be21157",
+                  "name": "Deer",
+                  "place": {
+                    "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                    "name": "(3, 2)",
+                    "type": "Place"
+                  },
+                  "threshold": 3,
+                  "type": "Animal"
+                },
+                {
+                  "food_value": 16,
+                  "health": 21,
+                  "id": "8025c791-79f4-410d-a171-f7c5351d9b9f",
+                  "name": "Cow",
+                  "place": {
+                    "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                    "name": "(3, 2)",
+                    "type": "Place"
+                  },
+                  "threshold": 0,
+                  "type": "Animal"
+                }
+              ],
+              "type": "Place"
+            },
+            "(3, 3)": {
+              "id": "de6a9929-363d-42f2-ab6e-19a3005722a8",
+              "name": "(3, 3)",
+              "neighbors": {
+                "NORTH": {
+                  "id": "c26714b3-760f-4cec-877a-4cf8b654c2af",
+                  "name": "(2, 3)",
+                  "type": "Place"
+                },
+                "WEST": {
+                  "id": "0542bd31-0e5e-472d-9475-9a960f376b9c",
+                  "name": "(3, 2)",
+                  "type": "Place"
+                }
+              },
+              "objects": [
+                {
+                  "id": "847b9471-76b7-40a1-bf83-8359141e2d87",
+                  "max_dmg": 15,
+                  "min_dmg": 12,
+                  "name": "Mace",
+                  "owner": null,
+                  "place": {
+                    "id": "de6a9929-363d-42f2-ab6e-19a3005722a8",
+                    "name": "(3, 3)",
+                    "type": "Place"
+                  },
+                  "type": "Weapon"
+                },
+                {
+                  "id": "5e3f1fec-f267-4220-b0ac-3567484a9590",
+                  "max_dmg": 25,
+                  "min_dmg": 15,
+                  "name": "Machete",
+                  "owner": null,
+                  "place": {
+                    "id": "de6a9929-363d-42f2-ab6e-19a3005722a8",
+                    "name": "(3, 3)",
+                    "type": "Place"
+                  },
+                  "type": "Weapon"
+                },
+                {
+                  "id": "b9de517b-71be-44df-904a-2a9bd8cfcc93",
+                  "name": "Bolts",
+                  "owner": null,
+                  "place": {
+                    "id": "de6a9929-363d-42f2-ab6e-19a3005722a8",
+                    "name": "(3, 3)",
+                    "type": "Place"
+                  },
+                  "quantity": 1,
+                  "type": "Ammo",
+                  "weapon": "Crossbow"
+                },
+                {
+                  "id": "a1f5b18d-4603-4d90-82eb-c38336045aff",
+                  "name": "Bolts",
+                  "owner": null,
+                  "place": {
+                    "id": "de6a9929-363d-42f2-ab6e-19a3005722a8",
+                    "name": "(3, 3)",
+                    "type": "Place"
+                  },
+                  "quantity": 1,
+                  "type": "Ammo",
+                  "weapon": "Crossbow"
+                },
+                {
+                  "id": "77cab62f-e00d-4555-a35d-e922318bfb9c",
+                  "max_dmg": 45,
+                  "min_dmg": 35,
+                  "name": "Rifle",
+                  "owner": null,
+                  "place": {
+                    "id": "de6a9929-363d-42f2-ab6e-19a3005722a8",
+                    "name": "(3, 3)",
+                    "type": "Place"
+                  },
+                  "shots_left": 0,
+                  "type": "RangedWeapon"
+                },
+                {
+                  "food_value": 3,
+                  "id": "f6366187-2140-4a22-9197-467d800b2787",
+                  "name": "Watermelon",
+                  "owner": null,
+                  "place": {
+                    "id": "de6a9929-363d-42f2-ab6e-19a3005722a8",
+                    "name": "(3, 3)",
+                    "type": "Place"
+                  },
+                  "type": "Food"
+                },
+                {
+                  "attack_probability": 0.33,
+                  "damage": 12,
+                  "food_value": 6,
+                  "health": 28,
+                  "id": "05eeebfa-7d48-4773-bbbd-69756686123b",
+                  "name": "Wolf",
+                  "place": {
+                    "id": "de6a9929-363d-42f2-ab6e-19a3005722a8",
+                    "name": "(3, 3)",
+                    "type": "Place"
+                  },
+                  "threshold": 3,
+                  "type": "WildAnimal"
+                }
+              ],
+              "type": "Place"
+            }
+          }
+        }
+      ],
+      "scores": {
+        "Chua Zhe Xuan Royston": 140,
+        "Muhammad Adam bin Ismail": 90
       }
     }
-  ]
+  ],
+  "scores": {
+    "Chua Zhe Xuan Royston": 250,
+    "Muhammad Adam bin Ismail": 150
+  }
 }

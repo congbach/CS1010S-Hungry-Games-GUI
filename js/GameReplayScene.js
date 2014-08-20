@@ -52,10 +52,10 @@
                     this.replayAttackEvent(event);
                     break;
 
-//                case "TOOK":
-//                    this.replayTakeEvent(event);
-//                    break;
-//
+                case "TOOK":
+                    this.replayTakeEvent(event);
+                    break;
+
                 case "KILLED":
                     this.replayDeadEvent(event);
                     break;
@@ -63,7 +63,8 @@
                 default:
                     // FIXME: eventually all events should be supported -> throw assertion here
                     console.log("Unknown replayable event: " + event[0]);
-                    this.replayNextEvent();
+                    console.log(event);
+//                    this.replayNextEvent();
             }
         },
 
@@ -103,6 +104,25 @@
         },
 
         replayTakeEvent:function(event) {
+            var gridCoordinate = cs1010s.GridCoordinate.createFromJSON(event[1].place.name);
+            var grid = this.getGrid(gridCoordinate);
+            var takingObject = grid.searchForObjectByJSON(event[1]);
+            var takenObject = grid.searchForObjectByJSON(event[2]);
+
+            this.animateTakeEvent(takingObject, takenObject, gridCoordinate);
+        },
+
+        animateTakeEvent:function(takingObject, takenObject, gridCoordinate) {
+            var takeAnimationController =
+                new cs1010s.TakeEventAnimationController(takingObject, takenObject, gridCoordinate,
+                                                         this.takeEventAnimationDidEnd, this);
+            takeAnimationController.startAnimating();
+        },
+
+        takeEventAnimationDidEnd:function(takingObject, takenObject, gridCoordinate) {
+            this.getGrid(gridCoordinate).removeObject(takenObject);
+            this.removeChild(takenObject);
+            this.replayNextEvent();
         },
 
         replayDeadEvent:function(event) {

@@ -3,6 +3,7 @@
     var ATTACK_EVENT_ATTACKER_ATTACK_WITHDRAW_ANIMATION_DURATION = 0.2;
     var ATTACK_EVENT_TARGET_FLINCH_ANIMATION_DURATION = 1.0;
     var DEAD_EVENT_ANIMATION_DURATION = 1.0;
+    var TAKE_EVENT_ANIMATION_DURATION = 1.0;
 
     cs1010s.GameEventAnimationController = cc.Class.extend({
         _callback : null,
@@ -93,6 +94,34 @@
             animationActions.push(cc.CallFunc.create(this.invokeCallback, this));
 
             this._attackedObject.runAction(cc.Sequence.create(animationActions));
+        }
+    });
+
+    cs1010s.TakeEventAnimationController = cs1010s.GameEventAnimationController.extend({
+        _takingObject : null,
+        _takenObject : null,
+        _gridCoordinate : null,
+
+        ctor:function(takingObject, takenObject, gridCoordinate, callback, callbackTarget) {
+            this._super(callback, callbackTarget);
+
+            this._takingObject = takingObject;
+            this._takenObject = takenObject;
+            this._gridCoordinate = gridCoordinate;
+        },
+
+        startAnimating:function() {
+            this._takenObject.runAction(cc.MoveTo.create(TAKE_EVENT_ANIMATION_DURATION,
+                                                         this._takingObject.getPosition()));
+
+            var animationActions = [];
+            animationActions.push(cc.FadeOut.create(TAKE_EVENT_ANIMATION_DURATION));
+            animationActions.push(cc.CallFunc.create(this.invokeCallback, this));
+            this._takenObject.runAction(cc.Sequence.create(animationActions));
+        },
+
+        invokeCallback:function() {
+            this._callback.apply(this._callbackTarget, [this._takingObject, this._takenObject, this._gridCoordinate]);
         }
     });
 

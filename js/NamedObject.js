@@ -17,6 +17,6 @@ cs1010s.NamedObject = cc.Sprite.extend({
     },
 
     matchJSON:function(json) {
-        return json.name == this.name;
+        return json.id == this.objectID;
     }
 });

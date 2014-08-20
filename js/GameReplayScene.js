@@ -8,7 +8,7 @@
             this.jsonHistoryLog = jsonHistoryLog;
             this.turnId = -1;
             this.loadMapObjects(this.jsonHistoryLog[0].map);
-//            this.replayNextTurn();
+            this.replayNextTurn();
         },
 
         replayNextTurn:function() {
@@ -36,15 +36,13 @@
             var replayableEvents = [
                 "MOVE",
                 "ATTACK",
-                "TAKE",
+                "TOOK",
                 "KILLED"
             ];
             return replayableEvents.indexOf(event[0]) != -1;
         },
 
         replayEvent:function(event) {
-            console.log(this.turnId, this.eventId);
-            console.log(event);
             switch (event[0]) {
                 case "MOVE":
                     this.replayMoveEvent(event);
@@ -54,7 +52,7 @@
                     this.replayAttackEvent(event);
                     break;
 
-//                case "TAKE":
+//                case "TOOK":
 //                    this.replayTakeEvent(event);
 //                    break;
 //
@@ -130,7 +128,7 @@
     cs1010s.GameReplayScene.create = function(json) {
         var config = json.rounds[0].config;
         var mapSize = config.map.size;
-        var scene = new cs1010s.GameReplayScene(mapSize);
+        var scene = new cs1010s.GameReplayScene(mapSize, cs1010s.GridSize.Medium);
         scene.playHistory(json.rounds[0].history);
         return scene;
     };

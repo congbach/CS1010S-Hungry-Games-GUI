@@ -1,15 +1,22 @@
 (function() {
-    var GRID_MAX_OBJECTS = 9;
+    cs1010s.GridSize = { Small : { name: "small", maxObjects : 9 },
+                         Medium : { name: "medium", maxObjects : 16 } };
 
     cs1010s.Grid = cc.Sprite.extend({
         _objects: null,
+        _maxObjectsCount: null,
 
-        ctor:function() {
-            this._super("images/square.png");
+        ctor:function(gridSize) {
+            this._super(this.getGridImage(gridSize));
+            this._maxObjectsCount = gridSize.maxObjects;
 
             this._objects = [];
-            for (var i = 0; i < GRID_MAX_OBJECTS; i++)
+            for (var i = 0; i < this._maxObjectsCount; i++)
                 this._objects.push(null);
+        },
+
+        getGridImage:function(gridSize) {
+            return "images/square.png";
         },
 
         addObject:function(object) {
@@ -75,20 +82,34 @@
         },
 
         _getPositionForObjectAtIndex:function(index) {
-            var GRID_MAP = [
-                [1, 5, 3],
-                [6, 0, 7],
-                [4, 8, 2]
-            ];
+            var GRID_MAP;
+            switch (this._maxObjectsCount) {
+                case 9:
+                    GRID_MAP = [
+                        [1, 5, 3],
+                        [6, 0, 7],
+                        [4, 8, 2]
+                    ];
+                    break;
+
+                case 16:
+                    GRID_MAP = [
+                        [4, 8, 9, 2],
+                        [10, 0, 6, 11],
+                        [12, 7, 1, 13],
+                        [3, 14, 15, 5]
+                    ];
+                    break;
+            }
             var subRowId, subColId;
-            for (var i = 0; i < 3; i++)
-                for (var j = 0; j < 3; j++)
+            for (var i = 0; i < GRID_MAP.length; i++)
+                for (var j = 0; j < GRID_MAP[i].length; j++)
                     if (GRID_MAP[i][j] == index) {
                         subRowId = i;
                         subColId = j;
                     }
-            var subRowHeight = this.getContentSize().height / 3;
-            var subColWidth = this.getContentSize().width / 3;
+            var subRowHeight = this.getContentSize().height / GRID_MAP.length;
+            var subColWidth = this.getContentSize().width / GRID_MAP[0].length;
 
             var x = this.getPosition().x - this.getContentSize().width/2;
             var y = this.getPosition().y - this.getContentSize().height/2;
@@ -122,18 +143,18 @@
     cs1010s.GameScene = cc.Scene.extend({
         _grids : null,
 
-        ctor:function(mapSize) {
+        ctor:function(mapSize, gridSize) {
             this._super();
 
-            this.constructMap(mapSize);
+            this.constructMap(mapSize, gridSize);
         },
 
-        constructMap:function(mapSize) {
+        constructMap:function(mapSize, gridSize) {
             this._grids = [];
             for (var i = 0; i < mapSize; i++) {
                 var row = [];
                 for (var j = 0; j < mapSize; j++) {
-                    var grid = new cs1010s.Grid();
+                    var grid = new cs1010s.Grid(gridSize);
                     grid.setPosition((i + 0.5) * grid.getContentSize().width,
                                      (j + 0.5) * grid.getContentSize().height);
                     this.addChild(grid);

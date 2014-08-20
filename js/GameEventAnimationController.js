@@ -4,6 +4,7 @@
     var ATTACK_EVENT_TARGET_FLINCH_ANIMATION_DURATION = 1.0;
     var DEAD_EVENT_ANIMATION_DURATION = 1.0;
     var TAKE_EVENT_ANIMATION_DURATION = 1.0;
+    var SPAWN_EVENT_ANIMATION_DURATION = 1.0;
 
     cs1010s.GameEventAnimationController = cc.Class.extend({
         _callback : null,
@@ -145,6 +146,24 @@
 
         invokeCallback:function() {
             this._callback.apply(this._callbackTarget, [this._deadObject, this._gridCoordinate]);
+        }
+    });
+
+    cs1010s.SpawnEventAnimationController = cs1010s.GameEventAnimationController.extend({
+        _spawnedObject : null,
+
+        ctor:function(spanwedObject, callback, callbackTarget) {
+            this._super(callback, callbackTarget);
+
+            this._spawnedObject = spanwedObject;
+        },
+
+        startAnimating:function() {
+            this._spawnedObject.setOpacity(0);
+
+            var animationAction = cc.FadeIn.create(SPAWN_EVENT_ANIMATION_DURATION);
+            var animationEndAction = cc.CallFunc.create(this.invokeCallback, this);
+            this._spawnedObject.runAction(cc.Sequence.create(animationAction, animationEndAction));
         }
     });
 }());

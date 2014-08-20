@@ -61,6 +61,10 @@
                     this.replayDeadEvent(event);
                     break;
 
+                case "SPAWNED":
+                    this.replaySpawnEvent(event);
+                    break;
+
                 default:
                     // FIXME: eventually all events should be supported -> throw assertion here
                     console.log("Unknown replayable event: " + event[0]);
@@ -143,6 +147,22 @@
             this.getGrid(gridCoordinate).removeObject(deadObject);
             this.removeChild(deadObject);
             this.replayNextEvent();
+        },
+
+        replaySpawnEvent:function(event) {
+            var gridCoordinate = cs1010s.GridCoordinate.createFromJSON(event[1].place.name);
+            var spawnedObject = cs1010s.GameObjectFactory.createFromJSON(event[1]);
+
+            var grid = this.getGrid(gridCoordinate);
+            spawnedObject.setPosition(grid.getNextObjectPosition());
+            this.addObject(spawnedObject, gridCoordinate.row, gridCoordinate.col);
+            this.animateSpawnEvent(spawnedObject);
+        },
+
+        animateSpawnEvent:function(spawnedObject) {
+            var spawnAnimationController =
+                new cs1010s.SpawnEventAnimationController(spawnedObject, this.replayNextEvent, this);
+            spawnAnimationController.startAnimating();
         }
     });
 

@@ -7,7 +7,6 @@
         playHistory:function(jsonHistoryLog) {
             this.jsonHistoryLog = jsonHistoryLog;
             this.turnId = -1;
-            this.loadMapObjects(this.jsonHistoryLog[0].map);
             this.replayNextTurn();
         },
 
@@ -15,6 +14,7 @@
             if (++this.turnId >= this.jsonHistoryLog.length)
                 return;
 
+            this.loadNewMapObjects(this.jsonHistoryLog[this.turnId].map);
             this.eventId = -1;
             this.replayNextEvent();
         },
@@ -37,7 +37,8 @@
                 "MOVE",
                 "ATTACK",
                 "TOOK",
-                "KILLED"
+                "KILLED",
+                "SPAWNED"
             ];
             return replayableEvents.indexOf(event[0]) != -1;
         },
@@ -99,7 +100,7 @@
         animateAttackEvent:function(attackingObject, attackedObject, attackDamage) {
             var attackAnimationController =
                 new cs1010s.AttackEventAnimationController(attackingObject, attackedObject, attackDamage,
-                                                           this.replayNextEvent, this);
+                    this.replayNextEvent, this);
             attackAnimationController.startAnimating();
         },
 
@@ -115,7 +116,7 @@
         animateTakeEvent:function(takingObject, takenObject, gridCoordinate) {
             var takeAnimationController =
                 new cs1010s.TakeEventAnimationController(takingObject, takenObject, gridCoordinate,
-                                                         this.takeEventAnimationDidEnd, this);
+                    this.takeEventAnimationDidEnd, this);
             takeAnimationController.startAnimating();
         },
 

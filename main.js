@@ -45,6 +45,7 @@ cs1010s.resources = [
     "images/potato.png",
     "images/apple.png",
     "images/carrot.png",
+    "images/meat.png",
 
     // players
     "images/AI.png",

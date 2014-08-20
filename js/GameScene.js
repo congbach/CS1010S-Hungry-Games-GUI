@@ -43,6 +43,14 @@
                 this._objects[i] = null;
         },
 
+        getAllObjects:function() {
+            var ret = [];
+            for (var i = 0; i < this._objects.length; i++)
+                if (this._objects[i])
+                    ret.push(this._objects[i]);
+            return ret;
+        },
+
         searchForObjectByJSON:function(json) {
             var ret = null;
             $.each(this._objects, function(index, object) {
@@ -164,18 +172,34 @@
             }
         },
 
-        loadMapObjects:function(jsonMap) {
+        loadNewMapObjects:function(jsonMap) {
             var that = this;
             $.each(jsonMap, function(index, element) {
                 var tokens = index.replace(/[(),]/g, "").split(" ");
                 var row = parseInt(tokens[0]) - 1;
                 var col = parseInt(tokens[1]) - 1;
-                $.each(element.objects, function(id, jsonObj) {
-                    that.addObject(cs1010s.GameObjectFactory.createFromJSON(jsonObj), row, col);
-                });
-            })
+                var grid = that.getGrid(row, col);
+                if (element.objects)
+                    $.each(element.objects, function(id, jsonObj) {
+                        if (!grid.searchForObjectByJSON(jsonObj))
+                            that.addObject(cs1010s.GameObjectFactory.createFromJSON(jsonObj), row, col);
+                    });
+            });
 
             this.repositionAllObjects();
+        },
+
+        _clearMap:function() {
+            var that = this;
+            $.each(this._grids, function(rowId, row) {
+                $.each(row, function(colId, grid) {
+                    var objects = grid.getAllObjects();
+                    grid.removeAllObjects();
+                    $.each(objects, function(index, object) {
+                        that.removeChild(object);
+                    });
+                })
+            });
         },
 
         addObject:function(obj, row, col) {

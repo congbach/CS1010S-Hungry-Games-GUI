@@ -13,6 +13,7 @@ cs1010s.resources = [
     "images/machete.png",
     "images/dagger.png",
     "images/mace.png",
+    "images/axe.png",
 
     // ranged weapons
     "images/bow.png",
@@ -38,6 +39,7 @@ cs1010s.resources = [
     "images/deer.png",
     "images/bear.png",
     "images/wolf.png",
+    "images/mutation.png",
 
     // food
     "images/watermelon.png",

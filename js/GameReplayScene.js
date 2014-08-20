@@ -167,10 +167,11 @@
     });
 
     cs1010s.GameReplayScene.create = function(json) {
-        var config = json.rounds[0].config;
+        var roundId = 1;
+        var config = json.rounds[roundId].config;
         var mapSize = config.map.size;
         var scene = new cs1010s.GameReplayScene(mapSize, cs1010s.GridSize.Medium);
-        scene.playHistory(json.rounds[0].history);
+        scene.playHistory(json.rounds[roundId].history);
         return scene;
     };
 }());

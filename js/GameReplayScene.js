@@ -144,9 +144,35 @@
         },
 
         deadEventAnimationDidEnd:function(deadObject, gridCoordinate) {
-            this.getGrid(gridCoordinate).removeObject(deadObject);
             this.removeChild(deadObject);
+            if (deadObject instanceof cs1010s.Animal) {
+                if (this.turnId + 1 < this.jsonHistoryLog.length) {
+                    // Load meat (spawned next turn) in advance to ensure smoothness of the game
+                    var meat = this.scanAnimalMeat(this.jsonHistoryLog[this.turnId + 1].map, deadObject, gridCoordinate);
+                    this.addChild(meat);
+                    var grid = this.getGrid(gridCoordinate);
+                    var index = grid.replaceObject(deadObject, meat);
+                    grid.repositionObjectAtIndex(index);
+                }
+            }
+            else
+                this.getGrid(gridCoordinate).removeObject(deadObject);
             this.replayNextEvent();
+        },
+
+        scanAnimalMeat:function(jsonMap, deadAnimal, gridCoordinate) {
+            var jsonGrid = jsonMap["(" + (gridCoordinate.row + 1) + ", " + (gridCoordinate.col + 1) + ")"];
+            var that = this;
+            var meat = null;
+            $.each(jsonGrid.objects, function(id, jsonObj) {
+                if (jsonObj.type == cs1010s.GameObjectFactory.ObjectType.Food &&
+                    jsonObj.name.indexOf(deadAnimal.name) != -1 &&
+                    jsonObj.name.indexOf("meat") != -1) {
+                    meat = cs1010s.GameObjectFactory.createFoodFromJSON(jsonObj);
+                    return false;
+                }
+            });
+            return meat;
         },
 
         replaySpawnEvent:function(event) {

@@ -38,6 +38,13 @@
                 this._objects[index] = null;
         },
 
+        replaceObject:function(object, replacement) {
+            var index = this._objects.indexOf(object);
+            if (index != -1)
+                this._objects[index] = replacement;
+            return index;
+        },
+
         removeAllObjects:function() {
             for (var i = 0; i < this._objects.length; i++)
                 this._objects[i] = null;
@@ -80,6 +87,12 @@
 //                                   y + (r + 0.5) * subRowHeight);
 //            }
 //        },
+
+        repositionObjectAtIndex:function(index) {
+            var object = this._objects[index];
+            if (object)
+                object.setPosition(this._getPositionForObjectAtIndex(index));
+        },
 
         repositionAllObjects:function() {
             var that = this;
